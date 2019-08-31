@@ -57,6 +57,9 @@ ip_bans.yaml
 /esphome/includes/secrets.yaml
 known_devices.yaml
 
+# Json files
+.ps4-games.json
+
 
 # Created by https://www.gitignore.io/api/macos
 # Edit at https://www.gitignore.io/?templates=macos
