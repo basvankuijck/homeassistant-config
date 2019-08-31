@@ -1,0 +1,8 @@
+---
+platform: mqtt
+unique_id: patio
+name: "Terrasoverkapping"
+command_topic: "home-assistant/light/terrace/switch"
+brightness_command_topic: "home-assistant/light/terrace/dim"
+brightness_scale: 15
+optimistic: true

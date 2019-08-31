@@ -1,0 +1,6 @@
+---
+platform: mqtt
+unique_id: garden_trees_2
+optimistic: false
+name: "Tuin grondspots"
+command_topic: "home-assistant/light/garden_trees/switch"

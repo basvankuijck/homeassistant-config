@@ -1,0 +1,6 @@
+scene:
+  options:
+    - home
+    - tv
+    - gone
+    - sleep

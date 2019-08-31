@@ -1,0 +1,9 @@
+alias: "Tuinlicht zonsopgang"
+action:
+  entity_id: script.turn_off_tree_lights
+  service: script.turn_on
+initial_state: true
+trigger:
+  event: sunrise
+  offset: "+00:30:00"
+  platform: sun

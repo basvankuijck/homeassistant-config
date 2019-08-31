@@ -1,0 +1,16 @@
+alias: Motion detector timer keuken
+initial_state: true
+trigger:
+  platform: event
+  event_type: timer.finished
+  event_data:
+    entity_id: timer.motion_detector_timer
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: input_select.scene
+      state: tv
+action:
+  - service: light.turn_off
+    entity_id: light.keuken

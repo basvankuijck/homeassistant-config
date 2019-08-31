@@ -1,0 +1,41 @@
+alias: Motion detector carport
+initial_state: true
+trigger:
+  platform: event
+  event_type: folder_watcher
+  event_data:
+    event_type: created
+
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: alarm_control_panel.ha_alarm
+      state: armed_away
+    - condition: state
+      entity_id: group.devices
+      state: not_home
+
+action:
+  - service: camera.local_file_update_file_path
+    data_template:
+      entity_id: camera.carport_movement
+      file_path: "{{ trigger.event.data.path }}"
+  - delay: '00:00:02'
+  - service: notify.notify
+    data:
+      title: Carport
+      message: Beweging gedetecteerd!
+      data:
+        attachment:
+          content-type: jpeg
+          hide-thumbnail: false
+        push:
+          category: camera
+        entity_id: camera.carport_movement
+
+  - service: script.turn_on
+    entity_id: script.record_camera_carport
+
+  - service: script.turn_on
+    entity_id: script.trigger_carport_sensor

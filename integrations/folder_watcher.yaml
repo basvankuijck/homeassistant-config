@@ -1,0 +1,9 @@
+---
+# This integration adds Watchdog file system monitoring, publishing events on the Home Assistant bus on the creation/deletion/modification of files within configured folders
+#
+# https://www.home-assistant.io/components/folder_watcher/
+#
+folder_watcher:
+  - folder: /share
+    patterns:
+      - '*.jpg'

@@ -1,0 +1,4 @@
+---
+name: Weg
+entities:
+  - script.turn_on_scene_gone: on

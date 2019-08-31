@@ -1,126 +1,16 @@
 homeassistant:
-  # Name of the location where Home Assistant is running
   name: De Draaikes 32
-  # Location required to calculate the time the sun rises and sets
-  latitude: 51.48205429999999
-  longitude: 4.65852730000006
-  # Impacts weather/sunrise data (altitude above sea level in meters)
+  latitude: !secret latitude
+  longitude: !secret longitude
   elevation: 0
-  # metric for Metric, imperial for Imperial
   unit_system: metric
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: Europe/Amsterdam
-  # Customization file
   customize: !include customize.yaml
   whitelist_external_dirs:
     - /share
     - /config/www
-
-# Enables the frontend
-frontend: !include frontend.yaml
+  packages: !include_dir_named integrations
 
 default_config:
 
-device_tracker:
-
-lovelace:
-  mode: yaml
-
 # discovery:
-
-map:
-
-sun:
-
-# Weather prediction
-weather:
-  - platform: darksky
-    api_key: !secret darksky_api_key
-
-
-http:
-  base_url: https://dedraaikes32.duckdns.org
-  ssl_certificate: /ssl/fullchain.pem
-  ssl_key: /ssl/privkey.pem
-
-light: !include lights.yaml
-
-toon:
-    client_id: !secret toon_consumer_key
-    client_secret: !secret toon_consumer_secret
-
-tts:
-  - platform: google_translate
-    service_name: google_say
-    language: 'nl'
-    cache: true
-    cache_dir: /tmp/tts
-    time_memory: 300
-    base_url: https://dedraaikes32.duckdns.org
-
-ios:
-
-sensor: !include sensors.yaml
-scene: !include scene.yaml
-
-binary_sensor:
-- platform: mqtt
-  name: "Motion sensor"
-  state_topic: "home-assistant/sensor/one"
-  force_update: true
-
-- platform: mqtt
-  name: "Carport sensor"
-  state_topic: "home-assistant/sensor/carport"
-  force_update: true
-
-google_assistant: !include google_assistant.yaml
-
-automation: !include_dir_merge_list automations/
-script: !include_dir_merge_named scripts/
-homekit: !include homekit.yaml
-group: !include groups.yaml
-alarm_control_panel: !include alarm_control_panel.yaml
-notify: !include notify.yaml
-intent_script: !include_dir_merge_named intents/
-dialogflow:
-
-folder_watcher:
-  - folder: /share
-    patterns:
-      - '*.jpg'
-
-logger:
-  default: warning
-  logs:
-    homeassistant.components.camera: debug
-    homeassistant.components.ps4.media_player: error
-
-ffmpeg:
-
-camera: !include cameras.yaml
-
-input_select:
-  state:
-    options:
-      - gone
-      - home
-      - sleep
-  scene:
-    options:
-      - home
-      - tv
-      - gone
-      - sleep
-
-input_number:
-  google_home_volume:
-    name: Google Home Volume
-    initial: 50
-    min: 0
-    max: 100
-    step: 1
-
-timer:
-    motion_detector_timer:
-        duration: '00:00:30'

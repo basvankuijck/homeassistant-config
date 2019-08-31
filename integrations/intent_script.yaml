@@ -1,0 +1,8 @@
+---
+# The intent_script integration allows users to configure actions and responses to intents.
+# Intents can be fired by any integration that supports it.
+# Examples are Alexa (Amazon Echo), Dialogflow (Google Assistant) and Snips.
+#
+# https://www.home-assistant.io/components/intent_script/
+#
+intent_script: !include_dir_merge_named ../intents/

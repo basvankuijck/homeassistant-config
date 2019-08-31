@@ -1,0 +1,6 @@
+---
+platform: mqtt
+unique_id: play_light
+optimistic: false
+name: "Speeltafel"
+command_topic: "home-assistant/light/play_table/switch"

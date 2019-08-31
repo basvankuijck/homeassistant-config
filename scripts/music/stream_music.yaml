@@ -1,0 +1,9 @@
+---
+stream_music:
+  alias: Stream music
+  sequence:
+  - service: media_player.play_media
+    entity_id: media_player.huiskamer
+    data_template:
+      media_content_id: '{{ stream }}'
+      media_content_type: music

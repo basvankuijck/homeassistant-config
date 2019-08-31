@@ -1,0 +1,13 @@
+---
+title: Floorplan
+icon: mdi:floor-plan
+panel: true
+cards:
+  - type: "custom:floorplan-card"
+    entities:
+      - light.woonkamer
+      - light.bureau_2
+      - light.speeltafel
+      - light.keukenkast
+      - light.keuken
+      - binary_sensor.motion_sensor

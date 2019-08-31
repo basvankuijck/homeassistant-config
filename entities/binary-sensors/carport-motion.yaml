@@ -1,0 +1,5 @@
+---
+platform: mqtt
+name: "Carport sensor"
+state_topic: "home-assistant/sensor/carport"
+force_update: true

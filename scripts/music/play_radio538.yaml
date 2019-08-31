@@ -1,0 +1,9 @@
+---
+play_radio538:
+  alias: Speel Radio 538
+  sequence:
+  - service: script.turn_on
+    entity_id: script.stream_music
+    data_template:
+      variables:
+        stream: http://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3

@@ -1,5 +1,0 @@
-people:
-  name: "People"
-  entities:
-    - device_tracker.iphone_x_bas
-    - device_tracker.daan_iphone_x

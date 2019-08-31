@@ -1,0 +1,8 @@
+---
+send_capture_command:
+  alias: Send capture command to cameras
+  sequence:
+    - service: mqtt.publish
+      data_template:
+        topic: 'homeassistant/camera/save'
+        payload: '{{stream}}'

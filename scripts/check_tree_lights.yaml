@@ -1,0 +1,16 @@
+---
+# Zodra iemand thuis komt, controleren of de grondspots aangezet moeten worden
+check_tree_lights:
+  alias: Controleer tuinlichten
+  sequence:
+    - condition: or
+      conditions:
+        - condition: sun
+          after: sunset
+          after_offset: "-00:30:00"
+        - condition: sun
+          before_offset: "+00:30:00"
+          before: sunrise
+    - service: light.turn_on
+      data:
+        entity_id: light.tuin_grondspots

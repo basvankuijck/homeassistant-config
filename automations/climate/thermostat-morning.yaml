@@ -1,0 +1,14 @@
+alias: "Thermostaat aan om 06:45"
+initial_state: true
+trigger:
+  platform: time
+  at: "06:45:00"
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: input_select.state
+      state: sleep
+action:
+  entity_id: script.turn_on_thermostate_morning
+  service: script.turn_on

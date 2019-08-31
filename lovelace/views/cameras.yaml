@@ -1,0 +1,41 @@
+---
+title: Camera
+icon: mdi:video
+cards:
+  - type: picture-entity
+    name: Carport
+    entity: camera.carport
+    camera_image: camera.carport
+    show_state: false
+
+  - type: picture-entity
+    name: Carport motion
+    entity: camera.carport_movement
+    camera_image: camera.carport_movement
+    show_state: false
+
+  - type: picture-entity
+    name: Woonkamer
+    entity: camera.living
+    camera_image: camera.living
+    show_state: false
+
+  - type: entity-button
+    name: Save carport stream
+    entity: script.send_capture_command
+    show_icon: false
+    tap_action:
+      action: call-service
+      service: script.send_capture_command
+      service_data:
+        stream: carport
+
+  - type: entity-button
+    name: Save living stream
+    entity: script.send_capture_command
+    show_icon: false
+    tap_action:
+      action: call-service
+      service: script.send_capture_command
+      service_data:
+        stream: living

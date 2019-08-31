@@ -1,0 +1,7 @@
+---
+google_home_volume:
+  name: Google Home Volume
+  initial: 50
+  min: 0
+  max: 100
+  step: 1

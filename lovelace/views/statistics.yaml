@@ -1,0 +1,36 @@
+title: Stats
+icon: mdi:chart-areaspline
+cards:
+    - type: gauge
+      name: PI HDD
+      unit: GB
+      entity: sensor.disk_use
+      max: 32
+
+    - type: gauge
+      name: PI Memory
+      unit: GB
+      entity: sensor.memory_use
+      max: 1024
+
+    - type: gauge
+      name: PI CPU
+      unit: "%"
+      entity: sensor.processor_use
+
+    - type: gauge
+      name: HDD Mac Mini
+      unit: GB
+      entity: sensor.mac_mini_diskspace
+      max: 320
+
+    - type: gauge
+      name: PI CPU Tempareture
+      unit: °C
+      entity: sensor.cpu_temperature
+      max: 70
+
+    - type: history-graph
+      title: Temperatuur
+      entities:
+        - climate.toon_thermostat

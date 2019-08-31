@@ -1,0 +1,6 @@
+---
+# The ios integration is the Home Assistant part for using the iOS companion app
+#
+# https://www.home-assistant.io/components/ios/
+#
+ios:

@@ -1,0 +1,55 @@
+---
+title: Home
+icon: mdi:home-assistant
+cards:
+  - type: glance
+    title: Sensoren
+    entities:
+      - binary_sensor.carport_sensor
+      - binary_sensor.motion_sensor
+
+  - type: entities
+    title: Scenes
+    show_header_toggle: false
+    entities:
+        - entity: scene.slapen
+        - entity: scene.thuis
+        - entity: scene.tv_kijken
+        - entity: scene.weg
+
+  - type: alarm-panel
+    entity: alarm_control_panel.ha_alarm
+
+  - type: thermostat
+    name: Thermostaat
+    entity: climate.toon_thermostat
+
+  - type: entities
+    title: Lichten
+    show_header_toggle: false
+    entities:
+        - entity: light.bureau_2
+        - entity: light.woonkamer
+        - entity: light.keuken
+        - entity: light.speeltafel
+        - entity: light.keukenkast
+        # - entity: light.xmas_tree
+        - entity: light.tuin_grondspots
+        - entity: light.terrasoverkapping
+
+  - type: entities
+    title: Automatisering
+    show_header_toggle: false
+    entities:
+        - entity: automation.alarm
+        # - entity: automation.occupancy_simulator
+        - entity: automation.tuinlicht_zonsondergang
+        - entity: automation.tuinlicht_zonsopgang
+        - entity: automation.thermostaat_aan_om_06_45
+        - entity: automation.motion_detector_keuken
+        - entity: automation.motion_detector_carport
+
+  - type: 'custom:weather-card-chart'
+    title: Weather
+    mode: hourly
+    weather:  weather.dark_sky

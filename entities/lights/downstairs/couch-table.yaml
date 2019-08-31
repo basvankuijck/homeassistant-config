@@ -1,0 +1,6 @@
+---
+platform: mqtt
+unique_id: living_light
+optimistic: false
+name: "Woonkamer"
+command_topic: "home-assistant/light/living_room/switch"

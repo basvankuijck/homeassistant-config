@@ -1,0 +1,9 @@
+---
+# The toon integration platform can be used to control your Toon thermostat.
+# This integration adds a climate device for your Toon thermostat, sensors for power and gas consumption, sensors for solar production and several binary sensors for things like boiler burner on/off, hot tap water and boiler health status.
+#
+# https://www.home-assistant.io/components/toon/
+#
+toon:
+  client_id: !secret toon_consumer_key
+  client_secret: !secret toon_consumer_secret
