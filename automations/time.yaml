@@ -1,0 +1,38 @@
+- alias: "Thermostaat aan om 06:45"
+  initial_state: true
+  trigger:
+    platform: time
+    at: "06:45:00"
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_select.state
+        state: sleep
+  action:
+    entity_id: script.turn_on_thermostate_morning
+    service: script.turn_on
+
+- alias: Daily Backup at 03:00
+  initial_state: true
+  trigger:
+    platform: time
+    at: '03:00:00'
+  action:
+  - service: hassio.snapshot_full
+    data_template:
+      name: Automated Backup {{ now().strftime('%Y-%m-%d') }}
+      password: !secret snapshot_password
+
+- alias: Home assistant startup
+  initial_state: true
+  trigger:
+     - platform: homeassistant
+       event: start
+  action:
+    service: script.turn_on
+    data_template:
+      entity_id: >
+        {% if is_state('input_select.state' , 'home') %} script.turn_on_scene_thuis
+        {% elif is_state('input_select.state' , 'sleep') %} script.turn_on_scene_sleep
+        {% else %} script.turn_on_scene_gone {% endif %} 

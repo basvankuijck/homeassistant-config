@@ -1,0 +1,10 @@
+- platform: manual_mqtt
+  name: "HA Alarm"
+  state_topic: home-assistant/home/alarm
+  command_topic: home-assistant/home/alarm/set
+  delay_time: 0
+  pending_time: 20
+  disarmed:
+    trigger_time: 0
+  armed_home:
+    pending_time: 0

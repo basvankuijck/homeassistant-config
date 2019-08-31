@@ -1,0 +1,30 @@
+- alias: "Occupancy simulator"
+  initial_state: false
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: input_select.state
+        state: gone
+      - condition: time
+        before: '23:00:00'
+      - condition: or
+        conditions:
+        - condition: sun
+          after: sunset
+          after_offset: "-00:30:00"
+        - condition: sun
+          before_offset: "+00:30:00"
+          before: sunrise
+  trigger:
+    platform: time_pattern
+    minutes: '/30'
+    seconds: 00
+  action:
+    - delay:
+        minutes: '{{ range(5,15) | random | int }}'
+    - service: script.turn_on
+      entity_id: script.toggle_occsim
+      data_template:
+        variables:
+          eid: '{{ ["light.bureau_2","light.woonkamer","light.speeltafel"] | random }}'

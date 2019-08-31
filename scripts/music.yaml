@@ -1,0 +1,35 @@
+stream_music:
+  alias: Stream music
+  sequence:
+  - service: media_player.play_media
+    entity_id: media_player.huiskamer
+    data_template:
+      media_content_id: '{{ stream }}'
+      media_content_type: music
+
+play_radio_2:
+  alias: Speel NPO Radio 2
+  sequence:
+  - service: script.turn_on
+    entity_id: script.stream_music
+    data_template:
+      variables:
+        stream: http://icecast.omroep.nl/radio2-bb-mp3
+
+play_radio538:
+  alias: Speel Radio 538
+  sequence:
+  - service: script.turn_on
+    entity_id: script.stream_music
+    data_template:
+      variables:
+        stream: http://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
+
+play_100procentnl:
+  alias: Speel 100% NL
+  sequence:
+  - service: script.turn_on
+    entity_id: script.stream_music
+    data_template:
+      variables:
+        stream: http://stream.100p.nl/100pctnl.mp3

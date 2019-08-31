@@ -1,0 +1,11 @@
+toggle_occsim:
+  alias: "Fake home"
+  sequence:
+    - service: light.turn_on
+      data_template:
+        entity_id: '{{ eid }}'
+    - delay:
+        minutes: '{{ range(30,45) | random | int }}'
+    - service: light.turn_off
+      data_template:
+        entity_id: '{{ eid }}'
