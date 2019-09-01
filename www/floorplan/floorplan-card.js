@@ -94,7 +94,7 @@ class FloorplanCard extends HTMLElement {
                 "imagefile": "light-living.png",
                 "buttonorigin": {
                     "left": 50,
-                    "top": 50
+                    "top": 52
                 }
             },
             {
@@ -143,21 +143,6 @@ class FloorplanCard extends HTMLElement {
                 }
             },
             {
-                "id": "light.keukenkast",
-                "type": "light",
-                "frame": {
-                    "width": 23.44727973,
-                    "left": 74.7231584,
-                    "top": 31.00652174,
-                    "height": 35.4619565
-                },
-                "imagefile": "light-keukenkast.png",
-                "buttonorigin": {
-                    "left": 56,
-                    "top": 62
-                }
-            },
-            {
                 "id": "binary_sensor.motion_sensor",
                 "type": "sensor",
                 "frame": {
@@ -170,6 +155,21 @@ class FloorplanCard extends HTMLElement {
                 "buttonorigin": {
                     "left": 80,
                     "top": 50
+                }
+            },
+            {
+                "id": "light.keukenkast",
+                "type": "light",
+                "frame": {
+                    "width": 23.44727973,
+                    "left": 74.7231584,
+                    "top": 31.00652174,
+                    "height": 35.4619565
+                },
+                "imagefile": "light-keukenkast.png",
+                "buttonorigin": {
+                    "left": 56,
+                    "top": 62
                 }
             }
         ];
