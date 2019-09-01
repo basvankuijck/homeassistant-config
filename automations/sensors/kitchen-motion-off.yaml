@@ -7,6 +7,7 @@ trigger:
   event_type: timer.finished
   event_data:
     entity_id: timer.motion_detector_timer
+    
 condition:
   condition: and
   conditions:

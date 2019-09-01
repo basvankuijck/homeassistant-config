@@ -5,7 +5,6 @@
 *.db-shm
 *.db-wal
 *.pyc
-*.js
 
 # Directory (contents) ignores
 deps

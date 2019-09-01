@@ -1,3 +1,4 @@
+---
 alias: Change Google Home volume
 trigger:
   platform: state
