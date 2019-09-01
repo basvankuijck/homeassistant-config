@@ -1,4 +1,4 @@
 ---
 name: Slapen
 entities:
-  - script.turn_on_scene_sleep: on
+  script.turn_on_scene_sleep: on

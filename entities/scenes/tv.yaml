@@ -1,4 +1,4 @@
 ---
 name: TV Kijken
 entities:
-  - script.turn_on_scene_tv: on
+  script.turn_on_scene_tv: on
