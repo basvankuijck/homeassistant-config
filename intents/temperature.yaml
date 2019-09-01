@@ -2,4 +2,4 @@
 
 GetTemperature:
   speech:
-    text: Het is momenteel {{ climate.toon_thermostat.temperature | round(0) }} graden celsius binnen.
+    text: Het is momenteel {{ climate.toon_thermostat.current_temperature | round(0) }} graden celsius binnen.
