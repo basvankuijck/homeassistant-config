@@ -1,3 +1,5 @@
+---
+#
 alias: Motion detector timer keuken
 initial_state: true
 trigger:

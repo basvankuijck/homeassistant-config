@@ -1,4 +1,4 @@
-title: De Draaikes 32
+title: !secret name
 resources: !include_dir_list lovelace/resources
 
 views:

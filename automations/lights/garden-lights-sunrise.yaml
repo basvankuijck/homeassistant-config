@@ -1,9 +1,14 @@
+---
+# Turn off the garden ground light spots 30 minutes after sunrise.
+# They'll probably be off at that time, but scene triggers could have turned them on.
+
 alias: "Tuinlicht zonsopgang"
-action:
-  entity_id: script.turn_off_tree_lights
-  service: script.turn_on
 initial_state: true
 trigger:
   event: sunrise
   offset: "+00:30:00"
   platform: sun
+action:
+  service: light.turn_off
+  data:
+     entity_id: light.tuin_grondspots

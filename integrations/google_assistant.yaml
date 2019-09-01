@@ -4,4 +4,4 @@
 # https://www.home-assistant.io/components/google_assistant/
 #
 google_assistant:
-  project_id: dedraaikes32
+  project_id: !secret google_assistant_project_id

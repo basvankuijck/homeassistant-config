@@ -1,9 +1,0 @@
----
-turn_on_thermostate_morning:
-  alias: Thermostaat aan
-  sequence:
-  - alias: Thermostaat
-    service: climate.set_temperature
-    data:
-      entity_id: climate.toon_thermostat
-      temperature: 21

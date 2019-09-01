@@ -1,3 +1,17 @@
+---
+# Automation triggered by motion in the kitchen
+#
+# Trigger:
+# - The `binary_sensor.motion_sensor` sensor triggers a motion
+#
+# Conditions:
+# - The currently selected scene is 'tv'
+# - The sun is below the horizon (it's dark outside)
+#
+# Actions:
+# - Turn on the kitchen lights
+# - Call the timer that will turn off the lights in the kitchen automatically
+
 alias: Motion detector keuken
 initial_state: true
 trigger:
@@ -11,10 +25,10 @@ condition:
     - condition: state
       entity_id: input_select.scene
       state: tv
-      
-    - condition: state
-      entity_id: light.tuin_grondspots
-      state: 'on'
+
+    - condition: state  # from sunset until sunrise
+      entity_id: sun.sun
+      state: 'below_horizon'
 
 action:
   - service: light.turn_on

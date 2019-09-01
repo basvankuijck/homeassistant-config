@@ -1,7 +1,8 @@
+---
+# Automatically urn on the garden light spots 30 minutes before sunset.
+# Only when we're at home.
+
 alias: "Tuinlicht zonsondergang"
-action:
-  entity_id: script.turn_on_tree_lights
-  service: script.turn_on
 trigger:
   event: sunset
   platform: sun
@@ -13,3 +14,7 @@ condition:
       entity_id: input_select.state
       state: home
 initial_state: true
+action:
+  service: light.turn_on
+  data:
+    entity_id: light.tuin_grondspots

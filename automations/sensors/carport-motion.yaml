@@ -1,3 +1,20 @@
+---
+# An automation that fires when there is movement registered by the carport camera.
+#
+# Trigger:
+# - Watch for in the /share folder for newly created .jpg files
+#
+# Conditions:
+# - Only when the alarm is armed for away.
+# - And none of the devices are in proximity of the house
+#
+# Actions:
+# - Update the `camera.carport_movement` camera (which is a still image camera) with the newly created file
+# - Wait 2 seconds
+# - Send a push notification that a motion is detected with the (still) camera image as an attachment
+# - Record the carport camera for 30s
+# - Turn on the carport 'motion' sensor for 30s
+
 alias: Motion detector carport
 initial_state: true
 trigger:

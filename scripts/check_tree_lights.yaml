@@ -1,5 +1,7 @@
 ---
-# Zodra iemand thuis komt, controleren of de grondspots aangezet moeten worden
+# This script checks to see if the garden spot lights should be turned on
+# Only 30 minutes before sunset and 30 minutes after sunrise
+
 check_tree_lights:
   alias: Controleer tuinlichten
   sequence:

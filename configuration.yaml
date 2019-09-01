@@ -1,8 +1,8 @@
 homeassistant:
-  name: De Draaikes 32
+  name: !secret name
   latitude: !secret latitude
   longitude: !secret longitude
-  elevation: 0
+  elevation: 10
   unit_system: metric
   time_zone: Europe/Amsterdam
   customize: !include customize.yaml
