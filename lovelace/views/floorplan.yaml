@@ -4,4 +4,3 @@ icon: mdi:floor-plan
 panel: true
 cards:
   - type: "custom:floorplan-card"
-  entity: light.kitchen
