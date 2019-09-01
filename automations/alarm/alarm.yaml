@@ -1,21 +1,21 @@
 ---
-- alias: "Alarm"
-  initial_state: false
-  trigger:
-    - entity_id: binary_sensor.motion_sensor
-      platform: state
-      to: "on"
-      
-  condition:
-    condition: or
-    conditions:
-      - condition: state
-        entity_id: alarm_control_panel.ha_alarm
-        state: armed_away
-      - condition: state
-        entity_id: alarm_control_panel.ha_alarm
-        state: armed_night
+alias: "Alarm"
+initial_state: false
+trigger:
+  - entity_id: binary_sensor.motion_sensor
+    platform: state
+    to: "on"
+    
+condition:
+  condition: or
+  conditions:
+    - condition: state
+      entity_id: alarm_control_panel.ha_alarm
+      state: armed_away
+    - condition: state
+      entity_id: alarm_control_panel.ha_alarm
+      state: armed_night
 
-  action:
-    entity_id: script.trigger_alarm_away
-    service: script.turn_on
+action:
+  entity_id: script.trigger_alarm_away
+  service: script.turn_on

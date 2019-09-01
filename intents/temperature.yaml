@@ -1,3 +1,5 @@
+# "Wat is de temperatuur?"
+
 GetTemperature:
   speech:
-    text: De temperatuur is 20 graden celsius
+    text: Het is momenteel {{ climate.toon_thermostat.temperature | round(0) }} graden celsius binnen.
