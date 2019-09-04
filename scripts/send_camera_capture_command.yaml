@@ -1,4 +1,10 @@
 ---
+# Send a MQTT publish command to save a camera stream.
+# Probable subscription will be done on the mac mini 
+#
+# Parameters:
+#  - stream: The name of the stream (carport or living)
+
 send_capture_command:
   alias: Send capture command to cameras
   sequence:
