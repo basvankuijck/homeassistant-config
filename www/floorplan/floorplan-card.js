@@ -23,7 +23,7 @@ class FloorplanCard extends HTMLElement {
 
                 var sensorImage = document.createElement("img");
                 sensorImage.src = "/local/floorplan/images/sensor.png";
-                sensorImage.style = `width: 6%; height: 16%; position: absolute; left: ${entity.buttonorigin.left}%; top: ${entity.buttonorigin.top}%`;
+                sensorImage.style = `width: 50px; height: 49px; position: absolute; left: ${entity.buttonorigin.left}%; top: ${entity.buttonorigin.top}%`;
                 addLast.push(sensorImage);
             }
             var innerHTML = `<img class="${entity.type}" src="/local/floorplan/images/${entity.imagefile}" style="${style}">`;
