@@ -12,6 +12,7 @@
 # - Update the `camera.carport_movement` camera (which is a still image camera) with the newly created file
 # - Wait 2 seconds
 # - Send a push notification that a motion is detected with the (still) camera image as an attachment
+# - Send a telegram message with the photo
 # - Record the carport camera for 30s
 # - Turn on the carport 'motion' sensor for 30s
 
@@ -39,6 +40,8 @@ action:
       entity_id: camera.carport_movement
       file_path: "{{ trigger.event.data.path }}"
   - delay: '00:00:02'
+
+  # Push notification
   - service: notify.notify
     data:
       title: Carport
@@ -50,6 +53,17 @@ action:
         push:
           category: camera
         entity_id: camera.carport_movement
+
+  # Telegram
+  - service: telegram_bot.send_message
+    data:
+      title: "*Carport*"
+      message: "Beweging gedetecteerd!"
+      parse_mode: markdown
+
+  - service: telegram_bot.send_photo
+    data_template:
+      file: "{{ trigger.event.data.path }}"
 
   - service: script.turn_on
     entity_id: script.record_camera_carport
