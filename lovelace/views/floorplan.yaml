@@ -4,3 +4,10 @@ icon: mdi:floor-plan
 panel: true
 cards:
   - type: "custom:floorplan-card"
+  - title: "Inwoners"
+    type: entities
+    entities:
+      - entity: person.bas
+        name: Bas
+      - entity: person.danielle
+        name: Daniëlle

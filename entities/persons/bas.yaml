@@ -1,0 +1,5 @@
+---
+name: Bas
+id: bas
+device_trackers:
+ - device_tracker.iphone_x_bas

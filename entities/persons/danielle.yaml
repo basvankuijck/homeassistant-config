@@ -1,0 +1,5 @@
+---
+name: Danielle
+id: danielle
+device_trackers:
+ - device_tracker.daan_iphone_x
