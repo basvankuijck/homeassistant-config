@@ -13,9 +13,13 @@ class FloorplanCard extends HTMLElement {
 
         var _entities = [];
         var addLast = [];
-        this.entities().forEach(function(entity) {            
+        this.entities().forEach(function(entity) {   
             const element = document.createElement('div');
-            element.style = `position: absolute; width: ${entity.frame.width}%; left: ${entity.frame.left}%; top: ${entity.frame.top}%; height: ${entity.frame.height}%`;
+            element.className = `type_${entity.type}`;
+            var elementStyle = `position: absolute; left: ${entity.frame.left}%; top: ${entity.frame.top}%`;
+            if (entity.frame.width && entity.frame.height) {
+                elementStyle += `; width: ${entity.frame.width}%; height: ${entity.frame.height}%`;
+            }
             element.title = entity.id;
             var style = "width: 100%; height: 100%; position: absolute;";
             if (entity.type == "sensor") {
@@ -29,7 +33,11 @@ class FloorplanCard extends HTMLElement {
             var innerHTML = `<img class="${entity.type}" src="/local/floorplan/images/${entity.imagefile}" style="${style}">`;
             if (entity.type == "light") {
                 innerHTML += `<img class="button" style="width: 50px; height: 49px; margin-top:-25px; margin-left: -25px; position: absolute; left: ${entity.buttonorigin.left}%; top: ${entity.buttonorigin.top}%">`;
+            } else if (entity.type == "thermostat") {
+                elementStyle += "; width: 70px; height: 22px; padding-top:8px; font-weight: bold; font-size: 12px; border-radius: 15px; background-color: rgba(0, 0, 0, 0.7); text-color: #fff; text-align: center";
+                innerHTML = "---";
             }
+            element.style = elementStyle;
             element.innerHTML = innerHTML
             base.appendChild(element);
             _entities.push(element);
@@ -70,12 +78,17 @@ class FloorplanCard extends HTMLElement {
                 button.src = "/local/floorplan/images/light_off.png";
                 img.style.display = 'none';
             }
-        } else {
-            img = element.getElementsByClassName("sensor")[0];
-            if (!!img && state.state == 'on' && img.style.display == "none") {
-                self.fireSensorTimer(hass, img, entityId);
-                img.style.display = 'block';
-            }
+        }
+
+        img = element.getElementsByClassName("sensor")[0];
+        if (!!img && state.state == 'on' && img.style.display == "none") {
+            self.fireSensorTimer(hass, img, entityId);
+            img.style.display = 'block';
+        }
+        
+        if (element.className == "type_thermostat") {
+            const temperature = state.attributes.current_temperature.toFixed(1).toString().replace(".", ",");
+            element.innerHTML = `${temperature} °C`;
         }
       });
     }
@@ -171,6 +184,14 @@ class FloorplanCard extends HTMLElement {
                     "left": 56,
                     "top": 62
                 }
+            },
+            {
+                "id": "climate.toon_thermostat",
+                "type": "thermostat",
+                "frame": {
+                    "left": 46.65382764,
+                    "top": 42.25543478
+                }
             }
         ];
     }
@@ -197,4 +218,4 @@ class FloorplanCard extends HTMLElement {
     }
   }
 
-  customElements.define('floorplan-card', FloorplanCard);
+customElements.define('floorplan-card', FloorplanCard);
