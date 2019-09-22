@@ -10,6 +10,7 @@
 deps
 .cloud
 .storage
+.HA_VERSION
 tts
 notebooks
 www/inside
