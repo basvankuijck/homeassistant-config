@@ -34,7 +34,7 @@ class FloorplanCard extends HTMLElement {
             if (entity.type == "light") {
                 innerHTML += `<img class="button" style="width: 50px; height: 49px; margin-top:-25px; margin-left: -25px; position: absolute; left: ${entity.buttonorigin.left}%; top: ${entity.buttonorigin.top}%">`;
             } else if (entity.type == "thermostat") {
-                elementStyle += "; width: 70px; height: 22px; padding-top:8px; font-weight: bold; font-size: 12px; border-radius: 15px; background-color: rgba(0, 0, 0, 0.7); text-color: #fff; text-align: center";
+                elementStyle += "; width: 70px; height: 22px; padding-top:8px; font-weight: bold; font-size: 12px; border-radius: 15px; background-color: rgba(0, 0, 0, 0.7); color: #fff; text-align: center";
                 innerHTML = "---";
             }
             element.style = elementStyle;
