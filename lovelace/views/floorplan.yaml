@@ -3,11 +3,18 @@ title: Floorplan
 icon: mdi:floor-plan
 panel: true
 cards:
-  - type: "custom:floorplan-card"
-  - title: "Inwoners"
-    type: entities
-    entities:
-      - entity: person.bas
-        name: Bas
-      - entity: person.danielle
-        name: Daniëlle
+  - type: vertical-stack
+    cards:
+      - type: horizontal-stack
+        cards:
+          - type: markdown
+            content: " "
+          - type: glance
+            name: Bewoners
+            entities:
+              - person.bas
+              - person.danielle
+          - type: markdown
+            content: " "
+          
+      - type: "custom:floorplan-card"
