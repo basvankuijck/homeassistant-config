@@ -1,0 +1,6 @@
+---
+name: Basisschool
+latitude: !secret elschool_latitude
+longitude: !secret elschool_longitude
+radius: 250
+icon: mdi:school
