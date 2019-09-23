@@ -1,0 +1,6 @@
+---
+persons:
+  name: "Personen"
+  entities:
+    - person.bas
+    - person.danielle
