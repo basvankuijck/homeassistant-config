@@ -31,7 +31,7 @@ condition:
       entity_id: alarm_control_panel.ha_alarm
       state: armed_away
     - condition: state
-      entity_id: group.devices
+      entity_id: group.persons
       state: not_home
 
 action:
