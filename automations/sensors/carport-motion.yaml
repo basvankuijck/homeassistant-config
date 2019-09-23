@@ -42,7 +42,7 @@ action:
   - delay: '00:00:02'
 
   # Push notification
-  - service: notify.notify
+  - service: notify.all
     data:
       title: Carport
       message: Beweging gedetecteerd!
