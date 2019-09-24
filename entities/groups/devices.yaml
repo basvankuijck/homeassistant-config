@@ -1,7 +1,7 @@
 devices:
   name: "Devices"
   entities:
-    - device_tracker.iphone_x_bas
+    # - device_tracker.iphone_x_bas
     - device_tracker.iphone_x_bas_2
-    - device_tracker.iphone_x_bas_3
+    # - device_tracker.iphone_x_bas_3
     - device_tracker.daan_iphone_x
