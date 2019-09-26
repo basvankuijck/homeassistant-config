@@ -4,4 +4,4 @@
 # https://www.home-assistant.io/components/calendar.google/
 #
 
-google_calendars: !include_dir_list ../entities/google-calendars
+google_calendars: !include_dir_list entities/google-calendars
