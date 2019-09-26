@@ -3,7 +3,6 @@ language: python
 python: "3.6.4"
 
 before_install:
-  - printf "http:\n  base_url: "'!'"secret http_base_url\n  ssl_certificate: fake_key.pem\n  ssl_key: fake_key.pem" > integrations/http.yaml
   - touch fake_key.pem
   - echo "- ./" > whitelist_external_dirs.yaml
   - mv travis_secrets.yaml secrets.yaml
