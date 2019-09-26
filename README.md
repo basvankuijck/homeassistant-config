@@ -81,6 +81,6 @@ Therefore I'm in the progress of replacing them with 'smart' outlets that suppor
 - [ ] Replace traditional smoke alarms with "smart" ones
 
 | Device | Why | Image |
-| :-------- |:-----------|:---:|---:|
+| :-------- |:-----------|---:|
 | **Eurotronic Spirit ZigBee** | In order to control the radiators in my kids' bedrooms. They tend to leave them on :) | <img src="docs/assets/etspirit.jpg" height="100px" /> |
 | **Alarm panel** | I got a spare iPad mini laying around that could function as a wall mounted alarm panel.| <img src="docs/assets/ipad-air.jpg" height="100px" /> |
