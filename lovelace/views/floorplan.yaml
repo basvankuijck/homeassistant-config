@@ -12,20 +12,20 @@ cards:
             entities:
               - person.bas
               - person.danielle
+
+          - type: "custom:atomic-calendar"
+            entities: 
+              - calendar.garbage
+              - calendar.bas
+              - calendar.contacts
+              - calendar.danielle
+              - calendar.dex
+              - calendar.finn
+              - calendar.holidays_nl
+              - calendar.shared
+            maxDaysToShow: 3
+            showNoEventsForToday: true
+            showLocation: false
+            title: Kalender
           
       - type: "custom:floorplan-card"
-
-      - type: "custom:atomic-calendar"
-        entities: 
-          - calendar.afval
-          - calendar.bas
-          - calendar.contacts
-          - alendar.daniellevsteenhoven_gmail_com
-          - calendar.dex
-          - calendar.finn
-          - calendar.feestdagen_in_nederland
-          - calendar.gezamenlijk
-        maxDaysToShow: 3
-        showNoEventsForToday: true
-        showLocation: false
-        title: Kalender
