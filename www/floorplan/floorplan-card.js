@@ -193,6 +193,17 @@ class FloorplanCard extends HTMLElement {
                     "top": 42.25543478
                 }
             }
+            // ,{
+            //     "id": "doorsensor.front",
+            //     "type": "door",
+            //     "imagefile": "door_front.png",
+            //     "frame": {
+            //         "width": 18.77708233,
+            //         "left": 36.01348098,
+            //         "top": 71.73913043,
+            //         "height": 23.64130435
+            //     }
+            // }
         ];
     }
 
