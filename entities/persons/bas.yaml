@@ -2,6 +2,6 @@
 name: Bas
 id: bas
 device_trackers:
- - device_tracker.iphone_x_bas
+#  - device_tracker.iphone_x_bas
  - device_tracker.iphone_x_bas_2
- - device_tracker.iphone_x_bas_3
+#  - device_tracker.iphone_x_bas_3
