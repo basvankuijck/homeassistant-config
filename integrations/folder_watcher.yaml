@@ -4,6 +4,6 @@
 # https://www.home-assistant.io/components/folder_watcher/
 #
 folder_watcher:
-  - folder: /share
+  - folder: !secret folder_watcher_folder
     patterns:
       - '*.jpg'
