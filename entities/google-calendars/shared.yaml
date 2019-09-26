@@ -1,0 +1,7 @@
+---
+cal_id: !secret google_calendar_shared
+entities:
+  - device_id: gezamenlijk
+    ignore_availability: true
+    name: Gezamenlijk
+    track: true
