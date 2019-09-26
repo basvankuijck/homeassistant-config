@@ -1,7 +1,0 @@
----
-cal_id: nl.dutch#holiday@group.v.calendar.google.com
-entities:
-  - device_id: feestdagen_in_nederland
-    ignore_availability: true
-    name: Feestdagen in Nederland
-    track: true

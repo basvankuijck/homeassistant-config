@@ -1,7 +1,0 @@
----
-cal_id: !secret google_calendar_dex
-entities:
-  - device_id: dex
-    ignore_availability: true
-    name: Dex
-    track: true

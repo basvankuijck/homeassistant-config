@@ -1,7 +1,56 @@
----
-# The google calendar platform allows you to connect to your Google Calendars and generate binary sensors
-#
-# https://www.home-assistant.io/components/calendar.google/
-#
 
-google_calendars: !include_dir_list entities/google-calendars
+- cal_id: !secret google_calendar_shared
+  entities:
+  - device_id: shared
+    ignore_availability: true
+    name: Gezamenlijk
+    track: true
+
+- cal_id: !secret google_calendar_daan
+  entities:
+  - device_id: danielle
+    ignore_availability: true
+    name: Daniëlle
+    track: true
+
+- cal_id: !secret google_calendar_finn
+  entities:
+  - device_id: finn
+    ignore_availability: true
+    name: Finn
+    track: true
+
+- cal_id: !secret google_calendar_bas
+  entities:
+  - device_id: bas
+    ignore_availability: true
+    name: Bas
+    track: true
+
+- cal_id: !secret google_calendar_dex
+  entities:
+  - device_id: dex
+    ignore_availability: true
+    name: Dex
+    track: true
+
+- cal_id: !secret google_calendar_garbage
+  entities:
+  - device_id: garbage
+    ignore_availability: true
+    name: Afval
+    track: true
+
+- cal_id: addressbook#contacts@group.v.calendar.google.com
+  entities:
+  - device_id: contacts
+    ignore_availability: true
+    name: Contacts
+    track: true
+
+- cal_id: nl.dutch#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: holidays_nl
+    ignore_availability: true
+    name: Feestdagen in Nederland
+    track: true

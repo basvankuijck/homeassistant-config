@@ -1,7 +1,0 @@
----
-cal_id: !secret google_calendar_daan
-entities:
-  - device_id: daan
-    ignore_availability: true
-    name: danielle
-    track: true
