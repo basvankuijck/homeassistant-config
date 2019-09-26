@@ -1,5 +1,6 @@
 ---
 alias: Change Google Home volume
+initial_state: true
 trigger:
   platform: state
   entity_id: input_number.google_home_volume

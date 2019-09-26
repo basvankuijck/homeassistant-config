@@ -1,4 +1,6 @@
+---
 alias: Update Google Home volume
+initial_state: true
 trigger:
   platform: state
   entity_id: media_player.huiskamer
