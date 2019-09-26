@@ -3,6 +3,7 @@ language: python
 python: "3.6.4"
 
 before_install:
+  - echo -e "folder_watcher:\n  - folder: ./\n    patterns:\n      - '*.jpg'" > integrations/folder_watcher.yaml
   - touch fake_key.pem
   - echo "- ./" > whitelist_external_dirs.yaml
   - mv travis_secrets.yaml secrets.yaml
