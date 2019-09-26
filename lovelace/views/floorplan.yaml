@@ -7,14 +7,25 @@ cards:
     cards:
       - type: horizontal-stack
         cards:
-          - type: markdown
-            content: " "
           - type: glance
             name: Bewoners
             entities:
               - person.bas
               - person.danielle
-          - type: markdown
-            content: " "
           
       - type: "custom:floorplan-card"
+
+      - type: "custom:atomic-calendar"
+        entities: 
+          - calendar.afval
+          - calendar.bas
+          - calendar.contacts
+          - alendar.daniellevsteenhoven_gmail_com
+          - calendar.dex
+          - calendar.finn
+          - calendar.feestdagen_in_nederland
+          - calendar.gezamenlijk
+        maxDaysToShow: 3
+        showNoEventsForToday: true
+        showLocation: false
+        title: Kalender
