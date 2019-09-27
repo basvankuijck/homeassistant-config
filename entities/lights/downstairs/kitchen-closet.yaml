@@ -1,6 +1,4 @@
 ---
-platform: mqtt
-unique_id: kitch_closet
-optimistic: false
-name: "Keukenkast"
-command_topic: "home-assistant/light/kitchen_cabinet/switch"
+platform: switch
+name: Keukenkast
+entity_id: switch.keukenkast
