@@ -12,6 +12,13 @@ My first experience with smart homes was when I bought a set of KlikAanKlikUit (
 After a while I bought a Raspberry PI with a 433Mhz transmitter that would be able to control some of my lights through Homekit with [Homebridge](https://github.com/nfarina/homebridge).    
 But after a while the limitations of Homekit came to light and after some searching I stumbled upon Home Assistant and have never looked back since.
 
+## Protocols
+
+In my current setup the main communication between smart 'devices' is done throught the following protocols:
+
+| Zigbee | 433Mhz | MQTT |
+|:------:|:------:|:----:|
+|<img src="docs/assets/logos/zigbee.png" height="40px" />|<img src="docs/assets/logos/433mhz.png" height="40px" />|<img src="docs/assets/logos/mqtt.png" height="40px" />|
 
 ## Hardware
 
@@ -19,19 +26,21 @@ But after a while the limitations of Homekit came to light and after some search
 
 A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 5.1V/2.5A power adapter.
 
-### Outlets
+### Smart receivers
 
-| Device | Amount | More Info | Image |
-| -------- |:-----------:|:---:|---:|
-| **ACD-200** | **4x** | [KlikAanKlikUit ACD-200](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/acd-200-stopcontact-dimmer-200w-multi-nederlandse-stekker.html) | <img src="docs/assets/kaku-acd200.jpg" height="100px" /> |
-| **AWMR-300** | **1x** | [KlikAanKlikUit AWMR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/inbouw/awmr-300-mini-inbouw-schakelaar.html) | <img src="docs/assets/kaku-awmr300.jpg" height="100px" /> |
-| **AGDR-300** | **2x** | [KlikAanKlikUit AGDR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/agdr-300-stopcontactdimmer-buiten-300w.html) | <img src="docs/assets/kaku-agdr300.jpg" height="100px" /> |
+| Device | Protocol | Amount | More Info | Image |
+| -------- |:---:|:-----------:|:---:|---:|
+| **ACD-200** | 433Mhz | **4x** | [KlikAanKlikUit ACD-200](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/acd-200-stopcontact-dimmer-200w-multi-nederlandse-stekker.html) | <img src="docs/assets/kaku-acd200.jpg" height="100px" /> |
+| **TRÅDFRI** | Zigbee | **1x** | [IKEA TRÅDFRI Smart Plug](https://www.ikea.com/nl/nl/p/tradfri-draadloos-plug-in-stopcontact-90356166/) | <img src="docs/assets/tradfi-plug.jp2" height="100px" /> |
+| **AWMR-300** | 433Mhz |  **1x** | [KlikAanKlikUit AWMR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/inbouw/awmr-300-mini-inbouw-schakelaar.html) | <img src="docs/assets/kaku-awmr300.jpg" height="100px" /> |
+| **AGDR-300** | 433Mhz | **2x** | [KlikAanKlikUit AGDR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/agdr-300-stopcontactdimmer-buiten-300w.html) | <img src="docs/assets/kaku-agdr300.jpg" height="100px" /> |
 
 ### Modules
 
 | Device | Amount | More Info | Image |
 | -------- |:-----------:|:---:|---:|
 | **NodeMCU v2** | **3x** | [ESP8266 NodeMCU V2](https://www.tinytronics.nl/shop/nl/communicatie/esp8266-nodemcu-v2) | <img src="docs/assets/nodemcu2.jpg" height="100px" /> |
+| **Wemos D1** | **1x** | [Wemos D1](https://nl.aliexpress.com/item/32723887671.html?src=google&albslr=223461305&src=google&albch=shopping&acnt=494-037-6276&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&albcp=6459980570&albag=76980386066&trgt=743612850714&crea=nl32723887671&netw=u&device=c&gclid=Cj0KCQjw5rbsBRCFARIsAGEYRwcxv9_foJ0yYKRkh_zB7Dupfr7RNCdl21uPcrFATWWDCqHWuX6_0VsaAr2uEALw_wcB) | <img src="docs/assets/wemos-d1.png" height="100px" /> |
 | **RF Transmitter** | **2x** | [433Mhz RF Transmitter](https://www.amazon.com/SMAKN®-433Mhz-Transmitter-Receiver-Arduino/dp/B00M2CUALS) | <img src="docs/assets/433transmitter.jpg" height="100px" /> |
 | **PIR** | **1x** | [PIR Motion sensor](https://www.elektor.nl/hc-sr501-pir-motion-sensor-module?gclid=Cj0KCQjww7HsBRDkARIsAARsIT4ndV5yKpz4TDB5ZA8-7x4do_JWC9dJzpfOr2MtLILT1Lr6tIO7N3saAtw7EALw_wcB) | <img src="docs/assets/pir-sensor.jpg" height="100px" /> |
 
@@ -72,17 +81,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 
 ## Wishlist / To do
 
-Currently the lights are controled using a 433Mhz transmitter communicating with the KaKu smart outlets.   
-Sometimes these outlets will not respond and after a couple of hours they seem to be responding again.   
-Therefore I'm in the progress of replacing them with 'smart' outlets that support the Zigbee protocol. So I can hook [them](https://github.com/dresden-elektronik/deconz-rest-plugin/wiki/Supported-Devices#supported-wireless-switches) up to my Zigbee mesh / deCONZ setup.
+Everything I intend to upgrade in my hassio setup I create a github issue.   
+[See all open issues](https://github.com/basvankuijck/homeassistant-config/issues).
 
-- [ ] Replace 433Mhz KaKu with Zigbee alternatives
-- [ ] Z-Wave compatibility
-- [ ] Intel NUC Barebone
-- [ ] Alarm panel, maybe even with NFC
-- [ ] Replace traditional smoke alarms with "smart" ones
-
-| Device | Why | Image |
-| :-------- |:-----------|---:|
-| **Eurotronic Spirit ZigBee** | In order to control the radiators in my kids' bedrooms. They tend to leave them on :) | <img src="docs/assets/etspirit.jpg" height="100px" /> |
-| **Alarm panel** | I got a spare iPad mini laying around that could function as a wall mounted alarm panel.| <img src="docs/assets/ipad-air.jpg" height="100px" /> |
+Probably a lot of them won't ever see the daylight, but if I come across some intereseting stuff my initial action would be to create an issue.
