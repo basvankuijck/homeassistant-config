@@ -11,4 +11,4 @@ homeassistant:
 
 default_config:
 
-# discovery:
+discovery:
