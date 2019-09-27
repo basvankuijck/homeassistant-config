@@ -1,6 +1,6 @@
 # basvankuijck Home Assistant configuration
 
-[![Travis-ci](https://travis-ci.com/basvankuijck/homeassistant-config.svg?branch=master)](https://travis-ci.com/basvankuijck/homeassistant-config)
+[![Travis-ci](https://travis-ci.com/basvankuijck/homeassistant-config.svg?token=HTRuSYHM4aU8kAkzt8C7&branch=master)](https://travis-ci.com/basvankuijck/homeassistant-config)
 
 I finally managed to cleanup my `/config` directory and refactor a sh*tload in order to be more futureproof and be able to share it on GitHub.   
 > Disclaimer:   
