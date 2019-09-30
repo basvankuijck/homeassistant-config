@@ -13,7 +13,7 @@ trigger_alarm_away:
 
   - service: light.turn_on
     data:
-      entity_id: light.woonkamer
+      entity_id: light.leeslamp_bank
 
   - service: light.turn_on
     data:

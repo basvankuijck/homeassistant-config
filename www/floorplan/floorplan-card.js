@@ -96,7 +96,7 @@ class FloorplanCard extends HTMLElement {
     entities() {
         return [
             {
-                "id": "light.woonkamer",
+                "id": "light.leeslamp_bank",
                 "type": "light",
                 "frame": {
                     "width": 16.41791045,

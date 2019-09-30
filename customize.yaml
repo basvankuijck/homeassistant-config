@@ -4,7 +4,7 @@ light.bureau_2:
     assumed_state: false
 light.keuken:
     assumed_state: false
-light.woonkamer:
+light.leeslamp_bank:
     assumed_state: false
 light.terrasoverkapping:
     assumed_state: false
