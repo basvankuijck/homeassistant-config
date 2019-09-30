@@ -10,7 +10,8 @@ turn_on_scene_thuis:
       entity_id: light.bureau_2
     - service: light.turn_on
       entity_id: light.leeslamp_bank
-      brightness_pct: 80
+      data:
+        brightness_pct: 80
     - service: light.turn_on
       entity_id: light.keuken
     - service: light.turn_on
