@@ -5,27 +5,25 @@ panel: true
 cards:
   - type: vertical-stack
     cards:
-      - type: horizontal-stack
-        cards:
-          - type: glance
-            name: Bewoners
-            entities:
-              - person.bas
-              - person.danielle
+      - type: glance
+        name: Bewoners
+        entities:
+          - person.bas
+          - person.danielle          
 
-          - type: "custom:atomic-calendar"
-            entities: 
-              - calendar.garbage
-              - calendar.bas
-              - calendar.contacts
-              - calendar.danielle
-              - calendar.dex
-              - calendar.finn
-              - calendar.holidays_nl
-              - calendar.shared
-            maxDaysToShow: 3
-            showNoEventsForToday: true
-            showLocation: false
-            title: Kalender
-          
       - type: "custom:floorplan-card"
+
+      - type: "custom:atomic-calendar"
+        maxDaysToShow: 3
+        showNoEventsForToday: true
+        showLocation: false
+        title: Kalender
+        entities: 
+          - calendar.garbage
+          - calendar.bas
+          - calendar.contacts
+          - calendar.danielle
+          - calendar.dex
+          - calendar.finn
+          - calendar.holidays_nl
+          - calendar.shared
