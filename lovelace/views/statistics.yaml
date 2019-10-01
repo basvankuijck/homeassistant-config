@@ -29,8 +29,3 @@ cards:
       unit: °C
       entity: sensor.cpu_temperature
       max: 70
-
-    - type: history-graph
-      title: Temperatuur
-      entities:
-        - climate.toon_thermostat
