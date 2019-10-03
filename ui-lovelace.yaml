@@ -1,5 +1,19 @@
 title: !secret name
-resources: !include_dir_list lovelace/resources
+resources: 
+  - url: /local/calendar/atomic-calendar.js
+    type: module
+  - url: /local/floorplan/floorplan-card.js?018
+    type: js
+  - url: https://unpkg.com/moment@2.24.0/moment.js
+    type: js
+  - url: /local/monster-card.js
+    type: js
+  - url: /local/custom-weather-card-chart.js
+    type: module
+  - url: /local/auto-entities.js
+    type: js
+  - url: /local/battery-entity.js?v=0.1
+    type: module
 
 views:
   - !include lovelace/views/floorplan.yaml
