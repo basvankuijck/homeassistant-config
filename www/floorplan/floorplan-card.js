@@ -172,7 +172,7 @@ class FloorplanCard extends HTMLElement {
               }
           },
           {
-              "id": "binary_sensor.motion_sensor",
+              "id": "binary_sensor.kitchen",
               "type": "sensor",
               "frame": {
                   "width": 35.62831006,

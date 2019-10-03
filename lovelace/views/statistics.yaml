@@ -38,7 +38,9 @@ cards:
       filter:
         include:
           - domain: binary_sensor
-            attributes:
+            attributes: 
               battery_level: "<= 100"
             options:
               type: 'custom:battery-entity'
+
+              

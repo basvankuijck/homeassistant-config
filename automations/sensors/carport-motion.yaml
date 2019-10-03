@@ -68,5 +68,15 @@ action:
   - service: script.turn_on
     entity_id: script.record_camera_carport
 
-  - service: script.turn_on
-    entity_id: script.trigger_carport_sensor
+  - service: mqtt.publish
+    data: 
+      topic: home-assistant/sensor/carport
+      payload: ON
+
+  - delay: '00:00:30'
+
+  - service: mqtt.publish
+    data: 
+      topic: home-assistant/sensor/carport
+      payload: OFF
+

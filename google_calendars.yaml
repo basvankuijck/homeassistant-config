@@ -54,3 +54,10 @@
     ignore_availability: true
     name: Feestdagen in Nederland
     track: true
+
+- cal_id: en.dutch#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: holidays_in_netherlands
+    ignore_availability: true
+    name: Holidays in Netherlands
+    track: true

@@ -1,19 +1,34 @@
 ---
+# Automation triggered by motion in the kitchen
 #
-alias: Motion detector timer keuken
+# Trigger:
+# - The `binary_sensor.kitchen` sensor triggers a motion not present
+#
+# Conditions:
+# - The currently selected scene is 'tv'
+# - The sun is below the horizon (the garden tree lights ar lit)
+#
+# Actions:
+# - Turn off the kitchen lights
+
+alias: Motion detector keuken
 initial_state: true
 trigger:
-  platform: event
-  event_type: timer.finished
-  event_data:
-    entity_id: timer.motion_detector_timer
-    
+  platform: state
+  entity_id: binary_sensor.kitchen
+  to: 'off'
+
 condition:
   condition: and
   conditions:
     - condition: state
       entity_id: input_select.scene
       state: tv
+
+    - condition: state
+      entity_id: light.tuin_grondspots
+      state: 'on'
+
 action:
   - service: light.turn_off
     entity_id: light.keuken

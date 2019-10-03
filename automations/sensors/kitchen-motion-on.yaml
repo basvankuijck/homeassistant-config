@@ -10,13 +10,12 @@
 #
 # Actions:
 # - Turn on the kitchen lights
-# - Call the timer that will turn off the lights in the kitchen automatically
 
 alias: Motion detector keuken
 initial_state: true
 trigger:
   platform: state
-  entity_id: binary_sensor.motion_sensor
+  entity_id: binary_sensor.kitchen
   to: 'on'
 
 condition:
@@ -33,5 +32,3 @@ condition:
 action:
   - service: light.turn_on
     entity_id: light.keuken
-  - service: timer.start
-    entity_id: timer.motion_detector_timer
