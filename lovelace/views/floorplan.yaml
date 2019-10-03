@@ -13,17 +13,24 @@ cards:
 
       - type: "custom:floorplan-card"
 
-      - type: "custom:atomic-calendar"
-        maxDaysToShow: 3
-        showNoEventsForToday: true
-        showLocation: false
-        title: Kalender
-        entities: 
-          - calendar.garbage
-          - calendar.bas
-          - calendar.contacts
-          - calendar.danielle
-          - calendar.dex
-          - calendar.finn
-          - calendar.holidays_nl
-          - calendar.shared
+      - type: horizontal-stack
+        cards:
+          - type: "custom:atomic-calendar"
+            maxDaysToShow: 3
+            showNoEventsForToday: true
+            showLocation: false
+            title: Kalender
+            entities: 
+              - calendar.garbage
+              - calendar.bas
+              - calendar.contacts
+              - calendar.danielle
+              - calendar.dex
+              - calendar.finn
+              - calendar.holidays_nl
+              - calendar.shared
+      
+          - type: history-graph
+            title: Temperatuur
+            entities:
+              - climate.toon_thermostat

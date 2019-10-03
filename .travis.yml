@@ -13,3 +13,16 @@ install:
 
 script:
   - hass -c ./ --script check_config --info all
+
+notifications:
+  slack:
+    rooms:
+      - secure: "HTs9KPixSdP5/2EBk8zMLGrv61/OxZ6uibQkAMJ+bchGhTR/nuADGMAyqXEezdD8Dq0hcOoepr3sBtX/jJaLKJGOnmxFHTsYVH39Vm2Zr87UJ8jMSEUs7jAuFytLD41XsaOPALdYKgPJVrotF1VJ3KynenBCOe1FJTy50RR0JJwV5UmBVcNIRql+7qDrucEerXr5vpUSySWtdWsB4iNr5HqBV4RQUJEO93tCvQ4BJvxYoXFggTqBQNkTvrTqIEUQyC8j7wsRasmPeTexnCuGo++i72p/eLqQrZGO7RnZzKGgsvkgd1cd4ZNyO7s3WYnsCrwyNRzkhA6IcJSs9jE8Gx/lhEs/c9IgCIgVmHYEX5CW5ihxAJsrvHfrsMMZ28j2rLfr7+iVjLX9jsIeZrDWruO5uqK44iR1Kay5NRNbjA8nFkAYWIats/CRNsZAukgDKYIlaYYTBFnVz48q7nQFRcAt+T2ggXEkKwx9F+DJ+A9VE3MArutGGMc0AR7KXl+BImy/9cJ1JzKaA6V2ZNdEBtbtghidEK0839LfEulp6t/UNFdYIj/IqkJWCofPWwUdyg4AA3oNYrHUQta5KFI68a/0Wi1tDla19K0hZBAojqrBwoRXwbc9EZTZF4NyodMAEKzYJWbyV4uzh3n5iCYQRS0f/LFHHIhYZBW05BI2mB4="
+    on_success: always
+    on_failure: always
+    template:
+      - "Build <%{build_url}|#%{build_number}> (`%{commit}`) of %{repository_slug} *%{result}*"
+      - "Branch: %{branch}"
+      - "> \"_%{commit_message}_\""
+      - "Duration: %{duration}"
+      - "Author: %{author}"
