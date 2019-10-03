@@ -19,23 +19,3 @@ cards:
     entity: camera.living
     camera_image: camera.living
     show_state: false
-
-  - type: entity-button
-    name: Save carport stream
-    entity: script.send_capture_command
-    show_icon: false
-    tap_action:
-      action: call-service
-      service: script.send_capture_command
-      service_data:
-        stream: carport
-
-  - type: entity-button
-    name: Save living stream
-    entity: script.send_capture_command
-    show_icon: false
-    tap_action:
-      action: call-service
-      service: script.send_capture_command
-      service_data:
-        stream: living
