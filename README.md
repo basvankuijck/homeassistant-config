@@ -1,6 +1,6 @@
 # basvankuijck Home Assistant configuration
 
-[![Travis-ci](https://travis-ci.com/basvankuijck/homeassistant-config.svg?token=HTRuSYHM4aU8kAkzt8C7&branch=master)](https://travis-ci.com/basvankuijck/homeassistant-config)
+[![Travis-ci](https://travis-ci.com/basvankuijck/homeassistant-config.svg?token=HTRuSYHM4aU8kAkzt8C7&branch=master)](https://travis-ci.com/basvankuijck/homeassistant-config) ![Uptime Robot](https://img.shields.io/uptimerobot/status/m783570788-3efebdedeaa4c04d5c60fe00)
 
 I finally managed to cleanup my `/config` directory and refactor a sh*tload in order to be more futureproof and be able to share it on GitHub.   
 > Disclaimer:   
