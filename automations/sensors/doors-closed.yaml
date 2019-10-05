@@ -24,17 +24,19 @@ action:
   - delay: '00:02:30'
 
   - condition: or
-      conditions:
-        - condition: state
-          entity_id: alarm_control_panel.ha_alarm
-          state: armed_away
-        - condition: state
-          entity_id: alarm_control_panel.ha_alarm
-          state: armed_night
+    conditions:
+      - condition: state
+        entity_id: alarm_control_panel.ha_alarm
+        state: armed_away
+      - condition: state
+        entity_id: alarm_control_panel.ha_alarm
+        state: armed_night
 
-  - condition: state
-    entity_id: group.doors_windows
-    state: on
+  - condition: or
+    conditions:
+      - condition: state
+        entity_id: group.doors_windows
+        state: 'on'
 
   - service: notify.all
     data:
