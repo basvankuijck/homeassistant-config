@@ -8,7 +8,19 @@ trigger:
   event: sunrise
   offset: "+00:30:00"
   platform: sun
+  
+condition:
+  condition: or
+  conditions:
+    - condition: state
+      entity_id: light.tuin_grondspots
+      state: on
+
 action:
-  service: light.turn_off
-  data:
-     entity_id: light.tuin_grondspots
+  - service: light.turn_off
+    data:
+      entity_id: light.tuin_grondspots
+
+  - service: notify.slack
+      data:
+        message: "De zon is opgekomen, de tuinlichten worden uitgezet"

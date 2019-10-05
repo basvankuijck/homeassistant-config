@@ -5,9 +5,13 @@ trigger:
     - platform: homeassistant
       event: start
 action:
-  service: script.turn_on
-  data_template:
-    entity_id: >
-      {% if is_state('input_select.state' , 'home') %} script.turn_on_scene_thuis
-      {% elif is_state('input_select.state' , 'sleep') %} script.turn_on_scene_sleep
-      {% else %} script.turn_on_scene_gone {% endif %}
+  - service: notify.slack
+      data:
+        message: "Ik ben weer opgestart!"
+        
+  - service: script.turn_on
+    data_template:
+      entity_id: >
+        {% if is_state('input_select.state' , 'home') %} script.turn_on_scene_thuis
+        {% elif is_state('input_select.state' , 'sleep') %} script.turn_on_scene_sleep
+        {% else %} script.turn_on_scene_gone {% endif %}

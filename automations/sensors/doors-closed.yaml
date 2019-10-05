@@ -10,7 +10,7 @@
 # - Check if any of the doors are still open
 # - Send a notification
 
-alias: Doors left open
+alias: "Ramen en deuren open laten staan melding"
 initial_state: true
 trigger:
   - platform: state

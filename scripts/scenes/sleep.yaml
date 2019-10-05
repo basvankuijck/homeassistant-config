@@ -1,6 +1,9 @@
 turn_on_scene_sleep:
   alias: "Scene 'Slapen'"
   sequence:
+    - service: notify.slack
+      data:
+        message: "Scene 'Slapen' geactiveerd"
     - service: light.turn_off
       entity_id: light.tuin_grondspots
     - delay:

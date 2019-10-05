@@ -2,6 +2,9 @@
 turn_on_scene_tv:
   alias: "Scene 'TV Kijken'"
   sequence:
+    - service: notify.slack
+      data:
+        message: "Scene 'TV Kijken' geactiveerd"
     - service: script.turn_on
       entity_id: script.check_tree_lights
     - delay:
