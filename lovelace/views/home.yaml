@@ -48,6 +48,7 @@ cards:
     show_header_toggle: false
     entities:
         - entity: automation.alarm
+        - entity: automation.doors_left_open
         # - entity: automation.occupancy_simulator
         - entity: automation.tuinlicht_zonsondergang
         - entity: automation.tuinlicht_zonsopgang

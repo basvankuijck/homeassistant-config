@@ -83,7 +83,7 @@ class FloorplanCard extends HTMLElement {
 
       img = element.getElementsByClassName("sensor")[0];
       if (!!img) {
-          if (state.state == 'on' && img.style.display == "none") {
+          if (state.state == 'on') {
               // self.fireSensorTimer(hass, img, entityId);
               img.style.display = 'block';
           } else {
