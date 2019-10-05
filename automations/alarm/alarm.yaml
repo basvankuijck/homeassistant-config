@@ -17,5 +17,46 @@ condition:
       state: armed_night
 
 action:
-  entity_id: script.trigger_alarm_away
-  service: script.turn_on
+  - service: alarm_control_panel.alarm_trigger
+    data:
+      entity_id: alarm_control_panel.ha_alarm
+
+  - service: notify.all
+    data:
+      message: Het alarm is afgegaan in je huis!
+      title: ALARM!
+
+  - service: light.turn_on
+    data:
+      entity_id: light.leeslamp_bank
+
+  - service: light.turn_on
+    data:
+      entity_id: light.bureau_2
+
+  - service: light.turn_on
+    data:
+      entity_id: light.keuken
+  - service: light.turn_on
+    data:
+      entity_id: light.speeltafel
+  - service: media_player.volume_set
+    data:
+      entity_id: media_player.huiskamer
+      volume_level: 1.0
+  - delay:
+      seconds: 2
+  - service: tts.google_say
+    data:
+      message: "Het alarm is geactiveerd."
+  - delay:
+      seconds: 3
+  - service: tts.google_say
+    data:
+      message: "De hulpdiensten zijn gewaarschuwd."
+  - delay:
+      seconds: 10
+  - service: media_player.volume_set
+    data:
+      entity_id: media_player.huiskamer
+      volume_level: 0.3
