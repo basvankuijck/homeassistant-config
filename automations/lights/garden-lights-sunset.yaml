@@ -20,5 +20,5 @@ action:
       entity_id: light.tuin_grondspots
 
   - service: notify.slack
-      data:
-        message: "De zon is gaat onder, de tuinlichten worden aangezet"
+    data:
+      message: "De zon is gaat onder, de tuinlichten worden aangezet"

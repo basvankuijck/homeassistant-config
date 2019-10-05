@@ -11,5 +11,5 @@ action:
       password: !secret snapshot_password 
     
   - service: notify.slack
-      data:
-        message: "Ik heb weer een backup gemaakt van de configuratie."
+    data:
+      message: "Ik heb weer een backup gemaakt van de configuratie."

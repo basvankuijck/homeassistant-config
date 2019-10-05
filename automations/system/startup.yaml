@@ -6,8 +6,8 @@ trigger:
       event: start
 action:
   - service: notify.slack
-      data:
-        message: "Ik ben weer opgestart!"
+    data:
+      message: "Ik ben weer opgestart!"
         
   - service: script.turn_on
     data_template:

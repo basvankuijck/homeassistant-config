@@ -26,8 +26,8 @@ trigger:
 
 action:
   - service: notify.slack
-      data:
-        message: "Er is beweging gedetecteerd bij de carport."
+    data:
+      message: "Er is beweging gedetecteerd bij de carport."
 
   - condition: and
     conditions:

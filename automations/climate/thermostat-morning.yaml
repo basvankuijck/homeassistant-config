@@ -19,5 +19,5 @@ action:
       entity_id: climate.toon_thermostat
       temperature: 21
   - service: notify.slack
-      data:
-        message: "Het is 06:45, de thermostaat wordt op 21°C gezet"
+    data:
+      message: "Het is 06:45, de thermostaat wordt op 21°C gezet"
