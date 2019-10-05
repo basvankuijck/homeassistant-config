@@ -18,17 +18,17 @@ cards:
       unit: "%"
       entity: sensor.processor_use
 
-    # - type: gauge
-    #   name: HDD Mac Mini
-    #   unit: GB
-    #   entity: sensor.mac_mini_diskspace
-    #   max: 320
+    - type: gauge
+      name: HDD Mac Mini
+      unit: GB
+      entity: sensor.mac_mini_diskspace
+      max: 320
 
     - type: gauge
-      name: PI CPU Tempareture
+      name: PI CPU Temperature
       unit: °C
       entity: sensor.cpu_temperature
-      max: 70
+      max: 80
 
     - type: custom:auto-entities
       card:
