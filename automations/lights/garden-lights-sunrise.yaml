@@ -10,11 +10,11 @@ trigger:
   platform: sun
   
 condition:
-  condition: or
+  condition: and
   conditions:
     - condition: state
       entity_id: light.tuin_grondspots
-      state: on
+      state: 'on'
 
 action:
   - service: light.turn_off
