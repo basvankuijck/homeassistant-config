@@ -14,3 +14,5 @@ light.keukenkast_2:
     assumed_state: false
 light.speeltafel:
     assumed_state: false
+sensor.mac_mini_diskspace:
+    icon: mdi:harddisk
