@@ -7,24 +7,21 @@ sensors:
       {% set date = strptime(state_attr('sensor.afval', 'paper'), '%Y-%m-%dT%H:%M:%S%z') %}
       {% set diff = as_timestamp(date) - as_timestamp(now()) %}
       {% set days = (diff | timestamp_custom('%j') | int) - 1 %}
-      {% set weeks = (days / 7) | int %}
       {% set hours = (diff | timestamp_custom('%H') | int) - 1 %}
-      {% if weeks == 1 %}Volgende week{% elif weeks > 1 %}Over {{ weeks }} weken{% elif days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
+      {% if days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
   garbage_organic:
     friendly_name: 'GFT'
     value_template: >-
       {% set date = strptime(state_attr('sensor.afval', 'organic'), '%Y-%m-%dT%H:%M:%S%z') %}
       {% set diff = as_timestamp(date) - as_timestamp(now()) %}
       {% set days = (diff | timestamp_custom('%j') | int) - 1 %}
-      {% set weeks = (days / 7) | int %}
       {% set hours = (diff | timestamp_custom('%H') | int) - 1 %}
-      {% if weeks == 1 %}Volgende week{% elif weeks > 1 %}Over {{ weeks }} weken{% elif days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
+      {% if days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
   garbage_other:
     friendly_name: 'Rest + Plastic'
     value_template: >-
       {% set date = strptime(state_attr('sensor.afval', 'other'), '%Y-%m-%dT%H:%M:%S%z') %}
       {% set diff = as_timestamp(date) - as_timestamp(now()) %}
       {% set days = (diff | timestamp_custom('%j') | int) - 1 %}
-      {% set weeks = (days / 7) | int %}
       {% set hours = (diff | timestamp_custom('%H') | int) - 1 %}
-      {% if weeks == 1 %}Volgende week{% elif weeks > 1 %}Over {{ weeks }} weken{% elif days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
+      {% if days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
