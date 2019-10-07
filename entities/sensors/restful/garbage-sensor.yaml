@@ -4,5 +4,5 @@ name: Afval
 json_attributes:
   - paper
   - other
-  - garden
+  - organic
 resource: !secret garbage_api_url

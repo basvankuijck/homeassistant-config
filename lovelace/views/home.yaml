@@ -3,6 +3,14 @@ title: Home
 icon: mdi:home-assistant
 cards:
   - type: entities
+    title: Afval
+    show_header_toggle: false
+    entities:
+        - entity: sensor.garbage_paper
+        - entity: sensor.garbage_other
+        - entity: sensor.garbage_organic
+
+  - type: entities
     title: Sensoren
     show_header_toggle: false
     entities:
@@ -60,3 +68,4 @@ cards:
     title: Weather
     mode: hourly
     weather:  weather.dark_sky
+
