@@ -6,13 +6,10 @@ trigger:
     minutes: "/15"
 action:
   - service: homeassistant.update_entity
-    data:
-      entity_id: sensor.garbage_organic
+    entity_id: sensor.garbage_organic
 
   - service: homeassistant.update_entity
-    data:
-      entity_id: sensor.garbage_other
+    entity_id: sensor.garbage_other
 
   - service: homeassistant.update_entity
-    data: 
-      entity_id: sensor.garbage_paper
+    entity_id: sensor.garbage_paper
