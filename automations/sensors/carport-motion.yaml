@@ -70,18 +70,20 @@ action:
     data_template:
       file: "{{ trigger.event.data.path }}"
 
+  # Record
   - service: script.turn_on
     entity_id: script.record_camera_carport
 
+  # Carport sensor
   - service: mqtt.publish
     data: 
       topic: home-assistant/sensor/carport
-      payload: ON
+      payload: 'ON'
 
   - delay: '00:00:30'
 
   - service: mqtt.publish
     data: 
       topic: home-assistant/sensor/carport
-      payload: OFF
+      payload: 'OFF'
 
