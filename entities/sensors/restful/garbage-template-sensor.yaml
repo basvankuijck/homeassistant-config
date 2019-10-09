@@ -3,6 +3,7 @@ platform: template
 sensors:
   garbage_paper:
     friendly_name: 'Papier'
+    entity_id: []
     value_template: >-
       {% set date = strptime(state_attr('sensor.afval', 'paper'), '%Y-%m-%dT%H:%M:%S%z') %}
       {% set diff = as_timestamp(date) - as_timestamp(now()) %}
@@ -12,6 +13,7 @@ sensors:
       
   garbage_organic:
     friendly_name: 'GFT'
+    entity_id: []
     value_template: >-
       {% set date = strptime(state_attr('sensor.afval', 'organic'), '%Y-%m-%dT%H:%M:%S%z') %}
       {% set diff = as_timestamp(date) - as_timestamp(now()) %}
@@ -21,6 +23,7 @@ sensors:
 
   garbage_other:
     friendly_name: 'Rest + Plastic'
+    entity_id: []
     value_template: >-
       {% set date = strptime(state_attr('sensor.afval', 'other'), '%Y-%m-%dT%H:%M:%S%z') %}
       {% set diff = as_timestamp(date) - as_timestamp(now()) %}
