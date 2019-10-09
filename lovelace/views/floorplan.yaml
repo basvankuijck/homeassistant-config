@@ -21,7 +21,6 @@ cards:
             showLocation: false
             title: Kalender
             entities: 
-              - calendar.garbage
               - calendar.bas
               - calendar.contacts
               - calendar.danielle

@@ -12,7 +12,7 @@ sensors:
       {% if days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
       
   garbage_organic:
-    friendly_name: 'GFT'
+    friendly_name: 'GFT'HEAD
     entity_id: sensor.time, sensor.afval
     value_template: >-
       {% set date = strptime(state_attr('sensor.afval', 'organic'), '%Y-%m-%dT%H:%M:%S%z') %}
@@ -22,7 +22,7 @@ sensors:
       {% if days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
 
   garbage_other:
-    friendly_name: 'Rest + Plastic'
+    friendly_name: 'Rest + Plastic'HEAD
     entity_id: sensor.time, sensor.afval
     value_template: >-
       {% set date = strptime(state_attr('sensor.afval', 'other'), '%Y-%m-%dT%H:%M:%S%z') %}
