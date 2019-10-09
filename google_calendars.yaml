@@ -34,13 +34,6 @@
     name: Dex
     track: true
 
-- cal_id: !secret google_calendar_garbage
-  entities:
-  - device_id: garbage
-    ignore_availability: true
-    name: Afval
-    track: true
-
 - cal_id: addressbook#contacts@group.v.calendar.google.com
   entities:
   - device_id: contacts
@@ -60,4 +53,11 @@
   - device_id: holidays_in_netherlands
     ignore_availability: true
     name: Holidays in Netherlands
+    track: true
+
+- cal_id: eh22a9fp15ovhr535hhqp0umf8@group.calendar.google.com
+  entities:
+  - device_id: afval
+    ignore_availability: true
+    name: Afval
     track: true

@@ -3,7 +3,7 @@ alias: Update garbage sensors every 15 minutes
 initial_state: true
 trigger:
     platform: time_pattern
-    minutes: "/15"
+    minutes: "/5"
 action:
   - service: homeassistant.update_entity
     entity_id: sensor.garbage_organic
