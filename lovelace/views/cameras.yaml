@@ -13,9 +13,3 @@ cards:
     entity: camera.carport_movement
     camera_image: camera.carport_movement
     show_state: false
-
-  - type: picture-entity
-    name: Woonkamer
-    entity: camera.living
-    camera_image: camera.living
-    show_state: false

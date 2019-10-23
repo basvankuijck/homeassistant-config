@@ -1,4 +1,0 @@
----
-platform: ffmpeg
-name: Living
-input: !secret camera_living_stream
