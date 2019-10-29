@@ -6,8 +6,8 @@ sensors:
     entity_id: sensor.time, sensor.afval
     value_template: >-
       {% set date = strptime(state_attr('sensor.afval', 'paper'), '%Y-%m-%dT%H:%M:%S%z') %}
-      {% set diff = as_timestamp(date) - as_timestamp(strptime(states.sensor.date_time.state, "%Y-%m-%d, %H:%M")) %}
-      {% set days = (diff / 86400) | int %}
+      {% set diff = as_timestamp(date) - as_timestamp(strptime(states.sensor.date_time.state, "%Y-%m-%d, %H:%M")) %}      
+      {% set days = diff | timestamp_custom("%j") | int %}
       {% set hours = (diff / 3600) | int %}
       {% if days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
       
@@ -16,8 +16,8 @@ sensors:
     entity_id: sensor.time, sensor.afval
     value_template: >-
       {% set date = strptime(state_attr('sensor.afval', 'organic'), '%Y-%m-%dT%H:%M:%S%z') %}
-      {% set diff = as_timestamp(date) - as_timestamp(strptime(states.sensor.date_time.state, "%Y-%m-%d, %H:%M")) %}
-      {% set days = (diff / 86400) | int %}
+      {% set diff = as_timestamp(date) - as_timestamp(strptime(states.sensor.date_time.state, "%Y-%m-%d, %H:%M")) %}      
+      {% set days = diff | timestamp_custom("%j") | int %}
       {% set hours = (diff / 3600) | int %}
       {% if days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
 
@@ -26,7 +26,7 @@ sensors:
     entity_id: sensor.time, sensor.afval
     value_template: >-
       {% set date = strptime(state_attr('sensor.afval', 'other'), '%Y-%m-%dT%H:%M:%S%z') %}
-      {% set diff = as_timestamp(date) - as_timestamp(strptime(states.sensor.date_time.state, "%Y-%m-%d, %H:%M")) %}
-      {% set days = (diff / 86400) | int %}
+      {% set diff = as_timestamp(date) - as_timestamp(strptime(states.sensor.date_time.state, "%Y-%m-%d, %H:%M")) %}      
+      {% set days = diff | timestamp_custom("%j") | int %}
       {% set hours = (diff / 3600) | int %}
       {% if days == 1 %}Morgen{% elif days == 2 %}Overmorgen{% elif days > 0 %}Over {{ days }} dagen{% elif hours > 0 %}Over {{ hours }} uur{% else %}Zometeen{% endif %}
