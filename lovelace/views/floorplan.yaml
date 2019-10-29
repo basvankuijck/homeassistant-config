@@ -8,8 +8,8 @@ cards:
       - type: glance
         name: Bewoners
         entities:
-          - person.bas
-          - person.danielle          
+          - person.bas_van_kuijck
+          - person.danielle_van_steenhoven      
 
       - type: "custom:floorplan-card"
 

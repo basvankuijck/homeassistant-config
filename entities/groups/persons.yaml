@@ -2,5 +2,5 @@
 persons:
   name: "Personen"
   entities:
-    - person.bas
-    - person.danielle
+    - person.bas_van_kuijck
+    - person.danielle_van_steenhoven
