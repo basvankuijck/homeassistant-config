@@ -28,7 +28,7 @@ turn_on_scene_thuis:
     - service: climate.set_temperature
       entity_id: climate.toon_thermostat
       data:
-        temperature: 22
+        temperature: 21.5
     - service: input_select.select_option
       entity_id: input_select.scene
       data:
