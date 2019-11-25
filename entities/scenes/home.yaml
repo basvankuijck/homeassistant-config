@@ -1,4 +1,6 @@
 ---
 name: Thuis
+id: thuis
 entities:
-  script.turn_on_scene_thuis: on
+  script.turn_on_scene_thuis: 
+    state: 'on'

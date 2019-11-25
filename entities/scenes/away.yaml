@@ -1,4 +1,6 @@
 ---
 name: Weg
+id: weg
 entities:
-  script.turn_on_scene_gone: on
+  script.turn_on_scene_gone:
+    state: 'on'
