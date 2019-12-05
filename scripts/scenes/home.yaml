@@ -21,8 +21,8 @@ turn_on_scene_thuis:
       entity_id: light.speeltafel
     - service: light.turn_on
       entity_id: light.keukenkast_2
-    # - service: light.turn_on
-    #   entity_id: light.xmas_tree
+    - service: light.turn_on
+      entity_id: light.xmas_tree
     - service: alarm_control_panel.alarm_arm_home
       entity_id: alarm_control_panel.ha_alarm
     - service: climate.set_temperature

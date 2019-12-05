@@ -47,7 +47,7 @@ cards:
         - entity: light.keuken
         - entity: light.speeltafel
         - entity: light.keukenkast_2
-        # - entity: light.xmas_tree
+        - entity: light.xmas_tree
         - entity: light.tuin_grondspots
         - entity: light.terrasoverkapping
 

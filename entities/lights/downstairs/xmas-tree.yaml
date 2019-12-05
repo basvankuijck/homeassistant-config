@@ -1,0 +1,6 @@
+---
+platform: mqtt
+unique_id: xmas_tree
+optimistic: false
+name: "Kerstboom"
+command_topic: "home-assistant/light/living_room/switch"
