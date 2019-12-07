@@ -17,3 +17,4 @@ cards:
       - entity: script.play_radio538
       - entity: script.play_radio_2
       - entity: script.play_100procentnl
+      - entity: script.play_skyradio

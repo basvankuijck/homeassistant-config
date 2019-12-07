@@ -42,3 +42,5 @@ turn_on_scene_sleep:
       entity_id: automation.occupancy_simulator
     - service: script.turn_on
       entity_id: script.turn_off_mac_screen
+    - service: media_player.media_stop
+      entity_id: media_player.huiskamer
