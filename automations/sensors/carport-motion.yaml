@@ -35,7 +35,7 @@ condition:
       state: not_home
 
 action:
-  - service: camera.local_file_update_file_path
+  - service: local_file.update_file_path
     data_template:
       entity_id: camera.carport_movement
       file_path: "{{ trigger.event.data.path }}"
