@@ -6,4 +6,4 @@ play_skyradio:
     entity_id: script.stream_music
     data_template:
       variables:
-        stream: https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIO.mp3
+        stream: https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIOAAC.aac
