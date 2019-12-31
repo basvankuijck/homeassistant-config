@@ -142,6 +142,17 @@ class FloorplanCard extends HTMLElement {
               }
           },
           {
+              "id": "light.erker",
+              "type": "light",
+              "frame": {
+                  "width": 11.1218103,
+                  "left": 1.396244584,
+                  "top": 3.940217391,
+                  "height": 71.60326087
+              },
+              "imagefile": "light-erker.png"
+          },
+          {
               "id": "light.speeltafel",
               "type": "light",
               "frame": {
