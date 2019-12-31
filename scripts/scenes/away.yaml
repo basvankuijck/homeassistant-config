@@ -16,6 +16,8 @@ turn_on_scene_gone:
     - service: light.turn_off
       entity_id: light.bureau_2
     - service: light.turn_off
+      entity_id: light.erker
+    - service: light.turn_off
       entity_id: light.leeslamp_bank
     - service: light.turn_off
       entity_id: light.keuken

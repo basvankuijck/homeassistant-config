@@ -43,6 +43,7 @@ cards:
     show_header_toggle: false
     entities:
         - entity: light.bureau_2
+        - entity: light.erker
         - entity: light.leeslamp_bank
         - entity: light.keuken
         - entity: light.speeltafel

@@ -14,6 +14,8 @@ light.keukenkast_2:
     assumed_state: false
 light.speeltafel:
     assumed_state: false
+light.erker:
+    assumed_state: false
 # light.xmas_tree:
 #     assumed_state: false
 sensor.mac_mini_diskspace:
