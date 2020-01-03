@@ -150,7 +150,7 @@ class FloorplanCard extends HTMLElement {
                   "top": 3.940217391,
                   "height": 71.60326087
               },
-              "imagefile": "light-erker.png",
+              "imagefile": "light-baywindow.png",
               "buttonorigin": {
                   "left": 50,
                   "top": 42
