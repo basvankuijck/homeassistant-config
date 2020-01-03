@@ -13,6 +13,8 @@ turn_on_scene_thuis:
       entity_id: light.bureau_2
     - service: light.turn_on
       entity_id: light.erker
+      data:
+        brightness_pct: 50
     - service: light.turn_on
       entity_id: light.leeslamp_bank
       data:
@@ -39,5 +41,3 @@ turn_on_scene_thuis:
       entity_id: input_select.state
       data:
         option: home
-    - service: homeassistant.turn_off
-      entity_id: automation.occupancy_simulator
