@@ -24,21 +24,22 @@ trigger:
   event_data:
     event_type: created
 
-condition:
-  condition: and
-  conditions:
-    - condition: state
-      entity_id: alarm_control_panel.ha_alarm
-      state: armed_away
-    - condition: state
-      entity_id: group.persons
-      state: not_home
-
 action:
   - service: local_file.update_file_path
     data_template:
       entity_id: camera.carport_movement
       file_path: "{{ trigger.event.data.path }}"
+      
+  - condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: alarm_control_panel.ha_alarm
+        state: armed_away
+      - condition: state
+        entity_id: group.persons
+        state: not_home
+
   - delay: '00:00:02'
 
   # Push notification
