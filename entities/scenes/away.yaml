@@ -2,5 +2,4 @@
 name: Weg
 id: weg
 entities:
-  script.turn_on_scene_gone:
-    state: 'on'
+  input_select.scene: gone
