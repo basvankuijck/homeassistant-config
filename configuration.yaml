@@ -13,3 +13,5 @@ homeassistant:
 default_config:
 
 discovery:
+  ignore:
+    - upnp
