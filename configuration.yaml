@@ -14,4 +14,4 @@ default_config:
 
 discovery:
   ignore:
-    - upnp
+    - igd
