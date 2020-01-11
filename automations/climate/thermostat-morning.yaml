@@ -3,7 +3,7 @@
 # This way the house will be warmed up around 07:00
 
 alias: "Thermostaat aan om 06:45"
-initial_state: true
+initial_state: false
 trigger:
   platform: time
   at: "06:45:00"
