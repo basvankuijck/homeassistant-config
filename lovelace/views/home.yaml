@@ -1,6 +1,5 @@
 ---
 title: Home
-background: var(--background)
 icon: mdi:home-assistant
 cards:
   - type: entities

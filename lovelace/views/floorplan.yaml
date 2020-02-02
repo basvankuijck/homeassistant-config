@@ -1,6 +1,5 @@
 ---
 title: Floorplan
-background: var(--background)
 icon: mdi:floor-plan
 panel: true
 cards:

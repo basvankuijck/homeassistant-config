@@ -1,6 +1,5 @@
 ---
 title: Camera
-background: var(--background)
 icon: mdi:video
 cards:
   - type: picture-entity

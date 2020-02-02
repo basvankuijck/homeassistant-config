@@ -1,6 +1,5 @@
 title: Stats
 icon: mdi:chart-areaspline
-background: var(--background)
 cards:
     - type: gauge
       name: PI HDD

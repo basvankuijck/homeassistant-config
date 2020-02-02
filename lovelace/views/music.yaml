@@ -1,6 +1,5 @@
 title: Muziek
 icon: mdi:music
-background: var(--background)
 cards:
   - type: media-control
     entity: media_player.huiskamer
