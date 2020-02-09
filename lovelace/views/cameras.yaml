@@ -9,6 +9,12 @@ cards:
     show_state: false
 
   - type: picture-entity
+    name: Garage
+    entity: camera.garage
+    camera_image: camera.garage
+    show_state: false
+
+  - type: picture-entity
     name: Carport motion
     entity: camera.carport_movement
     camera_image: camera.carport_movement

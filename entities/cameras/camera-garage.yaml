@@ -1,0 +1,7 @@
+---
+platform: generic
+name: Camera2
+still_image_url: !secret camera_shinobi_jpeg2
+stream_source: !secret camera_shinobi_stream2
+verify_ssl: false
+content_type: video/mp4
