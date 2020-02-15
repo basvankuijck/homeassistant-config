@@ -27,9 +27,16 @@ cards:
               - calendar.dex
               - calendar.finn
               - calendar.holidays_nl
-              - calendar.shared
-      
-          - type: history-graph
-            title: Temperatuur
+              - calendar.shared  
+    
+          - type: custom:mini-graph-card
+            show_points: false
+            name: Temperatuur
+            icon: mdi:temperature-celsius
+            hour24: true
+            decimals: 1
             entities:
-              - climate.toon_thermostat
+              - sensor.current_temperature
+              - sensor.set_temperature
+              - sensor.temperature_frontdoor
+              - sensor.temperature_kitchen

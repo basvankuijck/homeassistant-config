@@ -40,6 +40,23 @@ cards:
           - entity_id: "sensor.*_battery_level"
             state: "<= 100"
             options:
-              type: 'custom:battery-entity'
+              type: 'custom:battery-entity'    
+      
+    - type: custom:mini-graph-card
+      name: Verkeer
+      icon: mdi:traffic-light
+      decimals: 0
+      smoothing: false
+      update_interval: 5
+      points_per_hour: 5
+      line_width: 3
+      hour24: true
+      entities:
+        - entity: sensor.archer_c2600_kb_sec_received
+          name: Ontvangen
+          aggregate_func: avg
+        - entity: sensor.archer_c2600_kb_sec_sent
+          name: Verstuurd
+          aggregate_func: avg
 
               
