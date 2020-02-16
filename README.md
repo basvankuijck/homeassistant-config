@@ -48,6 +48,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | Device | Amount | More Info | Image |
 | -------- |:-----------:|:---:|---:|
 | **Besder IP Camera** | **2x** | [BESDER Bullet IP Camera Wi-fi Outdoor 1080P](https://aliexpress.com/item/32852462138.html?spm=a2g0s.9042311.0.0.27424c4dok4dP9) | <img src="docs/assets/camera.jpg" height="100px" /> |
+| **Yi Home 1080p** | **1x** | [Yi Home 1080p](https://www.yitechnology.com/yi-1080p-home-camera) | <img src="https://oss.yitechnology.com/images/home1080p/1080p-top.png" height="100px" /> |
 
 ### Zigbee
 
