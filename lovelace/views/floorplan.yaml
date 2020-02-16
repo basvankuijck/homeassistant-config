@@ -35,6 +35,7 @@ cards:
             icon: mdi:temperature-celsius
             hour24: true
             decimals: 1
+            line_width: 3
             entities:
               - sensor.current_temperature
               - sensor.set_temperature

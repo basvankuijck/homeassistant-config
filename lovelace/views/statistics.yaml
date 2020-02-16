@@ -53,10 +53,29 @@ cards:
       hour24: true
       entities:
         - entity: sensor.archer_c2600_kb_sec_received
-          name: Ontvangen
+          name: Download
           aggregate_func: avg
         - entity: sensor.archer_c2600_kb_sec_sent
-          name: Verstuurd
+          name: Upload
           aggregate_func: avg
+    
+    - type: horizontal-stack
+      cards:      
+      - type: custom:bignumber-card
+        title: ⬆
+        entity: sensor.archer_c2600_kb_sec_sent
+        from: left
+        scale: 30px
+        min: 0
+        max: 3750
+
+      - type: custom:bignumber-card
+        title: ⬇
+        entity: sensor.archer_c2600_kb_sec_received
+        from: left
+        scale: 30px
+        min: 0
+        max: 37500
+
 
               
