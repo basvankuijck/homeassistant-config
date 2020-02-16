@@ -9,11 +9,11 @@ sensors:
     friendly_name: "Ingestelde temperatuur"
     unit_of_measurement: "°C"
     value_template: "{{ states.climate.toon_thermostat.attributes.temperature }}"
-  temperature_frontdoor:
-    friendly_name: "Voordeur"
-    unit_of_measurement: "°C"
-    value_template: "{{ states.binary_sensor.frontdoor.attributes.temperature }}"
-  temperature_kitchen:
-    friendly_name: "Keuken"
-    unit_of_measurement: "°C"
-    value_template: "{{ states.binary_sensor.kitchen.attributes.temperature }}"    
+  # temperature_frontdoor:
+  #   friendly_name: "Voordeur"
+  #   unit_of_measurement: "°C"
+  #   value_template: "{{ states.binary_sensor.frontdoor.attributes.temperature }}"
+  # temperature_kitchen:
+  #   friendly_name: "Keuken"
+  #   unit_of_measurement: "°C"
+  #   value_template: "{{ states.binary_sensor.kitchen.attributes.temperature }}"    

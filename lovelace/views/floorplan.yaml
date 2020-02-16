@@ -39,5 +39,3 @@ cards:
             entities:
               - sensor.current_temperature
               - sensor.set_temperature
-              - sensor.temperature_frontdoor
-              - sensor.temperature_kitchen
