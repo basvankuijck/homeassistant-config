@@ -1,8 +1,6 @@
 ---
-platform: manual_mqtt
+platform: manual
 name: "HA Alarm"
-state_topic: home-assistant/home/alarm
-command_topic: home-assistant/home/alarm/set
 delay_time: 0
 pending_time: 20
 disarmed:
