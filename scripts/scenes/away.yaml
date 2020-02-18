@@ -45,3 +45,5 @@ turn_on_scene_gone:
       entity_id: script.turn_off_mac_screen
     - service: media_player.media_stop
       entity_id: media_player.huiskamer
+    - service: script.turn_on
+      entity_id: script.camera_record_on
