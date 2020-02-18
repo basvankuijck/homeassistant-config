@@ -38,10 +38,8 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 
 | Device | Amount | More Info | Image | Cost |
 | -------- |:-----------:|:---:|---:|:---:|
-| **NodeMCU v2** | **3x** | [ESP8266 NodeMCU V2](https://www.tinytronics.nl/shop/nl/communicatie/esp8266-nodemcu-v2) | <img src="docs/assets/nodemcu2.jpg" height="100px" /> |€ 24|
-| **Wemos D1** | **1x** | [Wemos D1](https://nl.aliexpress.com/item/32723887671.html?src=google&albslr=223461305&src=google&albch=shopping&acnt=494-037-6276&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&albcp=6459980570&albag=76980386066&trgt=743612850714&crea=nl32723887671&netw=u&device=c&gclid=Cj0KCQjw5rbsBRCFARIsAGEYRwcxv9_foJ0yYKRkh_zB7Dupfr7RNCdl21uPcrFATWWDCqHWuX6_0VsaAr2uEALw_wcB) | <img src="docs/assets/wemos-d1.png" height="100px" /> |€ 7|
+| **NodeMCU v2** | **2x** | [ESP8266 NodeMCU V2](https://www.tinytronics.nl/shop/nl/communicatie/esp8266-nodemcu-v2) | <img src="docs/assets/nodemcu2.jpg" height="100px" /> |€ 16|
 | **RF Transmitter** | **2x** | [433Mhz RF Transmitter](https://www.amazon.com/SMAKN®-433Mhz-Transmitter-Receiver-Arduino/dp/B00M2CUALS) | <img src="docs/assets/433transmitter.jpg" height="100px" /> |€ 2|
-| **PIR** | **1x** | [PIR Motion sensor](https://www.elektor.nl/hc-sr501-pir-motion-sensor-module?gclid=Cj0KCQjww7HsBRDkARIsAARsIT4ndV5yKpz4TDB5ZA8-7x4do_JWC9dJzpfOr2MtLILT1Lr6tIO7N3saAtw7EALw_wcB) | <img src="docs/assets/pir-sensor.jpg" height="100px" /> |€ 2|
 
 ### Cameras
 
@@ -83,7 +81,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **Google Home** | **1x** | [Google Home Mini](https://store.google.com/product/google_home_mini) | <img src="docs/assets/google-home-mini.jpg" height="100px" /> |€ 20|
 
 ## Total cost
-(So far) € 1.466,-
+(So far) € 1.449,-
 
 ## Wishlist / To do
 
