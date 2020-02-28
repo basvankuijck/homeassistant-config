@@ -1,6 +1,6 @@
 title: !secret name
 resources: 
-  - url: /local/calendar/atomic-calendar.js
+  - url: /local/custom-cards/atomic_calendar.js
     type: module
   - url: /local/floorplan/floorplan-card.js?018
     type: js
