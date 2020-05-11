@@ -15,4 +15,4 @@ check_tree_lights:
           before: sunrise
     - service: light.turn_on
       data:
-        entity_id: light.tuin_grondspots
+        entity_id: light.tuinverlichting

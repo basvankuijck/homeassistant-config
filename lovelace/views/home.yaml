@@ -50,6 +50,7 @@ cards:
         - entity: light.keukenkast_2
         # - entity: light.xmas_tree
         - entity: light.tuin_grondspots
+        - entity: light.buitenkeuken
         - entity: light.terrasoverkapping
 
   - type: entities

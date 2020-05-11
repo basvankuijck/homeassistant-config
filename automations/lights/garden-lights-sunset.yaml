@@ -17,7 +17,7 @@ initial_state: true
 action:
   - service: light.turn_on
     data:
-      entity_id: light.tuin_grondspots
+      entity_id: light.tuinverlichting
 
   - service: notify.slack
     data:

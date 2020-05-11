@@ -13,13 +13,13 @@ condition:
   condition: and
   conditions:
     - condition: state
-      entity_id: light.tuin_grondspots
+      entity_id: light.tuinverlichting
       state: 'on'
 
 action:
   - service: light.turn_off
     data:
-      entity_id: light.tuin_grondspots
+      entity_id: light.tuinverlichting
 
   - service: notify.slack
     data:
