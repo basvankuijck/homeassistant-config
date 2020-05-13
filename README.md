@@ -81,7 +81,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **Google Home** | **1x** | [Google Home Mini](https://store.google.com/product/google_home_mini) | <img src="docs/assets/google-home-mini.jpg" height="100px" /> |€ 20|
 
 ## Total cost
-(So far) € 1.449,-
+(So far) € 1.461,-
 
 ## Wishlist / To do
 
