@@ -13,5 +13,3 @@ homeassistant:
 default_config:
 
 discovery:
-  ignore:
-    - igd

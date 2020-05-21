@@ -2,8 +2,8 @@
 platform: manual
 name: "HA Alarm"
 delay_time: 0
-pending_time: 20
+arming_time: 20
 disarmed:
   trigger_time: 0
 armed_home:
-  pending_time: 0 
+  arming_time: 0 
