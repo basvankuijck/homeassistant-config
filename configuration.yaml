@@ -9,6 +9,7 @@ homeassistant:
   customize_glob: !include customize_glob.yaml
   whitelist_external_dirs: !include whitelist_external_dirs.yaml
   packages: !include_dir_named integrations
+  external_url: !secret http_base_url
 
 default_config:
 

@@ -30,8 +30,7 @@ action:
       entity_id: camera.carport_movement
       file_path: "{{ trigger.event.data.path }}"
       
-  - condition:
-    condition: and
+  - condition: and
     conditions:
       - condition: state
         entity_id: alarm_control_panel.ha_alarm
