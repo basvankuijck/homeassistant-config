@@ -4,6 +4,7 @@ homeassistant:
   longitude: !secret longitude
   elevation: 10
   unit_system: metric
+  temperature_unit: C
   time_zone: Europe/Amsterdam
   customize: !include customize.yaml
   customize_glob: !include customize_glob.yaml
