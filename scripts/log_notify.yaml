@@ -1,6 +1,10 @@
 ---
 log_notify:
   alias: Log notify
+  fields:
+    message:
+      description: 'The message content'
+      example: 'The light is on!'
   sequence:
     - service: notify.slack
       data_template:
