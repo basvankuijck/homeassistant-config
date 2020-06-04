@@ -2,9 +2,11 @@
 turn_on_scene_gone:
   alias: "Scene 'Weg'"
   sequence:
-    - service: notify.slack
+    - service: script.turn_on
+      entity_id: script.log_notify
       data:
-        message: "Scene 'Weg' geactiveerd"
+        variables:
+          message: "Scene 'Weg' geactiveerd"
     - service: light.turn_off
       entity_id: light.tuinverlichting
     - delay:

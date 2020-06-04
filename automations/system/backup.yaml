@@ -10,6 +10,8 @@ action:
       name: Automated Backup {{ now().strftime('%Y-%m-%d') }}
       password: !secret snapshot_password 
     
-  - service: notify.slack
+  - service: script.turn_on
+    entity_id: script.log_notify
     data:
-      message: "Ik heb weer een backup gemaakt van de configuratie."
+      variables:
+        message: "Ik heb weer een backup gemaakt van de configuratie."

@@ -5,9 +5,11 @@ trigger:
     - platform: homeassistant
       event: start
 action:
-  - service: notify.slack
+  - service: script.turn_on
+    entity_id: script.log_notify
     data:
-      message: "Ik ben weer opgestart!"
+      variables:
+        message: "Ik ben weer opgestart!"
         
   - service: script.turn_on
     data_template:

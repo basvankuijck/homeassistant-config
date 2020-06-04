@@ -19,6 +19,7 @@ action:
     data:
       entity_id: light.tuinverlichting
 
-  - service: notify.slack
+  - service: log.notify
     data:
-      message: "De zon gaat onder, de tuinlichten worden aangezet"
+      variables:
+        message: "De zon gaat onder, de tuinlichten worden aangezet"
