@@ -25,9 +25,9 @@ condition:
       entity_id: input_select.scene
       state: tv
 
-    - condition: state
-      entity_id: light.tuinverlichting
-      state: 'on'
+    - condition: time
+      after: '16:00:00'
+      before: '09:00:00'
 
 action:
   - service: light.turn_off
