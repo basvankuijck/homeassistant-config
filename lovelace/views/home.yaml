@@ -70,4 +70,3 @@ cards:
     title: Weather
     mode: hourly
     weather:  weather.dark_sky
-
