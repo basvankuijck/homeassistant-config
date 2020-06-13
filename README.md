@@ -39,7 +39,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | -------- |:-----------:|:---:|---:|:---:|
 | **ACD-200** |  **2x** | [KlikAanKlikUit ACD-200](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/acd-200-stopcontact-dimmer-200w-multi-nederlandse-stekker.html) | <img src="docs/assets/kaku-acd200.jpg" height="100px" /> |€ 49|
 | **AWMR-300** | **1x** | [KlikAanKlikUit AWMR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/inbouw/awmr-300-mini-inbouw-schakelaar.html) | <img src="docs/assets/kaku-awmr300.jpg" height="100px" /> |€ 25|
-| **AGDR-300** | **2x** | [KlikAanKlikUit AGDR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/agdr-300-stopcontactdimmer-buiten-300w.html) | <img src="docs/assets/kaku-agdr300.jpg" height="100px" /> |€ 50|
+| **AGDR-300** | **1x** | [KlikAanKlikUit AGDR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/agdr-300-stopcontactdimmer-buiten-300w.html) | <img src="docs/assets/kaku-agdr300.jpg" height="100px" /> |€ 25|
 
 ### Modules
 
@@ -88,7 +88,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **Google Home** | **1x** | [Google Home Mini](https://store.google.com/product/google_home_mini) | <img src="docs/assets/google-home-mini.jpg" height="100px" /> |€ 20|
 
 ## Total cost
-(So far) € 1.518,-
+(So far) € 1.518,- (includes removed / replaced stuff)
 
 ## Wishlist / To do
 

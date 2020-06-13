@@ -15,6 +15,7 @@ install:
   - pip3 install colorlog
 
 script:
+  - hass --version
   - hass -c ./ --script check_config --info all
 
 notifications:

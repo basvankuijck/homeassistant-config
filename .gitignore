@@ -59,6 +59,7 @@ known_devices.yaml
 
 # Json files
 .ps4-games.json
+.sonoff.json
 
 
 # Created by https://www.gitignore.io/api/macos
