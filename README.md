@@ -16,9 +16,9 @@ But after a while the limitations of Homekit came to light and after some search
 
 In my current setup the main communication between smart 'devices' is done throught the following protocols:
 
-| Zigbee | 433Mhz | MQTT |
-|:------:|:------:|:----:|
-|<img src="docs/assets/logos/zigbee.png" height="40px" />|<img src="docs/assets/logos/433mhz.png" height="40px" />|<img src="docs/assets/logos/mqtt.png" height="40px" />|
+| Zigbee | 433Mhz | MQTT | Sonoff |
+|:------:|:------:|:----:|:----:|
+|<img src="docs/assets/logos/zigbee.png" height="40px" />|<img src="docs/assets/logos/433mhz.png" height="40px" />|<img src="docs/assets/logos/mqtt.png" height="40px" />|<img src="docs/assets/logos/sonoff.png" height="40px" />|
 
 ## Hardware
 
@@ -47,6 +47,12 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | -------- |:-----------:|:---:|---:|:---:|
 | **NodeMCU v2** | **2x** | [ESP8266 NodeMCU V2](https://www.tinytronics.nl/shop/nl/communicatie/esp8266-nodemcu-v2) | <img src="docs/assets/nodemcu2.jpg" height="100px" /> |€ 16|
 | **RF Transmitter** | **2x** | [433Mhz RF Transmitter](https://www.amazon.com/SMAKN®-433Mhz-Transmitter-Receiver-Arduino/dp/B00M2CUALS) | <img src="docs/assets/433transmitter.jpg" height="100px" /> |€ 2|
+
+### Sonoff
+
+| Device | Amount | More Info | Image | Cost |
+| -------- |:-----------:|:---:|---:|:---:|
+| **Sonoff Basic R3** | **2x** | [Sonoff Basic R3](https://www.itead.cc/smart-home/sonoff-basicr3-wifi-diy-smart-switch.html) | <img src="docs/assets/sonoffbasicr3.jpg" height="50px" /> |€ 12|
 
 ### Cameras
 
@@ -88,7 +94,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **Google Home** | **1x** | [Google Home Mini](https://store.google.com/product/google_home_mini) | <img src="docs/assets/google-home-mini.jpg" height="100px" /> |€ 20|
 
 ## Total cost
-(So far) € 1.518,- (includes removed / replaced stuff)
+(So far) € 1.530,- (includes removed / replaced stuff)
 
 ## Wishlist / To do
 
