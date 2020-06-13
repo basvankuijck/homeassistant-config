@@ -3,4 +3,4 @@ platform: group
 name: Tuinverlichting
 entities:
   - light.buitenkeuken
-  - light.tuin_grondspots
+  - light.tuin_grondspots_2
