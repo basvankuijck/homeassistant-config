@@ -1,5 +1,0 @@
----
-platform: mqtt
-name: "Motion sensor"
-state_topic: "home-assistant/sensor/one"
-force_update: true

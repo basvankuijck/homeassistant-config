@@ -1,6 +1,0 @@
----
-name: "Voetbal"
-latitude: !secret soccer_latitude
-longitude: !secret soccer_longitude
-radius: 300
-icon: mdi:soccer-field

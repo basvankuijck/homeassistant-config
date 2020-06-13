@@ -1,4 +1,0 @@
----
-platform: switch
-name: Keukenkast
-entity_id: switch.keukenkast

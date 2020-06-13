@@ -1,6 +1,0 @@
----
-platform: mqtt
-unique_id: desk_light
-optimistic: false
-name: "Bureau"
-command_topic: "home-assistant/light/desk/switch"

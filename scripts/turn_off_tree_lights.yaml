@@ -1,9 +1,0 @@
----
-turn_off_tree_lights:
-  alias: Tuinlichten uit
-  sequence:
-    - service: light.turn_off
-      data:
-        entity_id: light.tuinverlichting
-    - delay:
-        seconds: 1

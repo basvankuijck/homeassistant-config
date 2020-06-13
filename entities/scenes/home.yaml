@@ -1,5 +1,0 @@
----
-name: Thuis
-id: thuis
-entities:
-  input_select.scene: home

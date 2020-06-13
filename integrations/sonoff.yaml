@@ -1,9 +1,0 @@
----
-#
-# Home Assistant custom component for control Sonoff devices with eWeLink (original) firmware over LAN and/or Cloud.
-#
-# https://github.com/AlexxIT/SonoffLAN
-#
-sonoff:
-  username: !secret ewelink_username
-  password: !secret ewelink_password

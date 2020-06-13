@@ -1,4 +1,0 @@
-doors_windows:
-  name: "Deuren & ramen"
-  entities:
-    - binary_sensor.frontdoor

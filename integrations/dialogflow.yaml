@@ -1,6 +1,0 @@
----
-# The dialogflow integration is designed to be used with the webhook integration of Dialogflow. 
-#
-# https://www.home-assistant.io/components/dialogflow/
-#
-dialogflow:

@@ -1,7 +1,0 @@
----
-turn_off_mac_screen:
-  alias: "Turn off mac screen"
-  sequence:
-    - service: mqtt.publish
-      data: 
-        topic: "homeassistant/macos/screen_off"

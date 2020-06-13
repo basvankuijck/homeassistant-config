@@ -1,5 +1,0 @@
-# "Wat is de temperatuur?"
-
-GetTemperature:
-  speech:
-    text: Het is momenteel {{ state_attr('climate.toon_thermostat', 'current_temperature') | round(0) }} graden celsius binnen.

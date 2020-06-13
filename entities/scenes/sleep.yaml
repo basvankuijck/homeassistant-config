@@ -1,5 +1,0 @@
----
-name: Slapen
-id: slapen
-entities:
-  input_select.scene: sleep

@@ -1,6 +1,0 @@
----
-platform: group
-name: Buitenkeuken
-entities:
-  - light.buitenkeuken_spot_1
-  - light.buitenkeuken_spot_2

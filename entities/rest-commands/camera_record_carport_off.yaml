@@ -1,3 +1,0 @@
----
-camera_record_carport_off:
-  url: !secret camera_record_endpoint_carport_off

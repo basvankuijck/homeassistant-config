@@ -1,9 +1,0 @@
----
-play_radio_2:
-  alias: Speel NPO Radio 2
-  sequence:
-  - service: script.turn_on
-    entity_id: script.stream_music
-    data_template:
-      variables:
-        stream: http://icecast.omroep.nl/radio2-bb-mp3

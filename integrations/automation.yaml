@@ -1,8 +1,0 @@
----
-# Home Assistant offers a wide range of automation configurations.
-# In this section, we’ll try to guide you through all the different possibilities and options
-#
-# https://www.home-assistant.io/docs/automation/
-#
-
-automation: !include_dir_list ../automations/

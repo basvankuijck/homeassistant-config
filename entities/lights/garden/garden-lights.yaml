@@ -1,6 +1,0 @@
----
-platform: group
-name: Tuinverlichting
-entities:
-  - light.buitenkeuken
-  - light.tuin_grondspots

@@ -1,7 +1,0 @@
----
-platform: group
-name: Erker
-entities:
-  - light.erker_spotje_1
-  - light.erker_spotje_2
-  - light.erker_spotje_3

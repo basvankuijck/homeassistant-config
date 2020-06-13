@@ -1,7 +1,0 @@
----
-name: all
-platform: group
-services:
-  - service: ios_iphone_x_bas
-  - service: mobile_app_iphone_x_bas
-  - service: mobile_app_daan_iphone_x
