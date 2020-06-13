@@ -1,0 +1,10 @@
+---
+# The logger integration lets you define the level of logging activities in Home Assistant.
+#
+# https://www.home-assistant.io/components/logger/
+#
+logger:
+  default: warning
+  logs:
+    homeassistant.components.camera: debug
+    homeassistant.components.ps4.media_player: error

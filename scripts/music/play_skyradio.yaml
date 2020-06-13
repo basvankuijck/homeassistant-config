@@ -1,0 +1,9 @@
+---
+play_skyradio:
+  alias: Speel Sky Radio
+  sequence:
+  - service: script.turn_on
+    entity_id: script.stream_music
+    data_template:
+      variables:
+        stream: https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIOAAC.aac

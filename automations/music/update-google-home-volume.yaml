@@ -1,0 +1,11 @@
+---
+alias: Update Google Home volume
+initial_state: true
+trigger:
+  platform: state
+  entity_id: media_player.huiskamer
+action:
+  service: input_number.set_value
+  data_template:
+    entity_id: input_number.google_home_volume
+    value: "{{ trigger.to_state.attributes.volume_level | multiply(100) | int }}"

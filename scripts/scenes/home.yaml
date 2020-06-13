@@ -1,0 +1,47 @@
+---
+turn_on_scene_thuis:
+  alias: "Scene 'Thuis'"
+  sequence:
+    - service: script.turn_on
+      entity_id: script.log_notify
+      data:
+        variables:
+          message: "Scene 'Thuis' geactiveerd"
+    - service: script.turn_on
+      entity_id: script.check_tree_lights
+    - delay:
+        seconds: 1
+    - service: light.turn_on
+      entity_id: light.bureau_2
+    - service: light.turn_on
+      entity_id: light.erker
+      data:
+        brightness_pct: 50
+    - service: light.turn_on
+      entity_id: light.leeslamp_bank
+      data:
+        brightness_pct: 80
+    - service: light.turn_on
+      entity_id: light.keuken
+    - service: light.turn_on
+      entity_id: light.speeltafel
+    - service: light.turn_on
+      entity_id: light.keukenkast_2
+    # - service: light.turn_on
+    #   entity_id: light.xmas_tree
+    - service: alarm_control_panel.alarm_arm_home
+      entity_id: alarm_control_panel.ha_alarm
+    - service: climate.set_temperature
+      entity_id: climate.toon_thermostat
+      data:
+        temperature: 21
+    - service: input_select.select_option
+      entity_id: input_select.scene
+      data:
+        option: home
+    - service: input_select.select_option
+      entity_id: input_select.state
+      data:
+        option: home
+    - service: script.turn_on
+      entity_id: script.camera_record_off

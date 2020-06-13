@@ -1,0 +1,17 @@
+---
+alias: Daily Backup at 03:00
+initial_state: true
+trigger:
+  platform: time
+  at: '03:00:00'
+action:
+  - service: hassio.snapshot_full
+    data_template:
+      name: Automated Backup {{ now().strftime('%Y-%m-%d') }}
+      password: !secret snapshot_password 
+    
+  - service: script.turn_on
+    entity_id: script.log_notify
+    data:
+      variables:
+        message: "Ik heb weer een backup gemaakt van de configuratie."

@@ -1,0 +1,20 @@
+title: Muziek
+icon: mdi:music
+cards:
+  - type: media-control
+    entity: media_player.huiskamer
+
+  - type: entities
+    title: Volume
+    show_header_toggle: false
+    entities:
+      - entity: input_number.google_home_volume
+
+  - type: entities
+    title: Radio zenders
+    show_header_toggle: false
+    entities:
+      - entity: script.play_radio538
+      - entity: script.play_radio_2
+      - entity: script.play_100procentnl
+      - entity: script.play_skyradio

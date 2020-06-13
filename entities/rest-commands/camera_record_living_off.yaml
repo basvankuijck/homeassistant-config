@@ -1,0 +1,3 @@
+---
+camera_record_living_off:
+  url: !secret camera_record_endpoint_living_off

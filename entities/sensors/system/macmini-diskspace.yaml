@@ -1,0 +1,6 @@
+---
+platform: mqtt
+state_topic: "homeassistant/sensor/macminidiskspace"
+name: "Mac Mini diskspace"
+unit_of_measurement: "GB"
+value_template: "{{ value | multiply(0.000000001) | float | round(1) }}"

@@ -1,0 +1,10 @@
+---
+# The telegram platform uses Telegram to deliver notifications from Home Assistant to your Android device, your Windows phone, or your iOS device.
+#
+# https://www.home-assistant.io/components/telegram/
+#
+telegram_bot:
+  platform: polling
+  api_key: !secret telegram_api_key
+  allowed_chat_ids:
+    - 1072978556

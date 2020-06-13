@@ -1,0 +1,6 @@
+---
+camera_record_off:
+  alias: Record camera off
+  sequence:
+      - service: rest_command.camera_record_carport_off
+      - service: rest_command.camera_record_living_off

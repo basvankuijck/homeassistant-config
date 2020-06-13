@@ -1,0 +1,5 @@
+---
+name: TV Kijken
+id: tv_kijken
+entities:
+  input_select.scene: tv

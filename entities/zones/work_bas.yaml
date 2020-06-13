@@ -1,0 +1,6 @@
+---
+name: "Werk (Bas)"
+latitude: !secret workbas_latitude
+longitude: !secret workbas_longitude
+radius: 150
+icon: mdi:briefcase

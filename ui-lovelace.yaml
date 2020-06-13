@@ -1,0 +1,16 @@
+title: !secret name
+background: var(--background)
+
+custom_header:
+  background: rgba(155, 155, 155, 0.25)
+  compact_mode: true
+  voice_hide: true
+  button_text:
+    options: '{{ hours24 }}:{{ minutesLZ }}'
+
+views:
+  - !include lovelace/views/floorplan.yaml
+  - !include lovelace/views/home.yaml
+  - !include lovelace/views/music.yaml
+  - !include lovelace/views/cameras.yaml
+  - !include lovelace/views/statistics.yaml

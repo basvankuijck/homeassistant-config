@@ -1,0 +1,51 @@
+---
+turn_on_scene_gone:
+  alias: "Scene 'Weg'"
+  sequence:
+    - service: script.turn_on
+      entity_id: script.log_notify
+      data:
+        variables:
+          message: "Scene 'Weg' geactiveerd"
+    - service: light.turn_off
+      entity_id: light.tuinverlichting
+    - delay:
+        seconds: 1
+    - service: light.turn_off
+      entity_id: light.terrasoverkapping
+    - delay:
+        seconds: 1
+    - service: light.turn_off
+      entity_id: light.bureau_2
+    - service: light.turn_off
+      entity_id: light.erker
+    - service: light.turn_off
+      entity_id: light.leeslamp_bank
+    - service: light.turn_off
+      entity_id: light.keuken
+    - service: light.turn_off
+      entity_id: light.speeltafel
+    - service: light.turn_off
+      entity_id: light.keukenkast_2
+    # - service: light.turn_off
+    #   entity_id: light.xmas_tree
+    - service: alarm_control_panel.alarm_arm_away
+      entity_id: alarm_control_panel.ha_alarm
+    - service: climate.set_temperature
+      entity_id: climate.toon_thermostat
+      data:
+        temperature: 12
+    - service: input_select.select_option
+      entity_id: input_select.scene
+      data:
+        option: gone
+    - service: input_select.select_option
+      entity_id: input_select.state
+      data:
+        option: gone
+    - service: script.turn_on
+      entity_id: script.turn_off_mac_screen
+    - service: media_player.media_stop
+      entity_id: media_player.huiskamer
+    - service: script.turn_on
+      entity_id: script.camera_record_on

@@ -1,0 +1,7 @@
+---
+platform: systemmonitor
+resources:
+  - type: disk_use
+    arg: /
+  - type: memory_use
+  - type: processor_use

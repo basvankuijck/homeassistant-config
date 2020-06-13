@@ -1,0 +1,45 @@
+---
+# Send a push notification when you leave the house or go to sleep and the doors and/or windows are still open.
+#
+# Trigger:
+# - The alarm is set to 'armed_away' or 'armed_night'
+#
+# Actions:
+# - Wait 2 minutes and 30 seconds
+# - Check if the alarm is still set to 'armed_away' or 'armed_night'
+# - Check if any of the doors are still open
+# - Send a notification
+
+alias: "Ramen en deuren open laten staan melding"
+initial_state: true
+trigger:
+  - platform: state
+    entity_id: alarm_control_panel.ha_alarm
+    to: 'armed_away'
+  - platform: state
+    entity_id: alarm_control_panel.ha_alarm
+    to: 'armed_night'
+
+action:
+  - delay: '00:02:30'
+
+  - condition: or
+    conditions:
+      - condition: state
+        entity_id: alarm_control_panel.ha_alarm
+        state: armed_away
+      - condition: state
+        entity_id: alarm_control_panel.ha_alarm
+        state: armed_night
+
+  - condition: or
+    conditions:
+      - condition: state
+        entity_id: group.doors_windows
+        state: 'on'
+
+  - service: notify.all
+    data:
+      title: Let op!
+      message: "Er zijn nog deuren en/of ramen die niet zijn gesloten!"
+

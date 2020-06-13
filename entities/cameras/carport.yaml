@@ -1,0 +1,4 @@
+---
+platform: ffmpeg
+name: Carport
+input: !secret camera_carport_stream

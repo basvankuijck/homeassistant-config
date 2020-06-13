@@ -1,0 +1,4 @@
+---
+platform: switch
+name: "Tuin grondspots"
+entity_id: switch.sonoff_garden_trees

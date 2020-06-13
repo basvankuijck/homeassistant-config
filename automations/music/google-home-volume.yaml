@@ -1,0 +1,11 @@
+---
+alias: Change Google Home volume
+initial_state: true
+trigger:
+  platform: state
+  entity_id: input_number.google_home_volume
+action:
+  service: media_player.volume_set
+  data_template:
+    entity_id: media_player.huiskamer
+    volume_level: "{{ trigger.to_state.state | multiply(0.01) | float(2) }}"

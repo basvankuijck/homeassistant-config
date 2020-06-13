@@ -1,0 +1,41 @@
+---
+title: Floorplan
+icon: mdi:floor-plan
+panel: true
+cards:
+  - type: vertical-stack
+    cards:
+      - type: glance
+        name: Bewoners
+        entities:
+          - person.bas_van_kuijck
+          - person.danielle_van_steenhoven      
+
+      - type: "custom:floorplan-card"
+
+      - type: horizontal-stack
+        cards:
+          - type: "custom:atomic-calendar"
+            maxDaysToShow: 3
+            showNoEventsForToday: true
+            showLocation: false
+            title: Kalender
+            entities: 
+              - calendar.bas
+              - calendar.contacts
+              - calendar.danielle
+              - calendar.dex
+              - calendar.finn
+              - calendar.holidays_nl
+              - calendar.shared  
+    
+          - type: custom:mini-graph-card
+            show_points: false
+            name: Temperatuur
+            icon: mdi:temperature-celsius
+            hour24: true
+            decimals: 1
+            line_width: 3
+            entities:
+              - sensor.current_temperature
+              - sensor.set_temperature

@@ -1,0 +1,6 @@
+---
+platform: mqtt
+unique_id: kitchen_light
+optimistic: false
+name: "Keuken"
+command_topic: "home-assistant/light/kitchen/switch"
