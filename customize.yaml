@@ -8,7 +8,7 @@ light.leeslamp_bank:
     assumed_state: false
 light.terrasoverkapping:
     assumed_state: false
-light.tuin_grondspots_2:
+light.tuin_grondspots:
     assumed_state: false
 light.keukenkast_2:
     assumed_state: false
