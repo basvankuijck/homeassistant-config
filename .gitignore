@@ -58,8 +58,8 @@ ip_bans.yaml
 known_devices.yaml
 
 # Json files
-.ps4-games.json
 .sonoff.json
+.ps4-game*.json
 
 
 # Created by https://www.gitignore.io/api/macos
