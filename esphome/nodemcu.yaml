@@ -1,13 +1,12 @@
 esphome:
-  name: wemosd1
+  name: nodemcu
   platform: ESP8266
-  board: d1_mini
+  board: nodemcuv2
 
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
 
-# Enable logging
 logger:
 
 api:
@@ -15,7 +14,3 @@ api:
 
 ota:
   password: !secret api_ota_password
-
-binary_sensor:
-  - platform: status
-    name: "Status"
