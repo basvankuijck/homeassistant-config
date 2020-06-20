@@ -4,7 +4,7 @@ cards:
     - type: gauge
       name: PI HDD Free
       unit: GB
-      entity: sensor.disk_use
+      entity: sensor.disk_free
       max: 32
 
     - type: gauge
