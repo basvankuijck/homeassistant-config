@@ -2,24 +2,24 @@ title: Stats
 icon: mdi:chart-areaspline
 cards:
     - type: gauge
-      name: PI HDD
+      name: PI HDD Free
       unit: GB
       entity: sensor.disk_use
       max: 32
 
     - type: gauge
-      name: PI Memory
+      name: PI Memory Usage
       unit: GB
       entity: sensor.memory_use
       max: 1024
 
     - type: gauge
-      name: PI CPU
+      name: PI CPU Usage
       unit: "%"
       entity: sensor.processor_use
 
     - type: gauge
-      name: HDD Mac Mini
+      name: HDD Mac-Mini Free
       unit: GB
       entity: sensor.mac_mini_diskspace
       max: 320
