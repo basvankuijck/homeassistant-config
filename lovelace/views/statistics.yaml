@@ -52,10 +52,10 @@ cards:
       line_width: 3
       hour24: true
       entities:
-        - entity: sensor.archer_c2600_kib_sec_received
+        - entity: sensor.archer_c2600_kib_s_received
           name: Download
           aggregate_func: avg
-        - entity: sensor.archer_c2600_kib_sec_sent
+        - entity: sensor.archer_c2600_kib_s_sent
           name: Upload
           aggregate_func: avg
     
@@ -63,7 +63,7 @@ cards:
       cards:      
       - type: custom:bignumber-card
         title: ⬆
-        entity: sensor.archer_c2600_kib_sec_sent
+        entity: sensor.archer_c2600_kib_s_sent
         from: left
         scale: 30px
         min: 0
@@ -71,7 +71,7 @@ cards:
 
       - type: custom:bignumber-card
         title: ⬇
-        entity: sensor.archer_c2600_kib_sec_received
+        entity: sensor.archer_c2600_kib_s_received
         from: left
         scale: 30px
         min: 0
