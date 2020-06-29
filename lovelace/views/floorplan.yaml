@@ -15,27 +15,20 @@ cards:
 
       - type: horizontal-stack
         cards:
-          - type: vertical-stack
-            cards:
-              - type: entity
-                name: "Pakketjes"
-                entity: sensor.aftership
-                icon: mdi:package-variant-closed
+          - type: "custom:atomic-calendar"
+            maxDaysToShow: 3
+            showNoEventsForToday: true
+            showLocation: false
+            title: Kalender
+            entities: 
+              - calendar.bas
+              - calendar.contacts
+              - calendar.danielle
+              - calendar.dex
+              - calendar.finn
+              - calendar.holidays_nl
+              - calendar.shared  
                 
-              - type: "custom:atomic-calendar"
-                maxDaysToShow: 3
-                showNoEventsForToday: true
-                showLocation: false
-                title: Kalender
-                entities: 
-                  - calendar.bas
-                  - calendar.contacts
-                  - calendar.danielle
-                  - calendar.dex
-                  - calendar.finn
-                  - calendar.holidays_nl
-                  - calendar.shared  
-    
           - type: custom:mini-graph-card
             show_points: false
             name: Temperatuur
