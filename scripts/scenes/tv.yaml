@@ -32,7 +32,7 @@ turn_on_scene_tv:
     - service: alarm_control_panel.alarm_arm_home
       entity_id: alarm_control_panel.ha_alarm
     - service: climate.set_temperature
-      entity_id: climate.toon_thermostat
+      entity_id: climate.thermostat
       data:
         temperature: 21
     - service: input_select.select_option

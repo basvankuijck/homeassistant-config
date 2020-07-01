@@ -217,7 +217,7 @@ class FloorplanCard extends HTMLElement {
               }
           },
           {
-              "id": "climate.toon_thermostat",
+              "id": "climate.thermostat",
               "type": "thermostat",
               "frame": {
                   "left": 46.65382764,

@@ -36,7 +36,7 @@ cards:
 
   - type: thermostat
     name: Thermostaat
-    entity: climate.toon_thermostat
+    entity: climate.thermostat
 
   - type: entities
     title: Lichten
