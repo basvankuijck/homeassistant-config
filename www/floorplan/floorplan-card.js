@@ -69,6 +69,7 @@ class FloorplanCard extends HTMLElement {
     this._entities.forEach(function(element) {
       const entityId = element.title;
       const state = hass.states[entityId];
+    
       var img = element.getElementsByClassName("light")[0];
       if (!!img) {
           const button = element.getElementsByClassName("button")[0];

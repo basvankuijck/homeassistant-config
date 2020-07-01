@@ -4,11 +4,11 @@ sensors:
   current_temperature:
     friendly_name: "Huidige temperatuur"
     unit_of_measurement: "°C"
-    value_template: "{{ states.climate.toon_thermostat.attributes.current_temperature }}"
+    value_template: "{{ states.climate.thermostat.attributes.current_temperature }}"
   set_temperature:
     friendly_name: "Ingestelde temperatuur"
     unit_of_measurement: "°C"
-    value_template: "{{ states.climate.toon_thermostat.attributes.temperature }}"
+    value_template: "{{ states.climate.thermostat.attributes.temperature }}"
   # temperature_frontdoor:
   #   friendly_name: "Voordeur"
   #   unit_of_measurement: "°C"
