@@ -15,7 +15,7 @@ cards:
 
       - type: horizontal-stack
         cards:
-          - type: "custom:atomic-calendar"
+          - type: "custom:atomic-calendar-revive"
             maxDaysToShow: 3
             showNoEventsForToday: true
             showLocation: false
