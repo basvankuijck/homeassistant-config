@@ -42,12 +42,12 @@ cards:
     title: Lichten
     show_header_toggle: false
     entities:
-        - entity: light.bureau_2
+        - entity: light.bureau
         - entity: light.erker
         - entity: light.leeslamp_bank
         - entity: light.keuken
         - entity: light.speeltafel
-        - entity: light.keukenkast_2
+        - entity: light.keukenkast
         # - entity: light.xmas_tree
         - entity: light.tuin_grondspots
         - entity: light.buitenkeuken

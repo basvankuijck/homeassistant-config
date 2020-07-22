@@ -32,7 +32,7 @@ action:
 
   - service: light.turn_on
     data:
-      entity_id: light.bureau_2
+      entity_id: light.bureau
 
   - service: light.turn_on
     data:

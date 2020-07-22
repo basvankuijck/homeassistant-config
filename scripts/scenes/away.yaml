@@ -16,7 +16,7 @@ turn_on_scene_gone:
     - delay:
         seconds: 1
     - service: light.turn_off
-      entity_id: light.bureau_2
+      entity_id: light.bureau
     - service: light.turn_off
       entity_id: light.erker
     - service: light.turn_off
@@ -26,7 +26,7 @@ turn_on_scene_gone:
     - service: light.turn_off
       entity_id: light.speeltafel
     - service: light.turn_off
-      entity_id: light.keukenkast_2
+      entity_id: light.keukenkast
     # - service: light.turn_off
     #   entity_id: light.xmas_tree
     - service: alarm_control_panel.alarm_arm_away

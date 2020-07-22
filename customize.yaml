@@ -1,6 +1,6 @@
 automation.cleanup: {}
 automation.motion_detector_carport: {}
-light.bureau_2:
+light.bureau:
     assumed_state: false
 light.keuken:
     assumed_state: false
@@ -10,7 +10,7 @@ light.terrasoverkapping:
     assumed_state: false
 light.tuin_grondspots:
     assumed_state: false
-light.keukenkast_2:
+light.keukenkast:
     assumed_state: false
 light.speeltafel:
     assumed_state: false

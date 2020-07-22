@@ -128,7 +128,7 @@ class FloorplanCard extends HTMLElement {
               }
           },
           {
-              "id": "light.bureau_2",
+              "id": "light.bureau",
               "type": "light",
               "frame": {
                   "width": 20.89552239,
@@ -203,7 +203,7 @@ class FloorplanCard extends HTMLElement {
               }
           },
           {
-              "id": "light.keukenkast_2",
+              "id": "light.keukenkast",
               "type": "light",
               "frame": {
                   "width": 23.44727973,
