@@ -5,7 +5,7 @@ cards:
       name: PI HDD Free
       unit: GB
       entity: sensor.disk_free
-      max: 32
+      max: 64
 
     - type: gauge
       name: PI Memory Usage
