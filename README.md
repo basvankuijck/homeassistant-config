@@ -31,7 +31,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | Device | Amount | More Info | Image | Cost |
 | -------- |:-----------:|:---:|:---:|:---:|
 | **Raspberry Pi 3B** | **1x** | [Raspberry Pi 3B](https://www.sossolutions.nl/officiele-raspberry-pi-3b-starterkit) | <img src="docs/assets/raspberrypi3b.jpg" height="70px" /> |€ 59|
-| **Sandisk Micro SDHC 16GB** | **1x** | [Micro SD 16GB](https://www.bol.com/nl/p/sandisk-ultra-micro-sdhc-16gb-uhsi-a1-met-adapter/9200000080737259/?Referrer=ADVNLGOO002018-G-63829457731-S-490418625291-9200000080737259&gclid=CjwKCAjw8J32BRBCEiwApQEKgWTUHWdhMO7gXCCJP6Z-j6EfqIduxOkLACIEwI87grNCn4dzAK9KIRoC3BUQAvD_BwE) | <img src="docs/assets/microsdhc16gb.jpg" height="50px" /> |€ 10|
+| **Sandisk Micro SDXC 64GB** | **1x** | [SANDISK MicroSD Extreme Plus 64GB 170MB](https://www.mediamarkt.nl/nl/product/_sandisk-microsd-extreme-plus-64gb-170mb-1587891.html) | <img src="https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-79540524/fee_325_225_png/SANDISK-MicroSD-Extreme-Plus-64GB-170MB" height="50px" /> |€ 26|
 
 ### 433Mhz 'Stuff'
 
@@ -94,7 +94,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **Google Home** | **1x** | [Google Home Mini](https://store.google.com/product/google_home_mini) | <img src="docs/assets/google-home-mini.jpg" height="100px" /> |€ 20|
 
 ## Total cost
-(So far) € 1.530,- (includes removed / replaced stuff)
+(So far) € 1.556,- (includes removed / replaced stuff)
 
 ## Wishlist / To do
 
