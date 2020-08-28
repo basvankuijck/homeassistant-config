@@ -1,0 +1,14 @@
+---
+platform: template
+switches:
+  record:
+    friendly_name: Camera record
+    value_template: "{{ is_state('sensor.camera_record_status', 'on') }}"
+    turn_on:
+      service: script.turn_on
+      data:
+        entity_id: script.camera_record_on
+    turn_off:
+      service: script.turn_on
+      data:
+        entity_id: script.camera_record_off

@@ -1,4 +1,6 @@
 ---
-platform: ffmpeg
+platform: generic
 name: Carport
-input: !secret camera_carport_stream
+still_image_url: !secret camera_carport_jpeg
+stream_source: !secret camera_carport_stream
+verify_ssl: false

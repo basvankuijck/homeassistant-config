@@ -2,27 +2,10 @@
 title: Camera
 icon: mdi:video
 cards:
-  - type: horizontal-stack
-    cards:
-      - type: entity-button
-        name: Start opnames
-        icon: mdi:record-circle-outline
-        entity: script.camera_record_on
-        tap_action:
-          action: call-service
-          service: script.turn_on
-          service_data:
-            entity_id: script.camera_record_on
-
-      - type: entity-button
-        name: Stop opnames
-        icon: mdi:stop
-        entity: script.camera_record_off
-        tap_action:
-          action: call-service
-          service: script.turn_on
-          service_data:
-            entity_id: script.camera_record_off
+  - type: button
+    entity: switch.record
+    icon: mdi:record-rec
+    show_state: true
   - type: picture-entity
     name: Carport
     entity: camera.carport

@@ -27,6 +27,8 @@ lovelace:
       type: module
     - url: /hacsfiles/lovelace-battery-entity/battery-entity.js
       type: module
+    - url: /hacsfiles/lovelace-layout-card/layout-card.js
+      type: module
 
     - url: /local/floorplan/floorplan-card.js?020
       type: js

@@ -1,0 +1,10 @@
+---
+platform: rest
+resource: !secret camera_record_endpoint_carport_status
+name: Camera record status
+value_template: >-
+  {% if value_json.mode == "record" %}
+  on
+  {% else %}
+  off
+  {% endif %}
