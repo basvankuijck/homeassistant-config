@@ -1,0 +1,6 @@
+---
+camera_record_timer:
+  alias: Record camera timer
+  sequence:
+      - service: rest_command.camera_record_carport_timer
+      - service: rest_command.camera_record_living_timer

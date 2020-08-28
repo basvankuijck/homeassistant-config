@@ -1,0 +1,3 @@
+---
+camera_record_living_timer:
+  url: !secret camera_record_endpoint_living_timer

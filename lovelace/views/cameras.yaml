@@ -1,11 +1,25 @@
 ---
 title: Camera
 icon: mdi:video
+panel: false
 cards:
-  - type: button
-    entity: switch.record
-    icon: mdi:record-rec
-    show_state: true
+  - type: vertical-stack
+    cards:
+      - type: button
+        entity: switch.record
+        icon: mdi:record-rec
+        show_state: true
+
+      - type: entity-button
+        name: Tijdelijke opname
+        icon: mdi:timer-outline
+        entity: script.camera_record_timer
+        tap_action:
+          action: call-service
+          service: script.turn_on
+          service_data:
+            entity_id: script.camera_record_timer
+
   - type: picture-entity
     name: Carport
     entity: camera.carport
