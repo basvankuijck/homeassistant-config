@@ -1,0 +1,16 @@
+---
+title: Instellingen
+icon: mdi:cog-outline
+cards:
+  - type: entities
+    title: Automatisering
+    show_header_toggle: false
+    entities:
+        - entity: automation.alarm
+        - entity: automation.ramen_en_deuren_open_laten_staan_melding
+        # - entity: automation.occupancy_simulator
+        - entity: automation.tuinlicht_zonsondergang
+        - entity: automation.tuinlicht_zonsopgang
+        - entity: automation.thermostaat_aan_om_06_45
+        - entity: automation.motion_detector_keuken
+        - entity: automation.motion_detector_carport

@@ -22,14 +22,12 @@ cards:
 
   - type: picture-entity
     name: Carport
-    entity: camera.carport
-    camera_image: camera.carport
+    entity: camera.carport_mainstreamprofile
     show_state: false
 
   - type: picture-entity
     name: Woonkamer
-    entity: camera.woonkamer
-    camera_image: camera.woonkamer
+    entity: camera.living_profile_0
     show_state: false
 
   - type: picture-entity
