@@ -1,0 +1,14 @@
+---
+
+alias: "Playtable off switch pressed once"
+trigger:
+  platform: event
+  event_type: deconz_event
+  event_data:
+    id: speeltafel_on_off_switch
+    event: 2002
+action:
+  - service: light.turn_on
+    entity_id: light.speeltafel
+    data_template:
+      brightness: '{{states.light.speeltafel.attributes.brightness - 30}}'

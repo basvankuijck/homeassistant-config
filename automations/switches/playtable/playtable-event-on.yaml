@@ -1,0 +1,14 @@
+---
+
+alias: "Playtable on switch pressed long"
+trigger:
+  platform: event
+  event_type: deconz_event
+  event_data:
+    id: speeltafel_on_off_switch
+    event: 1001
+action:
+  - service: light.turn_on
+    entity_id: light.speeltafel
+    data:
+      brightness: 190

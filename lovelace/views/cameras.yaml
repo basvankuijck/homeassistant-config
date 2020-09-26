@@ -1,6 +1,6 @@
 ---
 title: Camera
-icon: mdi:video
+icon: mdi:cctv
 panel: false
 cards:
   - type: vertical-stack

@@ -1,0 +1,96 @@
+- id: '1601131580025'
+  alias: Helderheid speeltafel licht
+  description: ''
+  trigger:
+  - device_id: 816d9dec000511eb9f615f5f6c622405
+    domain: deconz
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+  condition: []
+  action:
+  - type: brightness_increase
+    device_id: 7050692b000411eb91ec2fb3c942a174
+    entity_id: light.speeltafel
+    domain: light
+  mode: single
+- id: '1601131634994'
+  alias: Speeltafel licht helderheid opvoeren
+  description: ''
+  trigger:
+  - device_id: 816d9dec000511eb9f615f5f6c622405
+    domain: deconz
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+  condition: []
+  action:
+  - type: brightness_increase
+    device_id: 7050692b000411eb91ec2fb3c942a174
+    entity_id: light.speeltafel
+    domain: light
+  mode: single
+- id: '1601131651451'
+  alias: Speeltafel licht helderheid omlaag
+  description: ''
+  trigger:
+  - device_id: 816d9dec000511eb9f615f5f6c622405
+    domain: deconz
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+  condition: []
+  action:
+  - type: brightness_decrease
+    device_id: 7050692b000411eb91ec2fb3c942a174
+    entity_id: light.speeltafel
+    domain: light
+  mode: single
+- id: '1601131668890'
+  alias: Speeltafel licht aan
+  description: ''
+  trigger:
+  - device_id: 816d9dec000511eb9f615f5f6c622405
+    domain: deconz
+    platform: device
+    type: remote_button_long_press
+    subtype: turn_on
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 7050692b000411eb91ec2fb3c942a174
+    entity_id: light.speeltafel
+    domain: light
+  mode: single
+- id: '1601131683990'
+  alias: Speeltafel licht uit
+  description: ''
+  trigger:
+  - device_id: 816d9dec000511eb9f615f5f6c622405
+    domain: deconz
+    platform: device
+    type: remote_button_long_press
+    subtype: turn_off
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 7050692b000411eb91ec2fb3c942a174
+    entity_id: light.speeltafel
+    domain: light
+  mode: single
+- id: '1601131761555'
+  alias: Nieuwe automatisering
+  description: ''
+  trigger:
+  - device_id: 816d9dec000511eb9f615f5f6c622405
+    domain: deconz
+    platform: device
+    type: remote_button_long_press
+    subtype: turn_off
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 7050692b000411eb91ec2fb3c942a174
+    entity_id: light.speeltafel
+    domain: light
+  mode: single

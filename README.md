@@ -37,7 +37,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 
 | Device | Amount | More Info | Image | Cost |
 | -------- |:-----------:|:---:|---:|:---:|
-| **ACD-200** |  **2x** | [KlikAanKlikUit ACD-200](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/acd-200-stopcontact-dimmer-200w-multi-nederlandse-stekker.html) | <img src="docs/assets/kaku-acd200.jpg" height="100px" /> |€ 49|
+| **ACD-200** |  **1x** | [KlikAanKlikUit ACD-200](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/acd-200-stopcontact-dimmer-200w-multi-nederlandse-stekker.html) | <img src="docs/assets/kaku-acd200.jpg" height="100px" /> |€ 24|
 | **AWMR-300** | **1x** | [KlikAanKlikUit AWMR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/inbouw/awmr-300-mini-inbouw-schakelaar.html) | <img src="docs/assets/kaku-awmr300.jpg" height="100px" /> |€ 25|
 | **AGDR-300** | **1x** | [KlikAanKlikUit AGDR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/agdr-300-stopcontactdimmer-buiten-300w.html) | <img src="docs/assets/kaku-agdr300.jpg" height="100px" /> |€ 25|
 
@@ -71,6 +71,8 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **TRÅDFRI Smart Plug** | **1x** | [IKEA TRÅDFRI Smart Plug](https://www.ikea.com/nl/nl/p/tradfri-draadloos-plug-in-stopcontact-90356166/) | <img src="docs/assets/tradfi-plug.jp2" height="100px" /> |€ 10|
 | **TRÅDFRI Light Bulb** | **1x** | [IKEA TRÅDFRI Bulb E27 opal 1000lm](https://www.ikea.com/nl/nl/p/tradfri-led-e27-1000-lumen-draadloos-dimbaar-wit-spectrum-opaalwit-60408483/) | <img src="docs/assets/ikea-bulb.JPG" height="100px" /> |€ 18|
 | **TRÅDFRI LED Spot** | **5x** | [IKEA TRÅDFRI GU10 400lm](https://www.ikea.com/nl/nl/p/tradfri-led-lamp-gu10-400-lumen-draadloos-dimbaar-warm-wit-60420041/) | <img src="docs/assets/ikea-gu10.jpg" height="100px" /> |€ 30|
+| **TRÅDFRI Switch Rocker** | **1x** | [IKEA TRÅDFRI Wireless Rocker](https://www.ikea.com/nl/nl/p/tradfri-draadloze-dimmer-wit-70408595/) | <img src="docs/assets/ikea-tradfri-rocker.jpg" height="100px" /> |€ 7|
+| **TRÅDFRI LED Spectrum Spot** | **1x** | [IKEA TRÅDFRI GU10 White Spectrum 400lm](https://www.ikea.com/nl/nl/p/tradfri-led-lamp-gu10-400-lumen-draadloos-dimbaar-wit-spectrum-90408603/) | <img src="docs/assets/ikea-white-light-spectrum.jpg" height="100px" /> |€ 12|
 
 ### Thermostat
 
@@ -94,7 +96,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **Google Home** | **1x** | [Google Home Mini](https://store.google.com/product/google_home_mini) | <img src="docs/assets/google-home-mini.jpg" height="100px" /> |€ 20|
 
 ## Total cost
-(So far) € 1.556,- (includes removed / replaced stuff)
+(So far) € 1.575,- (includes removed / replaced stuff)
 
 ## Wishlist / To do
 

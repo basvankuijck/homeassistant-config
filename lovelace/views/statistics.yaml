@@ -1,160 +1,175 @@
 title: Stats
 icon: mdi:chart-areaspline
 cards:
-    - type: custom:mini-graph-card
-      name: Raspberry PI SD Free
-      icon: mdi:mini-sd
-      unit: GB
-      align_icon: left
-      decimals: 0
-      hour24: true
-      line_width: 3
-      upper_bound: 64
-      align_header: left
-      lower_bound: 0
-      entities:
-        - entity: sensor.disk_free
-      show:
-        fill: false
+  - type: custom:mini-graph-card
+    name: Raspberry PI SD Free
+    icon: mdi:mini-sd
+    unit: GB
+    align_icon: left
+    decimals: 0
+    hour24: true
+    line_width: 3
+    upper_bound: 64
+    aggregate_func: max
+    points_per_hour: 1
+    hours_to_show: 24
+    align_header: left
+    lower_bound: 0
+    entities:
+      - entity: sensor.disk_free
+    show:
+      fill: false
 
-    - type: custom:mini-graph-card
-      name: Raspberry PI Memory usage
-      hour24: true
-      icon: mdi:memory
-      decimals: 0
-      align_header: left
-      line_width: 3
-      upper_bound: 1024
-      align_icon: left
-      lower_bound: 0
-      unit: MB
-      entities:
-        - entity: sensor.memory_use
-      show:
-        fill: false
+  - type: custom:mini-graph-card
+    name: Raspberry PI Memory usage
+    hour24: true
+    icon: mdi:memory
+    decimals: 0
+    align_header: left
+    line_width: 3
+    upper_bound: 1024
+    align_icon: left
+    aggregate_func: max
+    points_per_hour: 1
+    hours_to_show: 24
+    lower_bound: 0
+    unit: MB
+    entities:
+      - entity: sensor.memory_use
+    show:
+      fill: false
 
-    - type: custom:mini-graph-card
-      name: Raspberry PI CPU usage
-      hour24: true
-      decimals: 0
-      align_icon: left
-      align_header: left
-      icon: mdi:cpu
-      upper_bound: 100
-      lower_bound: 0
-      line_width: 3
-      unit: "%"
-      entities:
-        - entity: sensor.processor_use
-      show:
-        fill: false
+  - type: custom:mini-graph-card
+    name: Raspberry PI CPU usage
+    hour24: true
+    decimals: 0
+    align_icon: left
+    align_header: left
+    icon: mdi:chip
+    aggregate_func: max
+    upper_bound: 100
+    points_per_hour: 1
+    hours_to_show: 24
+    lower_bound: 0
+    line_width: 3
+    unit: "%"
+    entities:
+      - entity: sensor.processor_use
+    show:
+      fill: false
 
-    - type: custom:mini-graph-card
-      name: Raspberry PI CPU Temperature
-      hour24: true
-      align_icon: left
-      align_header: left
-      icon: mdi:thermometer
-      decimals: 0
-      upper_bound: 80
-      lower_bound: 0
-      unit: "°C"
-      line_width: 3
-      entities:
-        - entity: sensor.cpu_temperature
-      show:
-        fill: false
+  - type: custom:mini-graph-card
+    name: Raspberry PI CPU Temperature
+    hour24: true
+    align_icon: left
+    align_header: left
+    icon: mdi:thermometer
+    decimals: 0
+    upper_bound: 80
+    points_per_hour: 1
+    hours_to_show: 24
+    aggregate_func: max
+    lower_bound: 0
+    unit: "°C"
+    line_width: 3
+    entities:
+      - entity: sensor.cpu_temperature
+    show:
+      fill: false
 
-    - type: custom:mini-graph-card
-      name: HDD Mac-Mini Free
-      hour24: true
-      decimals: 0
-      icon: mdi:chip
-      align_icon: left
-      upper_bound: 320
-      lower_bound: 0
-      line_width: 3
-      align_header: left
-      unit: "GB"
-      entities:
-        - entity: sensor.mac_mini_diskspace
-      show:
-        fill: false
+  - type: custom:mini-graph-card
+    name: HDD Mac-Mini Free
+    hour24: true
+    decimals: 0
+    icon: mdi:minidisc
+    align_icon: left
+    upper_bound: 320
+    points_per_hour: 1
+    hours_to_show: 24
+    lower_bound: 0
+    line_width: 3
+    aggregate_func: max
+    align_header: left
+    unit: "GB"
+    entities:
+      - entity: sensor.mac_mini_diskspace
+    show:
+      fill: false
 
-    - type: custom:auto-entities
-      card:
-        title: Batterij niveau's
-        type: entities
-        show_header_toggle: false
-      filter:
-        include:
-          - entity_id: "sensor.*_battery_level"
-            state: "<= 100"
-            options:
-              type: 'custom:battery-entity'    
-      
-    - type: custom:mini-graph-card
-      name: Verkeer
-      icon: mdi:traffic-light
-      decimals: 0
-      align_icon: left
-      align_header: left
-      smoothing: false
-      update_interval: 5
-      points_per_hour: 5
-      line_width: 3
-      show:
-        fill: false
-      hour24: true
-      entities:
-        - entity: sensor.archer_c2600_kib_s_received
-          name: Download
-          aggregate_func: avg
-          show_state: true
-        - entity: sensor.archer_c2600_kib_s_sent
-          name: Upload
-          aggregate_func: avg
-          show_state: true
+  - type: custom:auto-entities
+    card:
+      title: Batterij niveau's
+      type: entities
+      show_header_toggle: false
+    filter:
+      include:
+        - entity_id: "sensor.*_battery_level"
+          state: "<= 100"
+          options:
+            type: 'custom:battery-entity'    
+    
+  - type: custom:mini-graph-card
+    name: Verkeer
+    icon: mdi:traffic-light
+    decimals: 0
+    align_icon: left
+    align_header: left
+    smoothing: false
+    update_interval: 5
+    points_per_hour: 1
+    hours_to_show: 24
+    line_width: 3
+    show:
+      fill: false
+    hour24: true
+    entities:
+      - entity: sensor.archer_c2600_kib_s_received
+        name: Download
+        aggregate_func: avg
+        show_state: true
+      - entity: sensor.archer_c2600_kib_s_sent
+        name: Upload
+        aggregate_func: avg
+        show_state: true
 
-    - type: history-graph
-      title: 'Lichten'
-      entities:
-        - light.buitenkeuken
-        - light.bureau
-        - light.erker
-        - light.keuken
-        - light.keukenkast
-        - light.leeslamp_bank
-        - light.speeltafel
-        - light.tuin_grondspots
-        - light.terrasoverkapping
+  - type: history-graph
+    title: 'Lichten'
+    entities:
+      - light.buitenkeuken
+      - light.bureau
+      - light.erker
+      - light.keuken
+      - light.keukenkast
+      - light.leeslamp_bank
+      - light.speeltafel
+      - light.tuin_grondspots
+      - light.terrasoverkapping
 
-    - type: history-graph
-      title: 'Sensoren'
-      entities:
-        - binary_sensor.frontdoor
-        - binary_sensor.carport_sensor
-        - binary_sensor.kitchen
+  - type: history-graph
+    title: 'Sensoren'
+    entities:
+      - binary_sensor.frontdoor
+      - binary_sensor.carport_sensor
+      - binary_sensor.kitchen
 
-    - type: custom:mini-graph-card
-      name: Verbruik
-      hour24: true
-      decimals: 2
-      icon: mdi:currency-eur
-      align_icon: left
-      line_width: 
-      hours_to_show: 168
-      smoothing: false
-      group_by: date
-      align_header: left
-      unit: "EUR"
-      entities:
-        - entity: sensor.energy_cost_today
-          aggregate_func: last
-          show_legend: true
-        - entity: sensor.gas_cost_today
-          aggregate_func: last
-          show_legend: true
-      show:
-        fill: false
-        graph: bar
+  - type: custom:mini-graph-card
+    name: Verbruik
+    hour24: true
+    decimals: 2
+    icon: mdi:currency-eur
+    align_icon: left
+    line_width: 3
+    hours_to_show: 168
+    smoothing: false
+    group_by: date
+    align_header: left
+    unit: "EUR"
+    entities:
+      - entity: sensor.energy_cost_today
+        aggregate_func: last
+        show_legend: true
+      - entity: sensor.gas_cost_today
+        aggregate_func: last
+        show_legend: true
+    show:
+      fill: false
