@@ -11,4 +11,9 @@ action:
   - service: light.turn_on
     entity_id: light.speeltafel
     data_template:
-      brightness: '{{states.light.speeltafel.attributes.brightness + 30}}'
+      brightness: >-
+        {% if is_state('light.speeltafel', 'off') %}
+        190
+        {% else %}
+        {{ states.light.speeltafel.attributes.brightness + 30 }}
+        {% endif %}
