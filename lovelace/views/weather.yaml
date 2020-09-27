@@ -7,7 +7,6 @@ cards:
     entity: weather.br_unknown_station
 
   - type: picture-entity
-    name: Carport
     entity: camera.buienradar_loop
     show_state: false
 
