@@ -1,0 +1,53 @@
+---
+title: Weer
+icon: mdi:weather-partly-cloudy
+cards:  
+  - type: weather-forecast
+    title: Weer
+    entity: weather.br_unknown_station
+
+  - type: picture-entity
+    name: Carport
+    entity: camera.buienradar_loop
+    show_state: false
+
+  - type: history-graph
+    title: 'Historie'
+    entities:
+      - weather.br_unknown_station
+
+  - type: entities
+    title: Meetwaardes
+    entities:
+      - entity: weather.br_unknown_station
+        type: custom:multiple-entity-row
+        icon: mdi:water-outline
+        show_state: false
+        name: Luchtvochtigheid
+        entities:
+          - attribute: humidity
+            unit: '%'
+      - entity: weather.br_unknown_station
+        type: custom:multiple-entity-row
+        show_state: false
+        icon: mdi:eye
+        name: Zicht
+        entities:
+          - attribute: visibility
+            unit: 'km'
+      - entity: weather.br_unknown_station
+        type: custom:multiple-entity-row
+        icon: mdi:air-filter
+        show_state: false
+        name: Luchtdruk
+        entities:
+          - attribute: pressure
+            unit: 'hPa'
+      - entity: weather.br_unknown_station
+        icon: mdi:weather-windy
+        type: custom:multiple-entity-row
+        show_state: false
+        name: Windstoten
+        entities:
+          - attribute: wind_speed
+            unit: 'km/u'

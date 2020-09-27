@@ -52,8 +52,3 @@ cards:
         - entity: light.tuin_grondspots
         - entity: light.buitenkeuken
         - entity: light.terrasoverkapping
-
-  - type: 'custom:weather-card-chart'
-    title: Weather
-    mode: hourly
-    weather:  weather.dark_sky
