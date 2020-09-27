@@ -20,7 +20,7 @@ turn_on_scene_thuis:
     - service: light.turn_on
       entity_id: light.leeslamp_bank
       data:
-        brightness_pct: 80
+        brightness_pct: "{{ states('input_number.default_brightness_bay_window') | int }}"
     - service: light.turn_on
       entity_id: light.keuken
     - service: light.turn_on
@@ -34,7 +34,7 @@ turn_on_scene_thuis:
     - service: climate.set_temperature
       entity_id: climate.thermostat
       data:
-        temperature: 21
+        temperature: "{{ states('input_number.default_temperature') | float(1) }}"
     - service: input_select.select_option
       entity_id: input_select.scene
       data:

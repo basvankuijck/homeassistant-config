@@ -17,7 +17,7 @@ action:
   - service: climate.set_temperature
     data:
       entity_id: climate.thermostat
-      temperature: 21.5
+      temperature: "{{ states('input_number.default_temperature') | float(1) }}"
   - service: script.turn_on
     entity_id: script.log_notify
     data:

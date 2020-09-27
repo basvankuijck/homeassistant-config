@@ -13,7 +13,7 @@ action:
     data_template:
       brightness: >-
         {% if is_state('light.speeltafel', 'off') %}
-        190
+        {{ ((states('input_number.default_brightness_playtable_light') | float) * 2.55) | round(0) | int }}
         {% else %}
         {{ states.light.speeltafel.attributes.brightness + 30 }}
         {% endif %}

@@ -14,3 +14,15 @@ cards:
         - entity: automation.thermostaat_aan_om_06_45
         - entity: automation.motion_detector_keuken
         - entity: automation.motion_detector_carport
+
+  - type: entities
+    title: Standaard waardes
+    show_header_toggle: false
+    entities:
+      - entity: input_number.default_brightness_playtable_light
+        name: Helderheid speeltafel licht
+      - entity: input_number.default_brightness_bay_window
+        name: Helderheid erker licht
+      - entity: input_number.default_temperature
+        name: Temperatuur thuis
+      
