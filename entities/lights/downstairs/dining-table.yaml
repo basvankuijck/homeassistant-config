@@ -1,0 +1,6 @@
+---
+platform: group
+name: Eettafel
+entities:
+  - light.eettafel_1
+  - light.eettafel_2

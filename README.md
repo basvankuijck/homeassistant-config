@@ -73,6 +73,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **TRÅDFRI LED Spot** | **5x** | [IKEA TRÅDFRI GU10 400lm](https://www.ikea.com/nl/nl/p/tradfri-led-lamp-gu10-400-lumen-draadloos-dimbaar-warm-wit-60420041/) | <img src="docs/assets/ikea-gu10.jpg" height="100px" /> |€ 30|
 | **TRÅDFRI Switch Rocker** | **1x** | [IKEA TRÅDFRI Wireless Rocker](https://www.ikea.com/nl/nl/p/tradfri-draadloze-dimmer-wit-70408595/) | <img src="docs/assets/ikea-tradfri-rocker.jpg" height="100px" /> |€ 7|
 | **TRÅDFRI LED Spectrum Spot** | **1x** | [IKEA TRÅDFRI GU10 White Spectrum 400lm](https://www.ikea.com/nl/nl/p/tradfri-led-lamp-gu10-400-lumen-draadloos-dimbaar-wit-spectrum-90408603/) | <img src="docs/assets/ikea-white-light-spectrum.jpg" height="100px" /> |€ 12|
+| **iCasa Filament bulb** | **2x** | [iCasa Zigbee Filament LED lamp | 125mm](https://www.bol.com/nl/p/zigbee-filament-led-lamp-125mm-instelbaar-2700k-tot-6500k-vervangt-60w-gloeilamp-grote-fitting-e27-compatible-met-philips-hue-ikea-home-smart/9200000117123523/?bltgh=htufFpaP--RUc61zlhJIfQ.1_5.11.ProductTitle) | <img src="docs/assets/icasa-0751889266291-20275146_200.jpg" height="100px" /> |€ 17 |
 
 ### Thermostat
 
@@ -96,7 +97,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **Google Home** | **1x** | [Google Home Mini](https://store.google.com/product/google_home_mini) | <img src="docs/assets/google-home-mini.jpg" height="100px" /> |€ 20|
 
 ## Total cost
-(So far) € 1.575,- (includes removed / replaced stuff)
+(So far) € 1.609,- (includes removed / replaced stuff)
 
 ## Wishlist / To do
 
