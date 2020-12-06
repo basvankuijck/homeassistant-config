@@ -16,7 +16,9 @@ light.speeltafel:
     assumed_state: false
 light.erker:
     assumed_state: false
-# light.xmas_tree:
-#     assumed_state: false
+light.xmas_tree:
+    assumed_state: false
+light.kerstverlichting_buiten:
+    assumed_state: false
 sensor.mac_mini_diskspace:
     icon: mdi:harddisk

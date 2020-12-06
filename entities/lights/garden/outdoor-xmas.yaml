@@ -1,0 +1,6 @@
+---
+platform: mqtt
+unique_id: xmas_outside
+name: "Kerstverlichting buiten"
+command_topic: "home-assistant/light/garden_trees/switch"
+optimistic: false

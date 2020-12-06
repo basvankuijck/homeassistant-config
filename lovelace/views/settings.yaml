@@ -19,6 +19,8 @@ cards:
     title: Standaard waardes
     show_header_toggle: false
     entities:
+      - entity: input_number.default_brightness_dining_table
+        name: Helderheid eettafel lampen
       - entity: input_number.default_brightness_playtable_light
         name: Helderheid speeltafel licht
       - entity: input_number.default_brightness_bay_window

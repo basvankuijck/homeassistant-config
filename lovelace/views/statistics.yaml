@@ -141,6 +141,7 @@ cards:
       - light.keuken
       - light.keukenkast
       - light.leeslamp_bank
+      - light.eettafel
       - light.speeltafel
       - light.tuin_grondspots
       - light.terrasoverkapping

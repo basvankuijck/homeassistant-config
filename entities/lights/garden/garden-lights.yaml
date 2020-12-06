@@ -4,3 +4,4 @@ name: Tuinverlichting
 entities:
   - light.buitenkeuken
   - light.tuin_grondspots
+  - light.kerstverlichting_buiten

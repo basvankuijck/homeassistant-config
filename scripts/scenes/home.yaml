@@ -15,8 +15,8 @@ turn_on_scene_thuis:
       entity_id: light.bureau
     - service: light.turn_on
       entity_id: light.eettafel
-      data:
-        brightness_pct: 100
+      data_template:
+        brightness: "{{ ((states('input_number.input_number.default_brightness_dining_table') | float) * 2.55) | round(0) | int }}"
         color_temp: 425
     - service: light.turn_on
       entity_id: light.erker
@@ -32,8 +32,8 @@ turn_on_scene_thuis:
       entity_id: light.speeltafel
     - service: light.turn_on
       entity_id: light.keukenkast
-    # - service: light.turn_on
-    #   entity_id: light.xmas_tree
+    - service: light.turn_on
+      entity_id: light.xmas_tree
     - service: alarm_control_panel.alarm_arm_home
       entity_id: alarm_control_panel.ha_alarm
     - service: climate.set_temperature
