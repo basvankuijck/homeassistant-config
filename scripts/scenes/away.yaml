@@ -2,6 +2,18 @@
 turn_on_scene_gone:
   alias: "Scene 'Weg'"
   sequence:
+    - service: climate.set_temperature
+      entity_id: climate.thermostat
+      data:
+        temperature: 12
+    - service: input_select.select_option
+      entity_id: input_select.scene
+      data:
+        option: gone
+    - service: input_select.select_option
+      entity_id: input_select.state
+      data:
+        option: gone
     - service: script.turn_on
       entity_id: script.log_notify
       data:
@@ -33,18 +45,6 @@ turn_on_scene_gone:
       entity_id: light.xmas_tree
     - service: alarm_control_panel.alarm_arm_away
       entity_id: alarm_control_panel.ha_alarm
-    - service: climate.set_temperature
-      entity_id: climate.thermostat
-      data:
-        temperature: 12
-    - service: input_select.select_option
-      entity_id: input_select.scene
-      data:
-        option: gone
-    - service: input_select.select_option
-      entity_id: input_select.state
-      data:
-        option: gone
     - service: script.turn_on
       entity_id: script.turn_off_mac_screen
     - service: media_player.media_stop

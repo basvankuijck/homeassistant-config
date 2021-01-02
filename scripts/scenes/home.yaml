@@ -2,6 +2,18 @@
 turn_on_scene_thuis:
   alias: "Scene 'Thuis'"
   sequence:
+    - service: climate.set_temperature
+      entity_id: climate.thermostat
+      data:
+        temperature: "{{ states('input_number.default_temperature') | float(1) }}"
+    - service: input_select.select_option
+      entity_id: input_select.scene
+      data:
+        option: home
+    - service: input_select.select_option
+      entity_id: input_select.state
+      data:
+        option: home
     - service: script.turn_on
       entity_id: script.log_notify
       data:
@@ -17,7 +29,7 @@ turn_on_scene_thuis:
       entity_id: light.eettafel
       data_template:
         brightness: "{{ ((states('input_number.input_number.default_brightness_dining_table') | float) * 2.55) | round(0) | int }}"
-        color_temp: 425
+        color_temp: 415
     - service: light.turn_on
       entity_id: light.erker
       data:
@@ -36,17 +48,5 @@ turn_on_scene_thuis:
       entity_id: light.xmas_tree
     - service: alarm_control_panel.alarm_arm_home
       entity_id: alarm_control_panel.ha_alarm
-    - service: climate.set_temperature
-      entity_id: climate.thermostat
-      data:
-        temperature: "{{ states('input_number.default_temperature') | float(1) }}"
-    - service: input_select.select_option
-      entity_id: input_select.scene
-      data:
-        option: home
-    - service: input_select.select_option
-      entity_id: input_select.state
-      data:
-        option: home
     - service: script.turn_on
       entity_id: script.camera_record_off

@@ -52,5 +52,5 @@ cards:
         - entity: light.tuin_grondspots
         - entity: light.buitenkeuken
         - entity: light.terrasoverkapping
-        - entity: light.xmas_tree
-        - entity: light.kerstverlichting_buiten
+        # - entity: light.xmas_tree
+        # - entity: light.kerstverlichting_buiten

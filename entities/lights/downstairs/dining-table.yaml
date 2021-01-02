@@ -4,3 +4,4 @@ name: Eettafel
 entities:
   - light.eettafel_1
   - light.eettafel_2
+  - light.eettafel_3
