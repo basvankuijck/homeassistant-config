@@ -1,0 +1,14 @@
+---
+# An individual script, because the TOON thermostat has the tendency
+# to become unavailable.
+set_thermostat_temperature:
+  alias: Thermostaat temperatuur zetten
+  fields:
+    temperature:
+      description: 'The temperature'
+      example: 'The tempareture was set'
+  sequence:
+    - service: climate.set_temperature
+      entity_id: climate.thermostat
+      data:
+        temperature: "{{ temperature }}"
