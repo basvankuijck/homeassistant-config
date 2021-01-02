@@ -1,8 +1,8 @@
 turn_on_scene_sleep:
   alias: "Scene 'Slapen'"
   sequence:
-    - service: climate.set_temperature
-      entity_id: climate.thermostat
+    - service: script.turn_on
+      entity_id: script.set_thermostat_temperature
       data:
         temperature: 15
     - service: input_select.select_option
