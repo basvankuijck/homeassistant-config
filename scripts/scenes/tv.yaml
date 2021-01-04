@@ -2,10 +2,11 @@
 turn_on_scene_tv:
   alias: "Scene 'TV Kijken'"
   sequence:
-    - service: script.set_thermostat_temperature
-      entity_id: 
+    - service: script.turn_on
+      entity_id: script.set_thermostat_temperature
       data:
-        temperature: "{{ states('input_number.default_temperature') | float(1) }}"
+        variables:
+          temperature: "{{ states('input_number.default_temperature') | float(1) }}"
     - service: input_select.select_option
       entity_id: input_select.scene
       data:

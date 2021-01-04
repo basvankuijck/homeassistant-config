@@ -6,7 +6,6 @@ set_thermostat_temperature:
   fields:
     temperature:
       description: 'The temperature'
-      example: 'The tempareture was set'
   sequence:
     - service: climate.set_temperature
       entity_id: climate.thermostat

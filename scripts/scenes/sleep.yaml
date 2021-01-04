@@ -4,7 +4,8 @@ turn_on_scene_sleep:
     - service: script.turn_on
       entity_id: script.set_thermostat_temperature
       data:
-        temperature: 15
+        variables:
+          temperature: 15
     - service: input_select.select_option
       entity_id: input_select.scene
       data:

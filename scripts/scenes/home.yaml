@@ -2,10 +2,11 @@
 turn_on_scene_thuis:
   alias: "Scene 'Thuis'"
   sequence:
-    - service: script.turn_on
-      entity_id: script.set_thermostat_temperature
+    - service: climate.set_temperature
+      entity_id: climate.thermostat
       data:
-        temperature: "{{ states('input_number.default_temperature') | float(1) }}"
+        variables:
+          temperature: "{{ states('input_number.default_temperature') | float(1) }}"
     - service: input_select.select_option
       entity_id: input_select.scene
       data:
