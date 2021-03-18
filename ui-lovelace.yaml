@@ -11,8 +11,8 @@ custom_header:
 views:
   - !include lovelace/views/floorplan.yaml
   - !include lovelace/views/home.yaml
-  - !include lovelace/views/weather.yaml
-  - !include lovelace/views/music.yaml
   - !include lovelace/views/cameras.yaml
   - !include lovelace/views/statistics.yaml
+  - !include lovelace/views/weather.yaml
+  - !include lovelace/views/music.yaml
   - !include lovelace/views/settings.yaml

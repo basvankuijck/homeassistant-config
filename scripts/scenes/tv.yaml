@@ -26,11 +26,8 @@ turn_on_scene_tv:
         seconds: 1
     - service: light.turn_off
       entity_id: light.bureau
-    - service: light.turn_on
+    - service: light.turn_off
       entity_id: light.eettafel
-      data_template:
-        brightness: "{{ ((states('input_number.input_number.default_brightness_dining_table') | float) * 2.55) | round(0) | int }}"
-        color_temp: 415
     - service: light.turn_on
       entity_id: light.erker
       data:

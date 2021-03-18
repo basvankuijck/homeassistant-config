@@ -2,8 +2,8 @@
 turn_on_scene_thuis:
   alias: "Scene 'Thuis'"
   sequence:
-    - service: climate.set_temperature
-      entity_id: climate.thermostat
+    - service: script.turn_on
+      entity_id: script.set_thermostat_temperature
       data:
         variables:
           temperature: "{{ states('input_number.default_temperature') | float(1) }}"
@@ -29,16 +29,16 @@ turn_on_scene_thuis:
     - service: light.turn_on
       entity_id: light.eettafel
       data_template:
-        brightness: "{{ ((states('input_number.input_number.default_brightness_dining_table') | float) * 2.55) | round(0) | int }}"
+        brightness_pct: "{{ (states('input_number.default_brightness_dining_table') | float) | round(0) | int }}"
         color_temp: 415
     - service: light.turn_on
       entity_id: light.erker
       data:
-        brightness_pct: 50
+        brightness_pct: "{{ (states('input_number.default_brightness_bay_window') | float) | round(0) | int }}"
     - service: light.turn_on
       entity_id: light.leeslamp_bank
       data:
-        brightness_pct: "{{ states('input_number.default_brightness_bay_window') | int }}"
+        brightness_pct: "{{ (states('input_number.default_brightness_bay_window') | float) | round(0) | int }}"
     - service: light.turn_on
       entity_id: light.keuken
     - service: light.turn_on
