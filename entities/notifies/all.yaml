@@ -2,5 +2,5 @@
 name: all
 platform: group
 services:
-  - service: mobile_app_iphone_x_bas
+  - service: mobile_app_iphone_12_pro_bas
   - service: ios_daan_iphone_x
