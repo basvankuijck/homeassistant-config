@@ -1,0 +1,123 @@
+2021-10-03 19:02:09 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-03 19:02:09 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration sonoff which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-03 19:03:12 WARNING (MainThread) [homeassistant.config] Key whitelist_external_dirs has been replaced with allowlist_external_dirs. Please update your config
+2021-10-03 19:03:14 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option is deprecated, please remove it from your configuration
+2021-10-03 19:03:29 ERROR (MainThread) [homeassistant.setup] Error during setup of component google
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/setup.py", line 255, in _async_setup_component
+    result = await task
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/google/__init__.py", line 248, in setup
+    do_setup(hass, config, conf)
+  File "/usr/src/homeassistant/homeassistant/components/google/__init__.py", line 361, in do_setup
+    hass.data[DATA_INDEX] = load_config(hass.config.path(YAML_DEVICES))
+  File "/usr/src/homeassistant/homeassistant/components/google/__init__.py", line 420, in load_config
+    data = yaml.safe_load(file)
+  File "/usr/local/lib/python3.9/site-packages/yaml/__init__.py", line 162, in safe_load
+    return load(stream, SafeLoader)
+  File "/usr/local/lib/python3.9/site-packages/yaml/__init__.py", line 114, in load
+    return loader.get_single_data()
+  File "/usr/local/lib/python3.9/site-packages/yaml/constructor.py", line 51, in get_single_data
+    return self.construct_document(node)
+  File "/usr/local/lib/python3.9/site-packages/yaml/constructor.py", line 60, in construct_document
+    for dummy in generator:
+  File "/usr/local/lib/python3.9/site-packages/yaml/constructor.py", line 413, in construct_yaml_map
+    value = self.construct_mapping(node)
+  File "/usr/local/lib/python3.9/site-packages/yaml/constructor.py", line 218, in construct_mapping
+    return super().construct_mapping(node, deep=deep)
+  File "/usr/local/lib/python3.9/site-packages/yaml/constructor.py", line 143, in construct_mapping
+    value = self.construct_object(value_node, deep=deep)
+  File "/usr/local/lib/python3.9/site-packages/yaml/constructor.py", line 100, in construct_object
+    data = constructor(self, node)
+  File "/usr/local/lib/python3.9/site-packages/yaml/constructor.py", line 427, in construct_undefined
+    raise ConstructorError(None, None,
+yaml.constructor.ConstructorError: could not determine a constructor for the tag '!secret'
+  in "/config/google_calendars.yaml", line 2, column 11
+2021-10-03 19:03:29 ERROR (MainThread) [homeassistant.components.weather] The buienradar platform for the weather integration does not support platform setup. Please remove it from your config.
+2021-10-03 19:03:30 WARNING (MainThread) [homeassistant.components.binary_sensor] Setup of binary_sensor platform hassio is taking over 10 seconds.
+2021-10-03 19:03:30 WARNING (MainThread) [homeassistant.setup] Setup of input_number is taking over 10 seconds.
+2021-10-03 19:03:30 WARNING (MainThread) [homeassistant.setup] Setup of tag is taking over 10 seconds.
+2021-10-03 19:03:31 WARNING (MainThread) [homeassistant.setup] Setup of group is taking over 10 seconds.
+2021-10-03 19:03:31 WARNING (MainThread) [homeassistant.setup] Setup of counter is taking over 10 seconds.
+2021-10-03 19:03:31 WARNING (MainThread) [homeassistant.setup] Setup of input_datetime is taking over 10 seconds.
+2021-10-03 19:03:31 WARNING (MainThread) [homeassistant.setup] Setup of input_select is taking over 10 seconds.
+2021-10-03 19:03:31 WARNING (MainThread) [homeassistant.setup] Setup of timer is taking over 10 seconds.
+2021-10-03 19:03:32 WARNING (MainThread) [homeassistant.components.template.sensor] The 'entity_id' option near /config/integrations/../entities/sensors/system/disk_free.yaml:4 is deprecated, please remove it from your configuration
+2021-10-03 19:03:33 ERROR (MainThread) [homeassistant.components.camera] The buienradar platform for the camera integration does not support platform setup. Please remove it from your config.
+2021-10-03 19:03:33 INFO (MainThread) [homeassistant.components.camera] Setting up camera.generic
+2021-10-03 19:03:33 INFO (MainThread) [homeassistant.components.camera] Setting up camera.local_file
+2021-10-03 19:03:33 INFO (MainThread) [homeassistant.components.camera] Setting up camera.generic
+2021-10-03 19:03:33 INFO (MainThread) [homeassistant.components.camera] Setting up camera.buienradar
+2021-10-03 19:03:33 WARNING (MainThread) [homeassistant.components.template.sensor] The 'entity_id' option near /config/integrations/../entities/sensors/restful/garbage-template-sensor.yaml:4 is deprecated, please remove it from your configuration
+2021-10-03 19:03:34 WARNING (MainThread) [homeassistant.components.template.sensor] The 'entity_id' option near /config/integrations/../entities/sensors/restful/garbage-template-sensor.yaml:14 is deprecated, please remove it from your configuration
+2021-10-03 19:03:34 WARNING (MainThread) [homeassistant.components.template.sensor] The 'entity_id' option near /config/integrations/../entities/sensors/restful/garbage-template-sensor.yaml:24 is deprecated, please remove it from your configuration
+2021-10-03 19:03:39 DEBUG (MainThread) [homeassistant.components.camera] Not adding entity Buienradar because it's disabled
+2021-10-03 19:03:39 WARNING (MainThread) [homeassistant.setup] Setup of zone is taking over 10 seconds.
+2021-10-03 19:03:46 WARNING (MainThread) [homeassistant.components.binary_sensor] Setup of binary_sensor platform mqtt is taking over 10 seconds.
+2021-10-03 19:03:46 WARNING (MainThread) [homeassistant.components.media_player] Setup of media_player platform ps4 is taking over 10 seconds.
+2021-10-03 19:03:46 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform command_line is taking over 10 seconds.
+2021-10-03 19:03:46 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform mqtt is taking over 10 seconds.
+2021-10-03 19:03:47 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
+2021-10-03 19:03:49 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform rest is taking over 10 seconds.
+2021-10-03 19:03:50 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for wemosd1 (192.168.0.177): Error connecting to ('192.168.0.177', 6053): [Errno 113] Connect call failed ('192.168.0.177', 6053)
+2021-10-03 19:04:05 INFO (MainThread) [homeassistant.components.camera] Setting up camera.onvif
+2021-10-03 19:04:05 INFO (MainThread) [homeassistant.components.camera] Setting up camera.onvif
+2021-10-03 19:04:05 DEBUG (MainThread) [homeassistant.components.camera] Not adding entity Carport - SecondStreamProfile" because it's disabled
+2021-10-03 19:04:06 WARNING (MainThread) [homeassistant.components.homekit] The bridge Home Assistant Bridge has entity camera.woonkamer. For best performance, and to prevent unexpected unavailability, create and pair a separate HomeKit instance in accessory mode for this entity
+2021-10-03 19:04:06 WARNING (MainThread) [homeassistant.components.homekit] The bridge Home Assistant Bridge has entity camera.carport. For best performance, and to prevent unexpected unavailability, create and pair a separate HomeKit instance in accessory mode for this entity
+2021-10-03 19:04:06 WARNING (MainThread) [homeassistant.components.homekit] The bridge Home Assistant Bridge has entity camera.carport_movement. For best performance, and to prevent unexpected unavailability, create and pair a separate HomeKit instance in accessory mode for this entity
+2021-10-03 19:04:07 WARNING (MainThread) [homeassistant.components.homekit] The bridge Home Assistant Bridge has entity camera.carport_mainstreamprofile. For best performance, and to prevent unexpected unavailability, create and pair a separate HomeKit instance in accessory mode for this entity
+2021-10-03 19:04:07 WARNING (MainThread) [homeassistant.components.homekit] The bridge Home Assistant Bridge has entity camera.living_profile_0. For best performance, and to prevent unexpected unavailability, create and pair a separate HomeKit instance in accessory mode for this entity
+2021-10-03 19:04:07 ERROR (MainThread) [homeassistant.components.homekit.util] media_player.bass_imac does not support any media_player features
+2021-10-03 19:04:07 WARNING (MainThread) [homeassistant.components.homekit] The bridge Home Assistant Bridge has entity camera.buienradar_loop. For best performance, and to prevent unexpected unavailability, create and pair a separate HomeKit instance in accessory mode for this entity
+2021-10-03 19:04:13 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/telegram_bot/polling.py", line 23, in _start_bot
+    pol.start_polling()
+  File "/usr/src/homeassistant/homeassistant/components/telegram_bot/polling.py", line 91, in start_polling
+    self.updater.start_polling()
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/updater.py", line 285, in start_polling
+    self._init_thread(self.dispatcher.start, "dispatcher", ready=dispatcher_ready)
+  File "/usr/local/lib/python3.9/site-packages/telegram/ext/updater.py", line 225, in _init_thread
+    name=f"Bot:{self.bot.id}:{name}",
+  File "/usr/local/lib/python3.9/site-packages/telegram/bot.py", line 117, in decorator
+    self.get_me()
+  File "/usr/local/lib/python3.9/site-packages/decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "/usr/local/lib/python3.9/site-packages/telegram/bot.py", line 135, in decorator
+    result = func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/telegram/bot.py", line 392, in get_me
+    result = self._post('getMe', timeout=timeout, api_kwargs=api_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/telegram/bot.py", line 245, in _post
+    return self.request.post(f'{self.base_url}/{endpoint}', data=data, timeout=timeout)
+  File "/usr/local/lib/python3.9/site-packages/telegram/utils/request.py", line 349, in post
+    result = self._request_wrapper(
+  File "/usr/local/lib/python3.9/site-packages/telegram/utils/request.py", line 270, in _request_wrapper
+    raise Unauthorized(message)
+telegram.error.Unauthorized: Unauthorized
+2021-10-03 19:04:13 ERROR (MainThread) [homeassistant.components.toon.coordinator] Error during webhook registration - (400, {'code': 400, 'message': 'Bad Request', 'description': 'JSON decoding error: Cannot deserialize value of type `nl.quby.webhook.domain.model.WebHookAction` from String "GasUsage": not one of the values accepted for Enum class: [BoilerErrorInfo, PowerUsage, SmokeDetector, Thermostat, SmartPlug]'})
+2021-10-03 19:04:15 WARNING (MainThread) [custom_components.hacs] You have cbulock/lovelace-battery-entity installed with HACS this repository has been removed, please consider removing it. Removal reason (remove)
+2021-10-03 19:04:15 WARNING (MainThread) [custom_components.hacs] You have maykar/custom-header installed with HACS this repository has been removed, please consider removing it. Removal reason (remove)
+2021-10-03 19:04:15 ERROR (MainThread) [custom_components.hacs] cbulock/lovelace-battery-entity - Repository is in the blacklist.
+2021-10-03 19:04:15 WARNING (MainThread) [custom_components.hacs] maykar/custom-header - Repository is archived.
+2021-10-03 19:04:19 ERROR (MainThread) [homeassistant.components.rest_command] Client error http://192.168.0.176:8080/IlRyMSSq8ktRCHz4DFPladfeRY9poZ/monitor/O4hT4f7pvD/carport/start
+2021-10-03 19:04:22 ERROR (MainThread) [homeassistant.components.rest_command] Client error http://192.168.0.176:8080/IlRyMSSq8ktRCHz4DFPladfeRY9poZ/monitor/O4hT4f7pvD/living/start
+2021-10-03 19:04:35 ERROR (MainThread) [homeassistant.components.toon.helpers] Invalid response from API: (502, {'code': 502, 'message': 'Failed sending data to display. Server error'})
+2021-10-03 19:06:54 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities automation.occupancy_simulator
+2021-10-03 19:06:54 WARNING (SyncWorker_3) [pychromecast.controllers] STOP command requested but no session is active.
+2021-10-03 19:06:57 ERROR (MainThread) [homeassistant.components.toon.helpers] Invalid response from API: (502, {'code': 502, 'message': 'Failed sending data to display. Server error'})
+2021-10-03 19:06:58 ERROR (MainThread) [homeassistant.components.rest_command] Client error http://192.168.0.176:8080/IlRyMSSq8ktRCHz4DFPladfeRY9poZ/monitor/O4hT4f7pvD/carport/start
+2021-10-03 19:07:01 ERROR (MainThread) [homeassistant.components.rest_command] Client error http://192.168.0.176:8080/IlRyMSSq8ktRCHz4DFPladfeRY9poZ/monitor/O4hT4f7pvD/living/start
+2021-10-03 19:13:46 WARNING (MainThread) [homeassistant.components.http] The 'base_url' option is deprecated, please remove it from your configuration
+2021-10-03 19:13:46 WARNING (MainThread) [homeassistant.components.template.sensor] The 'entity_id' option near /config/integrations/../entities/sensors/system/disk_free.yaml:4 is deprecated, please remove it from your configuration
+2021-10-03 19:13:46 WARNING (MainThread) [homeassistant.components.template.sensor] The 'entity_id' option near /config/integrations/../entities/sensors/restful/garbage-template-sensor.yaml:4 is deprecated, please remove it from your configuration
+2021-10-03 19:13:46 WARNING (MainThread) [homeassistant.components.template.sensor] The 'entity_id' option near /config/integrations/../entities/sensors/restful/garbage-template-sensor.yaml:14 is deprecated, please remove it from your configuration
+2021-10-03 19:13:46 WARNING (MainThread) [homeassistant.components.template.sensor] The 'entity_id' option near /config/integrations/../entities/sensors/restful/garbage-template-sensor.yaml:24 is deprecated, please remove it from your configuration
+2021-10-03 19:13:47 ERROR (MainThread) [homeassistant.components.automation.update_google_home_volume] Update Google Home volume: Error executing script. Error for call_service at pos 1: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'volume_level'
+2021-10-03 19:13:47 ERROR (MainThread) [homeassistant.components.automation.update_google_home_volume] Error while executing automation automation.update_google_home_volume: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'volume_level'
+2021-10-03 19:13:47 ERROR (MainThread) [homeassistant.components.automation.update_google_home_volume] Update Google Home volume: Error executing script. Error for call_service at pos 1: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'volume_level'
+2021-10-03 19:13:47 ERROR (MainThread) [homeassistant.components.automation.update_google_home_volume] Error while executing automation automation.update_google_home_volume: Error rendering data template: UndefinedError: 'mappingproxy object' has no attribute 'volume_level'
+2021-10-03 19:13:48 ERROR (MainThread) [homeassistant.components.hassio.handler] Client error on /homeassistant/restart request Server disconnected

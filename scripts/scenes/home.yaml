@@ -51,3 +51,19 @@ turn_on_scene_thuis:
       entity_id: alarm_control_panel.ha_alarm
     - service: script.turn_on
       entity_id: script.camera_record_off
+    - delay:
+        seconds: 1
+    - service: light.turn_off
+      entity_id: light.erker
+    - service: light.turn_off
+      entity_id: light.leeslamp_bank
+    - delay:
+        seconds: 1
+    - service: light.turn_on
+      entity_id: light.erker
+      data:
+        brightness_pct: "{{ (states('input_number.default_brightness_bay_window') | float) | round(0) | int }}"
+    - service: light.turn_on
+      entity_id: light.leeslamp_bank
+      data:
+        brightness_pct: "{{ (states('input_number.default_brightness_bay_window') | float) | round(0) | int }}"

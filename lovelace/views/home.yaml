@@ -49,6 +49,7 @@ cards:
         - entity: light.speeltafel
         - entity: light.keukenkast
         - entity: light.eettafel
+        - entity: light.voordeur
         - entity: light.tuin_grondspots
         - entity: light.buitenkeuken
         - entity: light.terrasoverkapping

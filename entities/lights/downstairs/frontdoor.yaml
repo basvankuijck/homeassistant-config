@@ -1,0 +1,4 @@
+---
+platform: switch
+name: Voordeur
+entity_id: switch.frontdoor_light
