@@ -8,15 +8,12 @@ trigger:
   event: sunrise
   offset: "+00:30:00"
   platform: sun
-  
-condition:
-  condition: and
-  conditions:
-    - condition: state
-      entity_id: light.tuinverlichting
-      state: 'on'
 
 action:
+  - service: light.turn_off
+    data:
+      entity_id: light.voordeur
+
   - service: light.turn_off
     data:
       entity_id: light.tuinverlichting
