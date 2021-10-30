@@ -68,7 +68,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **Conbee II** | **1x** | [Phoscon Conbee II](https://www.phoscon.de/en/conbee2) | <img src="docs/assets/conbee2.jpg" height="50px" /> |€ 40|
 | **Xiaomi Motion Sensor** | **1x** | [Xiaomi Aqara motion sensor](https://aliexpress.com/item/32999497769.html?spm=a2g0s.9042311.0.0.48284c4dyCxoo5) | <img src="docs/assets/xiaomi-motion.jp2" height="100px" /> |€ 12|
 | **Xiaomi Door Sensor** | **1x** | [Xiaomi Aqara Door sensor](https://aliexpress.com/item/33003371330.html?spm=a2g0s.9042311.0.0.48284c4dyCxoo5) | <img src="docs/assets/xiaomi-door.jpg" height="100px" /> |€ 11|
-| **TRÅDFRI Smart Plug** | **1x** | [IKEA TRÅDFRI Smart Plug](https://www.ikea.com/nl/nl/p/tradfri-draadloos-plug-in-stopcontact-90356166/) | <img src="docs/assets/tradfi-plug.jp2" height="100px" /> |€ 10|
+| **TRÅDFRI Smart Plug** | **2x** | [IKEA TRÅDFRI Smart Plug](https://www.ikea.com/nl/nl/p/tradfri-draadloos-plug-in-stopcontact-90356166/) | <img src="docs/assets/tradfi-plug.jp2" height="100px" /> |€ 10|
 | **TRÅDFRI Light Bulb** | **1x** | [IKEA TRÅDFRI Bulb E27 opal 1000lm](https://www.ikea.com/nl/nl/p/tradfri-led-e27-1000-lumen-draadloos-dimbaar-wit-spectrum-opaalwit-60408483/) | <img src="docs/assets/ikea-bulb.JPG" height="100px" /> |€ 18|
 | **TRÅDFRI LED Spot** | **5x** | [IKEA TRÅDFRI GU10 400lm](https://www.ikea.com/nl/nl/p/tradfri-led-lamp-gu10-400-lumen-draadloos-dimbaar-warm-wit-60420041/) | <img src="docs/assets/ikea-gu10.jpg" height="100px" /> |€ 30|
 | **TRÅDFRI Switch Rocker** | **1x** | [IKEA TRÅDFRI Wireless Rocker](https://www.ikea.com/nl/nl/p/tradfri-draadloze-dimmer-wit-70408595/) | <img src="docs/assets/ikea-tradfri-rocker.jpg" height="100px" /> |€ 7|
@@ -87,6 +87,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | -------- |:-----------:|:---:|---:|:---:|
 | **iPad Air**<br>*(Wall mounted dashboard)* | **1x** | [Apple iPad Air](https://www.apple.com/nl/ipad-air/) | <img src="docs/assets/ipad-air.jpg" height="100px" /> |€ 300|
 | **Mac Mini**<br>*(Used as a DSR)* | **1x** | [Apple Mac Mini](https://www.apple.com/mac-mini/) | <img src="docs/assets/mac-mini.jpg" height="50px" /> |€ 700|
+| **Ring Doorbell** | **1x** | [Ring Doorbell Pro](https:///ring.com/products/video-doorbell-pro-with-plug-in-adapter) | <img src="https://cdn.shopify.com/s/files/1/0309/4288/8072/products/2.RingVideoDoorbellPro_1024x1024_2x_927264d5-2b77-4d83-95e5-ece57f853771_2000x2000.png?v=1602761414" height="100px" /> |€ 179|
 
 ### AV
 
@@ -97,7 +98,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **Google Home** | **1x** | [Google Home Mini](https://store.google.com/product/google_home_mini) | <img src="docs/assets/google-home-mini.jpg" height="100px" /> |€ 20|
 
 ## Total cost
-(So far) € 1.660,- (includes removed / replaced stuff)
+(So far) € 1.849,- (includes removed / replaced stuff)
 
 ## Wishlist / To do
 

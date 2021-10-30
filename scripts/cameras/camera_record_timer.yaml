@@ -4,3 +4,4 @@ camera_record_timer:
   sequence:
       - service: rest_command.camera_record_carport_timer
       - service: rest_command.camera_record_living_timer
+      - service: rest_command.camera_record_doorbell_timer

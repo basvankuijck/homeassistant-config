@@ -11,7 +11,7 @@ cards:
         # - entity: automation.occupancy_simulator
         - entity: automation.tuinlicht_zonsondergang
         - entity: automation.tuinlicht_zonsopgang
-        - entity: automation.thermostaat_aan_om_06_45
+        - entity: automation.thermostaat_automatisch_aan
         - entity: automation.motion_detector_keuken
         - entity: automation.motion_detector_carport
 
@@ -27,4 +27,3 @@ cards:
         name: Helderheid erker licht
       - entity: input_number.default_temperature
         name: Temperatuur thuis
-      

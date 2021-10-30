@@ -1,0 +1,47 @@
+---
+# Automation triggered by pressing the doorbell
+#
+# Trigger:
+# - The `binary_sensor.doorbell` sensor triggers a motion
+#
+# Actions:
+# - Store current google home volume to input_number
+# - Set google home volume to 100
+# - Play audio file to google_home
+# - Start doorbell camera and carport recording
+# - Wait x seconds
+# - Set google home volume back to the original value
+
+alias: Deurbel ingedrukt
+initial_state: true
+trigger:
+  platform: state
+  entity_id: binary_sensor.voordeur_ding
+  to: 'on'
+
+action:
+  - service: input_number.set_value
+    data:
+      value: "{{ states('input_number.google_home_volume') | float }}"
+    target:
+      entity_id: input_number.temp_google_home_volume
+  - service: media_player.volume_set
+    target:
+      entity_id: media_player.huiskamer
+    data:
+      volume_level: 1
+  - service: media_player.play_media
+    target:
+      entity_id: media_player.huiskamer
+    data:
+      media_content_id: !secret doorbell_chime_audio_url
+      media_content_type: music
+  - service: script.turn_on
+    entity_id: script.camera_record_doorbell_timer
+  - delay:
+      seconds: 7
+  - service: media_player.volume_set
+    target:
+      entity_id: media_player.huiskamer
+    data:
+      volume_level: "{{ states('input_number.temp_google_home_volume') | multiply(0.01) | float(2) }}"

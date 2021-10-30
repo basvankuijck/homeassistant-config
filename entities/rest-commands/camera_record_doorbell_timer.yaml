@@ -1,0 +1,3 @@
+---
+camera_record_doorbell_timer:
+  url: !secret camera_record_endpoint_doorbell_timer

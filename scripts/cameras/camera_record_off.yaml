@@ -4,3 +4,4 @@ camera_record_off:
   sequence:
       - service: rest_command.camera_record_carport_off
       - service: rest_command.camera_record_living_off
+      - service: rest_command.camera_record_doorbell_off

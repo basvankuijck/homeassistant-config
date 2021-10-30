@@ -31,6 +31,11 @@ cards:
     show_state: false
 
   - type: picture-entity
+    name: Deurbel
+    entity: camera.deurbel
+    show_state: false
+
+  - type: picture-entity
     name: Carport motion
     entity: camera.carport_movement
     camera_image: camera.carport_movement

@@ -1,0 +1,6 @@
+---
+platform: generic
+name: Deurbel
+still_image_url: !secret camera_doorbell_jpeg
+stream_source: !secret camera_doorbell_stream
+verify_ssl: false

@@ -1,0 +1,11 @@
+---
+camera_record_doorbell_timer:
+  alias: Record doorbell trigger camera timer
+  sequence:
+      - condition: or
+        conditions:
+        - condition: state
+          entity_id: alarm_control_panel.ha_alarm
+          state: armed_home
+      - service: rest_command.camera_record_carport_timer
+      - service: rest_command.camera_record_doorbell_timer

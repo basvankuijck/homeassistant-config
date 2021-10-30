@@ -1,12 +1,12 @@
 ---
-# Turn on the thermostat and set it to 21 degees at 06:45
-# This way the house will be warmed up around 07:00
+# Turn on the thermostat and set it to 21 degees at 07:00
+# This way the house will be warmed up around 07:15
 
-alias: "Thermostaat aan om 06:45"
+alias: "Thermostaat automatisch aan"
 initial_state: false
 trigger:
   platform: time
-  at: "06:45:00"
+  at: "07:00:00"
 condition:
   condition: and
   conditions:
@@ -18,8 +18,3 @@ action:
     data:
       entity_id: climate.thermostat
       temperature: "{{ states('input_number.default_temperature') | float(1) }}"
-  - service: script.turn_on
-    entity_id: script.log_notify
-    data:
-      variables:
-        message: "Het is 06:45, de thermostaat wordt op 21°C gezet"
