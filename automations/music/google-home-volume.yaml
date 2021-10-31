@@ -8,4 +8,4 @@ action:
   service: media_player.volume_set
   data_template:
     entity_id: media_player.huiskamer
-    volume_level: "{{ trigger.to_state.state | multiply(0.01) | float(2) }}"
+    volume_level: "{{ trigger.to_state.state | float(2) }}"

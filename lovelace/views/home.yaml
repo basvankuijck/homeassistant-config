@@ -2,13 +2,19 @@
 title: Home
 icon: mdi:home-assistant
 cards:
-  - type: entities
-    title: Afval
-    show_header_toggle: false
-    entities:
-        - entity: sensor.garbage_paper
-        - entity: sensor.garbage_other
-        - entity: sensor.garbage_organic
+  - type: 'custom:auto-entities'
+    card:
+      type: glance
+    filter:
+      include:
+        - entity_id: sensor.afvalwijzer_gft
+        - entity_id: sensor.afvalwijzer_papier
+        - entity_id: sensor.afvalwijzer_pmd
+        - entity_id: sensor.afvalwijzer_restafval
+    sort:
+      attribute: days_until_collection_date
+      method: attribute
+      numeric: true
 
   - type: entities
     title: Sensoren
@@ -19,6 +25,8 @@ cards:
       - entity: binary_sensor.kitchen
         secondary_info: last-changed
       - entity: binary_sensor.frontdoor
+        secondary_info: last-changed
+      - entity: binary_sensor.voordeur_motion
         secondary_info: last-changed
 
   - type: entities

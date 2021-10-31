@@ -8,4 +8,4 @@ action:
   service: input_number.set_value
   data_template:
     entity_id: input_number.google_home_volume
-    value: "{{ trigger.to_state.attributes.volume_level | multiply(100) | int }}"
+    value: "{{ trigger.to_state.attributes.volume_level | float(2) }}"

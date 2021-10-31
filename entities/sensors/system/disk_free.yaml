@@ -4,5 +4,4 @@ sensors:
   disk_free:
     unit_of_measurement: 'GiB'
     friendly_name: "Disk Free"
-    entity_id: sensor.disk_use
     value_template: "{{ 64.0 - (states('sensor.disk_use') | float) | round(1) }}"

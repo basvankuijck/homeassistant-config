@@ -1,24 +1,36 @@
 automation.cleanup: {}
 automation.motion_detector_carport: {}
 light.bureau:
-    assumed_state: false
+  assumed_state: false
 light.keuken:
-    assumed_state: false
+  assumed_state: false
 light.leeslamp_bank:
-    assumed_state: false
+  assumed_state: false
 light.terrasoverkapping:
-    assumed_state: false
+  assumed_state: false
 light.tuin_grondspots:
-    assumed_state: false
+  assumed_state: false
 light.keukenkast:
-    assumed_state: false
+  assumed_state: false
 light.speeltafel:
-    assumed_state: false
+  assumed_state: false
 light.erker:
-    assumed_state: false
+  assumed_state: false
 light.xmas_tree:
-    assumed_state: false
+  assumed_state: false
 light.kerstverlichting_buiten:
-    assumed_state: false
+  assumed_state: false
 sensor.mac_mini_diskspace:
-    icon: mdi:harddisk
+  icon: mdi:harddisk
+sensor.afvalwijzer_gft:
+  friendly_name: GFT
+  icon: mdi:food-apple
+sensor.afvalwijzer_pmd:
+  friendly_name: Plastic
+  icon: mdi:bottle-soda-classic-outline
+sensor.afvalwijzer_restafval:
+  friendly_name: Restafval
+  icon: mdi:delete
+sensor.afvalwijzer_papier:
+  friendly_name: Papier
+  icon: mdi:book-multiple

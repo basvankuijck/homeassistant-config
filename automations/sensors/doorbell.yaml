@@ -22,7 +22,7 @@ trigger:
 action:
   - service: input_number.set_value
     data:
-      value: "{{ states('input_number.google_home_volume') | float }}"
+      value: "{{ states('input_number.google_home_volume') | float(2) }}"
     target:
       entity_id: input_number.temp_google_home_volume
   - service: media_player.volume_set
@@ -44,4 +44,4 @@ action:
     target:
       entity_id: media_player.huiskamer
     data:
-      volume_level: "{{ states('input_number.temp_google_home_volume') | multiply(0.01) | float(2) }}"
+      volume_level: "{{ states('input_number.temp_google_home_volume') | float(2) }}"

@@ -1,13 +1,13 @@
 ---
 title: Weer
 icon: mdi:weather-partly-cloudy
-cards:  
+cards:
   - type: weather-forecast
     title: Weer
     entity: weather.br_unknown_station
 
   - type: picture-entity
-    entity: camera.buienradar_loop
+    entity: camera.buienradar
     show_state: false
 
   - type: history-graph

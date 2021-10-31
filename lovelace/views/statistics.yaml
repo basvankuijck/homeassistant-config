@@ -106,8 +106,8 @@ cards:
         - entity_id: "sensor.*_battery_level"
           state: "<= 100"
           options:
-            type: 'custom:battery-entity'    
-    
+            type: 'custom:battery-entity'
+
   - type: custom:mini-graph-card
     name: Verkeer
     icon: mdi:traffic-light
@@ -145,6 +145,7 @@ cards:
       - light.speeltafel
       - light.tuin_grondspots
       - light.terrasoverkapping
+      - light.voordeur
 
   - type: history-graph
     title: 'Sensoren'
@@ -152,25 +153,3 @@ cards:
       - binary_sensor.frontdoor
       - binary_sensor.carport_sensor
       - binary_sensor.kitchen
-
-  - type: custom:mini-graph-card
-    name: Verbruik
-    hour24: true
-    decimals: 2
-    icon: mdi:currency-eur
-    align_icon: left
-    line_width: 3
-    hours_to_show: 168
-    smoothing: false
-    group_by: date
-    align_header: left
-    unit: "EUR"
-    entities:
-      - entity: sensor.energy_cost_today
-        aggregate_func: last
-        show_legend: true
-      - entity: sensor.gas_cost_today
-        aggregate_func: last
-        show_legend: true
-    show:
-      fill: false

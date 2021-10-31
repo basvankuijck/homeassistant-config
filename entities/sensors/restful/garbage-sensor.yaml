@@ -1,8 +1,0 @@
----
-platform: rest
-name: Afval
-json_attributes:
-  - paper
-  - other
-  - organic
-resource: !secret garbage_api_url
