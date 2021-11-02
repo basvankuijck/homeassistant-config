@@ -28,6 +28,8 @@ cards:
         secondary_info: last-changed
       - entity: binary_sensor.voordeur_motion
         secondary_info: last-changed
+      - entity: binary_sensor.voordeur_ding
+        secondary_info: last-changed
 
   - type: entities
     title: Scenes
