@@ -1,6 +1,6 @@
 ---
-play_skyradio:
-  alias: Speel Sky Radio
+play_stream:
+  alias: Speel Media stream
   sequence:
   - service: media_player.volume_set
     target:
@@ -11,4 +11,4 @@ play_skyradio:
     entity_id: script.stream_music
     data_template:
       variables:
-        stream: https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIOAAC.aac
+        stream: "{{ stream_url }}"

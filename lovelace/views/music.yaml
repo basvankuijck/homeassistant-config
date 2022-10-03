@@ -1,24 +1,61 @@
 title: Muziek
 icon: mdi:music
-visible:
-  - user: 72ce68b0c06d44b4b735d77b62318880
-  - user: 928f8da852104c3c8317e5b6b94a4562
 cards:
   - type: entities
     title: Control
     show_header_toggle: false
     entities:
-      - entity: input_number.google_home_volume
-      - entity: script.stop_stream_music
+      - entity: media_player.huiskamer
 
   - type: entities
     title: Radio zenders
     show_header_toggle: false
     entities:
-      - entity: script.play_radio538
-      - entity: script.play_radio_2
-      - entity: script.play_100procentnl
-      - entity: script.play_skyradio
+      - entity: script.play_stream
+        name: Speel Radio538
+        type: button
+        action_name: Luister
+        tap_action:
+          action: call-service
+          service: script.play_stream
+          service_data:
+                stream_url: http://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538.mp3
+      - entity: script.play_stream
+        name: Speel Radio 2
+        type: button
+        action_name: Luister
+        tap_action:
+          action: call-service
+          service: script.play_stream
+          service_data:
+            stream_url: http://icecast.omroep.nl/radio2-bb-mp3
+      - entity: script.play_stream
+        name: Speel 100% NL
+        type: button
+        action_name: Luister
+        tap_action:
+          action: call-service
+          service: script.play_stream
+          service_data:
+            stream_url: http://stream.100p.nl/100pctnl.mp3
+      - entity: script.play_stream
+        name: Speel Sky Radio
+        type: button
+        action_name: Luister
+        tap_action:
+          action: call-service
+          service: script.play_stream
+          service_data:
+            stream_url: https://playerservices.streamtheworld.com/api/livestream-redirect/SKYRADIOAAC.aac
+      - entity: script.play_stream
+        name: Speel Q-Music
+        type: button
+        action_name: Luister
+        tap_action:
+          action: call-service
+          service: script.play_stream
+          service_data:
+            stream_url: https://stream.qmusic.nl/qmusic/mp3
 
   - type: media-control
     entity: media_player.huiskamer

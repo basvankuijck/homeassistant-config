@@ -57,6 +57,7 @@ ip_bans.yaml
 /esphome/secrets.yaml
 /esphome/includes/secrets.yaml
 known_devices.yaml
+/google-service-account.json
 
 # Json files
 .sonoff.json
