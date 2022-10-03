@@ -11,7 +11,7 @@
 # - Send a notification
 
 alias: "Ramen en deuren open laten staan melding"
-initial_state: true
+initial_state: false
 trigger:
   - platform: state
     entity_id: alarm_control_panel.ha_alarm

@@ -34,3 +34,13 @@ sensor.afvalwijzer_restafval:
 sensor.afvalwijzer_papier:
   friendly_name: Papier
   icon: mdi:book-multiple
+script.stop_stream_music:
+  icon: mdi:stop
+script.play_radio538:
+  icon: mdi:music
+script.play_radio2:
+  icon: mdi:music
+script.play_skyradio:
+  icon: mdi:music
+script.play_100procentnl:
+  icon: mdi:music

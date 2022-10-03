@@ -1,0 +1,6 @@
+---
+stop_stream_music:
+  alias: Stop media player
+  sequence:
+  - service: media_player.media_stop
+    entity_id: media_player.huiskamer

@@ -94,3 +94,38 @@
     entity_id: light.speeltafel
     domain: light
   mode: single
+- id: '1636463200526'
+  alias: Afval push notificatie
+  description: ''
+  use_blueprint:
+    path: westenberg/garbage-reminder.yaml
+    input:
+      day_offset: '1'
+      reminder_title: Afval buiten zetten
+      reminder_message: 'Het volgende afval zal morgen opgehaald worden:'
+      garbage_sensor_1: sensor.afvalwijzer_gft
+      garbage_sensor_2: sensor.afvalwijzer_papier
+      garbage_sensor_3: sensor.afvalwijzer_pmd
+      garbage_sensor_4: sensor.afvalwijzer_restafval
+- id: '1636463240454'
+  alias: Garbage reminder
+  description: ''
+  use_blueprint:
+    path: westenberg/garbage-reminder.yaml
+    input:
+      day_offset: '1'
+      garbage_sensor_1: sensor.afvalwijzer_gft
+      garbage_sensor_2: sensor.afvalwijzer_pmd
+      garbage_sensor_3: sensor.afvalwijzer_papier
+      garbage_sensor_4: sensor.afvalwijzer_restafval
+- id: '1636463290243'
+  alias: Garbage reminder
+  description: ''
+  use_blueprint:
+    path: westenberg/garbage-reminder.yaml
+    input:
+      day_offset: '1'
+      garbage_sensor_1: sensor.afvalwijzer_gft
+      garbage_sensor_2: sensor.afvalwijzer_pmd
+      garbage_sensor_3: sensor.afvalwijzer_papier
+      garbage_sensor_4: sensor.afvalwijzer_restafval

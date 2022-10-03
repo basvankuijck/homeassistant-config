@@ -1,14 +1,15 @@
 title: Muziek
 icon: mdi:music
+visible:
+  - user: 72ce68b0c06d44b4b735d77b62318880
+  - user: 928f8da852104c3c8317e5b6b94a4562
 cards:
-  - type: media-control
-    entity: media_player.huiskamer
-
   - type: entities
-    title: Volume
+    title: Control
     show_header_toggle: false
     entities:
       - entity: input_number.google_home_volume
+      - entity: script.stop_stream_music
 
   - type: entities
     title: Radio zenders
@@ -18,3 +19,6 @@ cards:
       - entity: script.play_radio_2
       - entity: script.play_100procentnl
       - entity: script.play_skyradio
+
+  - type: media-control
+    entity: media_player.huiskamer

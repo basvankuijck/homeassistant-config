@@ -27,6 +27,9 @@ turn_on_scene_sleep:
       entity_id: light.terrasoverkapping
     - delay:
         seconds: 1
+    - service: switch.turn_off
+      data:
+        entity_id: switch.tv_accessoires
     - service: light.turn_off
       entity_id: light.bureau
     - service: light.turn_off

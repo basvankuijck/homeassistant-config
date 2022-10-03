@@ -5,3 +5,6 @@
 #
 google_assistant:
   project_id: !secret google_assistant_project_id
+  service_account: !include ../google-service-account.json
+  report_state: true
+  expose_by_default: true

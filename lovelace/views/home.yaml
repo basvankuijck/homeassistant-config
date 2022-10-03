@@ -1,6 +1,9 @@
 ---
 title: Home
 icon: mdi:home-assistant
+visible:
+  - user: 72ce68b0c06d44b4b735d77b62318880
+  - user: 928f8da852104c3c8317e5b6b94a4562
 cards:
   - type: 'custom:auto-entities'
     card:
@@ -65,3 +68,10 @@ cards:
         - entity: light.terrasoverkapping
         # - entity: light.xmas_tree
         # - entity: light.kerstverlichting_buiten
+
+  - type: entities
+    title: Switches
+    show_header_toggle: false
+    entities:
+      - entity: switch.tv_accessoires
+        secondary_info: last-changed

@@ -37,7 +37,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 
 | Device | Amount | More Info | Image | Cost |
 | -------- |:-----------:|:---:|---:|:---:|
-| **ACD-200** |  **1x** | [KlikAanKlikUit ACD-200](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/acd-200-stopcontact-dimmer-200w-multi-nederlandse-stekker.html) | <img src="docs/assets/kaku-acd200.jpg" height="100px" /> |€ 24|
+| **ACD-200** |  **2x** | [KlikAanKlikUit ACD-200](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/acd-200-stopcontact-dimmer-200w-multi-nederlandse-stekker.html) | <img src="docs/assets/kaku-acd200.jpg" height="100px" /> |€ 24|
 | **AWMR-300** | **1x** | [KlikAanKlikUit AWMR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/inbouw/awmr-300-mini-inbouw-schakelaar.html) | <img src="docs/assets/kaku-awmr300.jpg" height="100px" /> |€ 25|
 | **AGDR-300** | **1x** | [KlikAanKlikUit AGDR-300](https://www.klikaanklikuit.nl/nl/producten/ontvangers/stopcontact/agdr-300-stopcontactdimmer-buiten-300w.html) | <img src="docs/assets/kaku-agdr300.jpg" height="100px" /> |€ 25|
 
@@ -73,7 +73,7 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **TRÅDFRI LED Spot** | **5x** | [IKEA TRÅDFRI GU10 400lm](https://www.ikea.com/nl/nl/p/tradfri-led-lamp-gu10-400-lumen-draadloos-dimbaar-warm-wit-60420041/) | <img src="docs/assets/ikea-gu10.jpg" height="100px" /> |€ 30|
 | **TRÅDFRI Switch Rocker** | **1x** | [IKEA TRÅDFRI Wireless Rocker](https://www.ikea.com/nl/nl/p/tradfri-draadloze-dimmer-wit-70408595/) | <img src="docs/assets/ikea-tradfri-rocker.jpg" height="100px" /> |€ 7|
 | **TRÅDFRI LED Spectrum Spot** | **1x** | [IKEA TRÅDFRI GU10 White Spectrum 400lm](https://www.ikea.com/nl/nl/p/tradfri-led-lamp-gu10-400-lumen-draadloos-dimbaar-wit-spectrum-90408603/) | <img src="docs/assets/ikea-white-light-spectrum.jpg" height="100px" /> |€ 12|
-| **iCasa Filament bulb** | **5x** | [iCasa Zigbee Filament LED lamp | 125mm](https://www.bol.com/nl/p/zigbee-filament-led-lamp-125mm-instelbaar-2700k-tot-6500k-vervangt-60w-gloeilamp-grote-fitting-e27-compatible-met-philips-hue-ikea-home-smart/9200000117123523/?bltgh=htufFpaP--RUc61zlhJIfQ.1_5.11.ProductTitle) | <img src="docs/assets/icasa-0751889266291-20275146_200.jpg" height="100px" /> |€ 85 |
+| **iCasa Filament bulb** | **5x** | [iCasa Zigbee Filament LED lamp 125mm](https://www.bol.com/nl/p/zigbee-filament-led-lamp-125mm-instelbaar-2700k-tot-6500k-vervangt-60w-gloeilamp-grote-fitting-e27-compatible-met-philips-hue-ikea-home-smart/9200000117123523/?bltgh=htufFpaP--RUc61zlhJIfQ.1_5.11.ProductTitle) | <img src="docs/assets/icasa-0751889266291-20275146_200.jpg" height="100px" /> |€ 85 |
 
 ### Thermostat
 
@@ -88,17 +88,17 @@ A Raspberry PI 3B with a 32GB SD card in a case with extra heatsinks fans and a 
 | **iPad Air**<br>*(Wall mounted dashboard)* | **1x** | [Apple iPad Air](https://www.apple.com/nl/ipad-air/) | <img src="docs/assets/ipad-air.jpg" height="100px" /> |€ 300|
 | **Mac Mini**<br>*(Used as a DSR)* | **1x** | [Apple Mac Mini](https://www.apple.com/mac-mini/) | <img src="docs/assets/mac-mini.jpg" height="50px" /> |€ 700|
 | **Ring Doorbell** | **1x** | [Ring Doorbell Pro](https:///ring.com/products/video-doorbell-pro-with-plug-in-adapter) | <img src="https://cdn.shopify.com/s/files/1/0309/4288/8072/products/2.RingVideoDoorbellPro_1024x1024_2x_927264d5-2b77-4d83-95e5-ece57f853771_2000x2000.png?v=1602761414" height="100px" /> |€ 179|
+| **Ring Doorbell Chime** | **1x** | [Ring Chime](https://www.valcom.co.uk/product/ring-video-door-bell-chime-add-on-2/) | <img src="https://www.valcom.co.uk/wp-content/uploads/2017/11/chime-1-1024x1024px__48405-510x510.jpg" height="100px" /> |€ 35|
 
 ### AV
 
 | Device | Amount | More Info | Image | Cost |
 | :-------- |:-----------:|:---:|---:|:---:|
 | **Chromecast** | **2x** | [Google Chromecast V1](https://store.google.com/product/chromecast) | <img src="docs/assets/chromecast.jpg" height="100px" /> |€ 20|
-| **Apple TV** | **1x** | [AppleTV V1](https://www.apple.com/tv/) | <img src="docs/assets/appletv.jpg" height="100px" /> |€ 60|
 | **Google Home** | **1x** | [Google Home Mini](https://store.google.com/product/google_home_mini) | <img src="docs/assets/google-home-mini.jpg" height="100px" /> |€ 20|
 
 ## Total cost
-(So far) € 1.849,- (includes removed / replaced stuff)
+(So far) € 1.902,- (includes removed / replaced stuff)
 
 ## Wishlist / To do
 

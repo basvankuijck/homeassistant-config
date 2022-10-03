@@ -1,0 +1,7 @@
+---
+# The Input Boolean helper integration allows you to define boolean values that can be controlled via the user interface and can be used within conditions of an automation.
+# This can for example be used to disable or enable certain automations by using them in their conditions.
+#
+# https://www.home-assistant.io/integrations/input_boolean/
+#
+input_boolean: !include_dir_merge_named ../entities/inputs/booleans

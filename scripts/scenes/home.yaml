@@ -53,6 +53,9 @@ turn_on_scene_thuis:
       entity_id: script.camera_record_off
     - delay:
         seconds: 1
+    - service: switch.turn_on
+      data:
+        entity_id: switch.tv_accessoires
     - service: light.turn_off
       entity_id: light.erker
     - service: light.turn_off

@@ -1,6 +1,9 @@
 ---
 title: Instellingen
 icon: mdi:cog-outline
+visible:
+  - user: 72ce68b0c06d44b4b735d77b62318880
+  - user: 928f8da852104c3c8317e5b6b94a4562
 cards:
   - type: entities
     title: Automatisering
@@ -13,7 +16,7 @@ cards:
         - entity: automation.tuinlicht_zonsopgang
         - entity: automation.thermostaat_automatisch_aan
         - entity: automation.motion_detector_keuken
-        - entity: automation.motion_detector_carport
+        - entity: automation.deurbel_ingedrukt
 
   - type: entities
     title: Standaard waardes

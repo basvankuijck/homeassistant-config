@@ -2,6 +2,9 @@
 title: Camera
 icon: mdi:cctv
 panel: false
+visible:
+  - user: 72ce68b0c06d44b4b735d77b62318880
+  - user: 928f8da852104c3c8317e5b6b94a4562
 cards:
   - type: vertical-stack
     cards:
@@ -35,8 +38,8 @@ cards:
   #   entity: camera.deurbel
   #   show_state: false
 
-  - type: picture-entity
-    name: Carport motion
-    entity: camera.carport_movement
-    camera_image: camera.carport_movement
-    show_state: false
+  # - type: picture-entity
+  #   name: Carport motion
+  #   entity: camera.carport_movement
+  #   camera_image: camera.carport_movement
+  #   show_state: false

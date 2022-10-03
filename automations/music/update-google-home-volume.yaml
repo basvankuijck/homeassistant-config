@@ -6,6 +6,7 @@ trigger:
   entity_id: media_player.huiskamer
 action:
   service: input_number.set_value
-  data_template:
-    entity_id: input_number.google_home_volume
-    value: "{{ state_attr("media_player.huiskamer", "volume_level") | float(2) }}"
+  target:
+    entity_id: input_number.temp_google_home_volume
+  data:
+    value: "{{ trigger.to_state.attributes.volume_level | float(2) }}"

@@ -1,0 +1,3 @@
+force_kitchenlight_on:
+    name: Forced kitchen light on
+    initial: false

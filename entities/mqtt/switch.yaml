@@ -1,0 +1,5 @@
+---
+switch:
+  - unique_id: tv_acc
+    name: "TV accessoires"
+    command_topic: home-assistant/light/play_table/switch
