@@ -30,3 +30,5 @@ cards:
         name: Helderheid erker licht
       - entity: input_number.default_temperature
         name: Temperatuur thuis
+      - entity: input_number.default_volume_streaming
+        name: Volume streaming

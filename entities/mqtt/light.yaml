@@ -1,0 +1,32 @@
+light:
+  - unique_id: desk_light
+    optimistic: false
+    object_id: bureau
+    name: "Bureau"
+    command_topic: "home-assistant/light/desk/switch"
+    
+  - unique_id: xmas_tree
+    optimistic: true
+    object_id: xmas_tree
+    name: "Kerstboom"
+    command_topic: "home-assistant/light/living_room/switch"
+    
+  - unique_id: kitchen_light
+    optimistic: true
+    object_id: keuken
+    name: "Keuken"
+    command_topic: "home-assistant/light/kitchen/switch"
+    
+  - unique_id: patio
+    object_id: terrasoverkapping
+    name: "Terrasoverkapping"
+    command_topic: "home-assistant/light/terrace/switch"
+    brightness_command_topic: "home-assistant/light/terrace/dim"
+    brightness_scale: 15
+    optimistic: true
+    
+  - unique_id: xmas_outside
+    object_id: kerstverlichting_buiten
+    name: "Kerstverlichting buiten"
+    command_topic: "home-assistant/light/garden_trees/switch"
+    optimistic: true

@@ -1,0 +1,6 @@
+sensor:
+  - state_topic: "homeassistant/sensor/macminidiskspace"
+    name: "Mac Mini diskspace"
+    object_id: "mac_mini_diskspace"
+    unit_of_measurement: "GB"
+    value_template: "{{ value | multiply(0.000000001) | float | round(1) }}"

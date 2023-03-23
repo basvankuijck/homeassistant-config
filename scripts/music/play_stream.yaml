@@ -6,7 +6,7 @@ play_stream:
     target:
       entity_id: media_player.huiskamer
     data:
-      volume_level: 0.2
+      volume_level: "{{ (states('input_number.default_volume_streaming') | float / 100) }}"
   - service: script.turn_on
     entity_id: script.stream_music
     data_template:

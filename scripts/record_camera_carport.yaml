@@ -1,9 +1,0 @@
----
-record_camera_carport:
-  alias: Record camera carport
-  sequence:
-      - service: camera.record
-        data:
-          entity_id: camera.carport
-          duration: 30
-          filename: '/share/recordings/carport_{{ now().strftime("%Y%m%d-%H%M%S") }}.mp4'

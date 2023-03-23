@@ -16,7 +16,7 @@ alias: Deurbel ingedrukt
 initial_state: true
 trigger:
   platform: state
-  entity_id: binary_sensor.voordeur_ding
+  entity_id: binary_sensor.voordeur_ding_2
   to: 'on'
 
 action:

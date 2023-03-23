@@ -25,11 +25,6 @@ turn_on_scene_sleep:
         seconds: 1
     - service: light.turn_off
       entity_id: light.terrasoverkapping
-    - delay:
-        seconds: 1
-    - service: switch.turn_off
-      data:
-        entity_id: switch.tv_accessoires
     - service: light.turn_off
       entity_id: light.bureau
     - service: light.turn_off
@@ -56,3 +51,8 @@ turn_on_scene_sleep:
       entity_id: media_player.huiskamer
     - service: script.turn_on
       entity_id: script.camera_record_on
+    - delay:
+        seconds: 30
+    - service: switch.turn_off
+      data:
+        entity_id: switch.tv_accessoires

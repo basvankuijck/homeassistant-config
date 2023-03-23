@@ -154,5 +154,4 @@ cards:
     title: 'Sensoren'
     entities:
       - binary_sensor.frontdoor
-      - binary_sensor.carport_sensor
       - binary_sensor.kitchen

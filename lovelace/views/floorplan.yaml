@@ -11,19 +11,51 @@ cards:
           - person.bas_van_kuijck
           - person.danielle_van_steenhoven
 
-      - type: glance
+      - type: horizontal-stack
         title: Scenes
         show_header_toggle: false
         show_state: false
-        entities:
-            - entity: scene.thuis
-              icon: mdi:home-account
-            - entity: scene.weg
-              icon: mdi:location-exit
-            - entity: scene.tv_kijken
-              icon: mdi:television
-            - entity: scene.slapen
-              icon: mdi:sleep
+        cards:
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: scene.thuis
+            name: Thuis
+            icon: mdi:home-account
+            icon_height: 100px
+
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: scene.weg
+            name: Weg
+            icon: mdi:location-exit
+            icon_height: 100px
+
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: scene.tv_kijken
+            name: TV Kijken
+            icon: mdi:television
+            icon_height: 100px
+
+          - show_name: true
+            show_icon: true
+            type: button
+            tap_action:
+              action: toggle
+            entity: scene.slapen
+            name: Slapen
+            icon: mdi:sleep
+            icon_height: 100px
+
 
       - type: "custom:floorplan-card"
 
