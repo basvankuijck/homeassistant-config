@@ -66,6 +66,15 @@ cards:
         - entity: light.terrasoverkapping
         # - entity: light.xmas_tree
         # - entity: light.kerstverlichting_buiten
+  - type: entities
+    title: Oven
+    show_header_toggle: false
+    entities:
+      - entity: sensor.oven_oven_job_state
+      - entity: sensor.oven_oven_machine_state
+      - entity: sensor.oven_oven_set_point
+      - entity: sensor.oven_temperature_measurement
+      - entity: sensor.oven_oven_mode
 
   - type: entities
     title: Switches

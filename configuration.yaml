@@ -6,6 +6,7 @@ homeassistant:
   unit_system: metric
   temperature_unit: C
   time_zone: Europe/Amsterdam
+  country: NL
   customize: !include customize.yaml
   customize_glob: !include customize_glob.yaml
   allowlist_external_dirs: !include allowlist_external_dirs.yaml

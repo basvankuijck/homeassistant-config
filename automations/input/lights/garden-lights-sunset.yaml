@@ -22,7 +22,8 @@ action:
     data:
       entity_id: light.tuinverlichting
 
-  - service: log.notify
+  - service: script.turn_on
+    entity_id: script.log_notify
     data:
       variables:
         message: "De zon gaat onder, de tuinlichten worden aangezet"
